@@ -1,20 +1,47 @@
-/* Generic
+/* Main Sass file and stucture
+
+sass/
+|
+|– base/
+|   |– _animations.scss  # Animation transitions
+|   |– _typography.scss  # Typography rules and font import
+|   |– _colors.scss      # Color Variables
+|   |– _variables.scss   # Sass Variables
+|
+|– components/                                          +
+|   |– _buttons.scss     # Button styling
+|   |– _loaders.scss     # Loaders styling and animations
+|   |– _forms.scss       # Forms
+|   (Add components as needed)
+|
+|– helpers/
+|   |– _mixins.scss   # Custom mixins and placeholders
+|
+|– layout/
+|   |– _header.scss      # Header
+|   |– _footer.scss      # Footer
+|   (Add components as needed)
+|
+|– pages/
+|   |– home.scss        # Specific styles per page
+|   (Add components as needed)
+|
+/– _vendor.scss             # 3rd party scss
+/– _base.scss             # general styling (or things that do not fit anywhere else)
+/– main.scss             # main Sass file where everything is imported
+
 ========================================================================== */
-@import "colors";
-@import "variables";
-@import "utilities";
 
-/* Vendor
-========================================================================== */
 
-// Bootsrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import 'vendor';
 
-@import "node_modules/normalize.css/normalize";
-@import "node_modules/family.scss/source/src/family";
-
-// Responsive file handler
-// Notes: Requires BootsrapGrid
-@import "responsive";
+@import 'base/colors';
+@import 'base/variables';
+@import 'helpers/mixins';
+@import 'base/typography';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'components/buttons';
+@import 'base';
+@import 'components/forms';
+@import 'base/animations';

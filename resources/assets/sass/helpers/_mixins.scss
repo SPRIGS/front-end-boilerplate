@@ -1,0 +1,22 @@
+/* App mixins
+========================================================================== */
+
+%coverBg {
+    background: {
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    };
+}
+
+%containBg {
+    background: {
+        size: contain;
+        position: center;
+        repeat: no-repeat;
+    };
+}
+
+.display-block {
+    display: block;
+}
