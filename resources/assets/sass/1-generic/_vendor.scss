@@ -1,0 +1,24 @@
+/*
+========================================================================== 
+    Vendor: 3rd party css
+========================================================================== 
+*/
+
+/* Bootstrap base 
+    (import only what's needed)
+*/
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/utilities';
+
+/* Normalize */
+@import '~normalize.css/normalize';
+
+/* Family.scss */
+@import '~family.scss/source/src/family';
+
+/* Swiper */
+// @import "~swiper/swiper.scss";

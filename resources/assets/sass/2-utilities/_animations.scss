@@ -1,0 +1,18 @@
+/* Animations
+========================================================================== */
+
+// Use keyframe mixin used in functions.scss
+
+@include keyframes(example-name) {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+// Usage
+.element {
+    @include animation('example-name 5s 3');
+}

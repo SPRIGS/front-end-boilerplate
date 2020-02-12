@@ -1,0 +1,46 @@
+/*
+========================================================================== 
+    App Images
+========================================================================== 
+*/
+
+/*
+* Wrap image with '.image-ratio'
+*/
+
+.image-ratio {
+    position: relative;
+    height: 0px;
+    padding-bottom: 56.25%; // 16:9 ratio
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    &-1-1 {
+        padding-bottom: 100%; // 1:1 ratio
+    }
+
+    &-4-3 {
+        padding-bottom: 75%; // 4:3 ratio
+    }
+
+    &-16-9 {
+        padding-bottom: 56.25%; // 16:9 ratio
+    }
+
+    &--contain {
+        img {
+            min-width: auto;
+            min-height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

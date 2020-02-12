@@ -3,7 +3,7 @@
 
     </footer>
 </main>
-<script src="public/assets/dist/js/app.js"></script>
+<script src="./public/assets/web/dist/js/app.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>

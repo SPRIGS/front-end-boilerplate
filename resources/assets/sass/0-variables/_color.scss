@@ -1,0 +1,36 @@
+/*
+========================================================================== 
+    App Color settings
+    Use 'http://chir.ag/projects/name-that-color' for variable naming.
+========================================================================== 
+*/
+
+/* Brand colors */
+$black-tundora: #2c2c2c;
+$blue-bahama: #1f4e79;
+$blue-malibu: #66b7e1;
+$red-torch: #ff0033;
+$white-smoke: #f5f5f5;
+
+/* Hover states */
+
+/*  Generic colors */
+$color_base: $black-tundora;
+$color_base_light: $white-smoke;
+
+$color-primary: $blue-bahama;
+$color-secondary: $blue-malibu;
+$color-accent: $red-torch;
+
+$black-tundora-hover: lighten($black-tundora, 10%);
+$blue-bahama-hover: lighten($blue-bahama, 10%);
+$blue-malibu-hover: lighten($blue-malibu, 10%);
+$red-torch-hover: lighten($red-torch, 10%);
+$white-smoke-hover: lighten($white-smoke, 10%);
+
+$color_base-hover: lighten($color_base, 10%);
+$color_base_light-hover: lighten($color_base_light, 10%);
+
+$color-primary-hover: lighten($color-primary, 10%);
+$color-secondary-hover: lighten($color-secondary, 10%);
+$color-accent-hover: lighten($color-accent, 10%);

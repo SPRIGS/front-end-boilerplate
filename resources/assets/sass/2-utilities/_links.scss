@@ -1,0 +1,37 @@
+/*
+========================================================================== 
+    App Links
+========================================================================== 
+*/
+
+a {
+    color: $color_primary;
+    &:hover {
+        color: $color_primary;
+        text-decoration: none;
+    }
+}
+
+a.link--primary {
+    color: $color_primary;
+    &:hover {
+        color: $color_primary;
+        text-decoration: none;
+    }
+}
+
+a.link--secondary {
+    color: $color_secondary;
+    &:hover {
+        color: $color_secondary;
+        text-decoration: none;
+    }
+}
+
+a.link--accent {
+    color: $color_accent;
+    &:hover {
+        color: $color_accent;
+        text-decoration: none;
+    }
+}

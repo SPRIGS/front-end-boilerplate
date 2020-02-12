@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'demofont';
+    src: url('#{$font-path}/demofont/demofontStd-LightItalic.eot');
+    src: url('#{$font-path}/demofont/demofontStd-LightItalic.eot?#iefix')
+            format('embedded-opentype'),
+        url('#{$font-path}/demofont/demofontStd-LightItalic.woff2')
+            format('woff2'),
+        url('#{$font-path}/demofont/demofontStd-LightItalic.woff')
+            format('woff'),
+        url('#{$font-path}/demofont/demofontStd-LightItalic.ttf')
+            format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'demofont Std';
+    src: url('#{$font-path}/demofont/demofontStd-Roman.eot');
+    src: url('#{$font-path}/demofont/demofontStd-Roman.eot?#iefix')
+            format('embedded-opentype'),
+        url('#{$font-path}/demofont/demofontStd-Roman.woff2') format('woff2'),
+        url('#{$font-path}/demofont/demofontStd-Roman.woff') format('woff'),
+        url('#{$font-path}/demofont/demofontStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'demofont Std';
+    src: url('#{$font-path}/demofont/demofontStd-Bold.eot');
+    src: url('#{$font-path}/demofont/demofontStd-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('#{$font-path}/demofont/demofontStd-Bold.woff2') format('woff2'),
+        url('#{$font-path}/demofont/demofontStd-Bold.woff') format('woff'),
+        url('#{$font-path}/demofont/demofontStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

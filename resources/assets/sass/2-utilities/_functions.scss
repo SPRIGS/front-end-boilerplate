@@ -1,0 +1,45 @@
+/* App placeholders and mixins
+========================================================================== */
+
+%background-cover {
+    background: {
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+}
+
+%background-contain {
+    background: {
+        size: contain;
+        position: center;
+        repeat: no-repeat;
+    }
+}
+
+/* Keyframse mixin setup */
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}

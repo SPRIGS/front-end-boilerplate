@@ -1,0 +1,99 @@
+/*
+========================================================================== 
+    Styleguide page
+========================================================================== 
+*/
+
+.s-styleguide {
+    .grid .row {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .grid-block {
+        background-color: $black-tundora;
+        // height: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: $white-smoke;
+        text-align: center;
+    }
+
+    .styleguide__buttons .col-6 {
+        margin-bottom: 1rem;
+    }
+
+    .color-card {
+        color: $white-smoke;
+        cursor: pointer;
+        min-height: 4rem;
+        padding: 0 0.5rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+
+        &.black-tundora {
+            background-color: $black-tundora;
+            &:hover {
+                background-color: $black-tundora-hover;
+            }
+        }
+        &.blue-bahama {
+            background-color: $blue-bahama;
+            &:hover {
+                background-color: $blue-bahama-hover;
+            }
+        }
+        &.blue-malibu {
+            background-color: $blue-malibu;
+            &:hover {
+                background-color: $blue-malibu-hover;
+            }
+        }
+        &.red-torch {
+            background-color: $red-torch;
+            &:hover {
+                background-color: $red-torch-hover;
+            }
+        }
+        &.white-smoke {
+            background-color: $white-smoke;
+            &:hover {
+                background-color: $white-smoke-hover;
+            }
+        }
+
+        /*  Generic colors */
+        &.color_base {
+            background-color: $color_base;
+            &:hover {
+                background-color: $color_base-hover;
+            }
+        }
+        &.color_base_light {
+            background-color: $color_base_light;
+            &:hover {
+                background-color: $color_base_light-hover;
+            }
+        }
+
+        &.color-primary {
+            background-color: $color-primary;
+            &:hover {
+                background-color: $color-primary-hover;
+            }
+        }
+        &.color-secondary {
+            background-color: $color-secondary;
+            &:hover {
+                background-color: $color-secondary-hover;
+            }
+        }
+        &.color-accent {
+            background-color: $color-accent;
+            &:hover {
+                background-color: $color-accent-hover;
+            }
+        }
+    }
+}

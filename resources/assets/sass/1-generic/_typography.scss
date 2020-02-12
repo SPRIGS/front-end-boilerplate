@@ -1,0 +1,107 @@
+/*
+========================================================================== 
+    App Typography
+========================================================================== 
+*/
+
+html,
+body {
+    font-size: 16px;
+}
+
+@for $i from 1 through 6 {
+    h#{$i},
+    .h#{$i} {
+        color: $color_base;
+        font-family: $font-family-heading;
+        font-weight: 700;
+        line-height: 1.1;
+        margin: 0;
+    }
+}
+
+h1,
+.h1 {
+    font-size: 2rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.5rem; // To be fixed
+}
+
+h3,
+.h3 {
+    font-size: 1.17rem; // not set
+}
+
+h4,
+.h4 {
+    font-size: 1rem; // not set
+}
+
+h5,
+.h5 {
+    font-size: 0.83rem; // not set
+}
+
+h6,
+.h6 {
+    font-size: 0.67rem; // not set
+}
+
+// Paragraph styling
+p {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0, 8rem;
+    }
+
+    &.large,
+    .large & {
+        font-size: 1.1rem;
+        // line-height: 1.68;
+    }
+
+    &.small,
+    .small & {
+        font-size: 0.9rem;
+    }
+}
+
+a {
+    color: $black;
+    text-decoration: underline;
+    transition: color 0.1s linear;
+
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+blockquote {
+    padding-left: 1.2rem;
+    border-left: 3px solid $color_base;
+}
+
+@include media-breakpoint-up(md) {
+    html,
+    body {
+        font-size: 20px;
+    }
+
+    p {
+        // padding: 0;
+        // margin-bottom: 2.5rem;
+
+        &.small,
+        .small & {
+            // margin-bottom: 1rem;
+        }
+    }
+}

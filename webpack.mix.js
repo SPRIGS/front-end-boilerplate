@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 var HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 mix.webpackConfig({
@@ -9,9 +9,10 @@ mix.copy('resources/assets/js/vendor', 'public/assets/web/dist/js/vendor');
 
 mix.options({
     processCssUrls: false
-})
-    // sourceMaps(false, 'source-map').
-    .sass('resources/assets/sass/app.scss', 'public/assets/web/dist/css');
+});
+
+mix.sass('resources/assets/sass/app.scss', 'public/assets/web/dist/css');
+// mix.sourceMaps(false, 'source-map').
 
 mix.styles(
     ['public/assets/web/dist/css/app.css'],

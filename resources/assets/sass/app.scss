@@ -1,25 +1,40 @@
-/* Main Sass file and stucture
+/* 
+█▀ █▀█ █▀█ █ █▀▀ █▀   █▀ █▀▀ █▀ █▀
+▄█ █▀▀ █▀▄ █ █▄█ ▄█   ▄█ █▄▄ ▄█ ▄█
 
-sass/
+
+scss/
 |
-|– base/
-|   |– _animations.scss  # Animation transitions
-|   |– _typography.scss  # Typography rules and font import
-|   |– _colors.scss      # Color Variables
-|   |– _variables.scss   # Sass Variables
+|– 0 Variables/
+|   |– _colors.scss      # Color variables
+|   |– _font.scss        # Font family variables
+|   |– _grid.scss        # Grid overwriting variables
+|   |– _transitions.scss # Transition and timing variables for consistent animations
 |
-|– components/                                          +
-|   |– _buttons.scss     # Button styling
-|   |– _loaders.scss     # Loaders styling and animations
-|   |– _forms.scss       # Forms
+|– 1 Generic/                                  
+|   |– font/
+|   |   |- icomoon.scss
+|   |   | (Add font families as needed)
+|
+|– 2 Utilities/                                  
+|   |– animations       #
+|   |– functions        #
+|   |– links            #
+|   |– lists            #
+|   |– sections         #
+|
+|– 3 Elements/
+|   |– _button.scss
+|   |– _typography.scss
+|
+|– 4 Sections/                       
+|   |– footer.scss
+|   |– header.scss
 |   (Add components as needed)
 |
-|– helpers/
-|   |– _mixins.scss   # Custom mixins and placeholders
-|
-|– layout/
-|   |– _header.scss      # Header
-|   |– _footer.scss      # Footer
+|– 5 Components/
+|   |– _breadcrumbs.scss
+|   |– _pagination.scss
 |   (Add components as needed)
 |
 |– pages/
@@ -27,21 +42,32 @@ sass/
 |   (Add components as needed)
 |
 /– _vendor.scss             # 3rd party scss
-/– _base.scss             # general styling (or things that do not fit anywhere else)
-/– main.scss             # main Sass file where everything is imported
+/– main.scss             # main Scss file where everything is imported
 
 ========================================================================== */
 
+@import '0-variables/color';
+@import '0-variables/font';
+@import '0-variables/grid';
+@import '0-variables/transitions';
 
-@import 'vendor';
+@import '1-generic/vendor';
+@import '1-generic/font';
+@import '1-generic/typography';
 
-@import 'base/colors';
-@import 'base/variables';
-@import 'helpers/mixins';
-@import 'base/typography';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'components/buttons';
-@import 'base';
-@import 'components/forms';
-@import 'base/animations';
+@import '2-utilities/functions';
+@import '2-utilities/animations';
+@import '2-utilities/links';
+@import '2-utilities/lists';
+@import '2-utilities/sections';
+
+@import '3-elements/button';
+@import '3-elements/image';
+
+@import '4-sections/footer';
+@import '4-sections/header';
+
+@import '5-components/breadcrumbs';
+@import '5-components/pagination';
+
+@import '6-pages/styleguide.scss';
