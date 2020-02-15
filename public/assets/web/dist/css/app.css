@@ -8486,22 +8486,17 @@ ul {
 ========================================================================== 
 */
 .button {
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid #2c2c2c;
-    color: #2c2c2c;
-    cursor: pointer;
     display: -webkit-inline-box;
     display: inline-flex;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    outline: none;
-    padding: 0.3rem 0.8rem;
-    position: relative;
+    padding: 5px 15px;
     text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #1f4e79;
+    border: 1px solid #1f4e79;
+    outline: none;
     text-decoration: none;
+    cursor: pointer;
     -webkit-transition: background-color 200ms linear, border 200ms linear,
         color 200ms linear;
     transition: background-color 200ms linear, border 200ms linear,
@@ -8580,8 +8575,10 @@ ul {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 .image-ratio-1-1 {
     padding-bottom: 100%;
@@ -8593,10 +8590,8 @@ ul {
     padding-bottom: 56.25%;
 }
 .image-ratio--contain img {
-    min-width: auto;
-    min-height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 /* Footer

@@ -5,20 +5,15 @@
 */
 
 .button {
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid $color_base;
-    color: $color_base;
-    cursor: pointer;
     display: inline-flex;
-    font-family: $font-family-heading;
-    font-weight: $font_weight_base;
-    font-size: 0.9rem;
-    outline: none;
-    padding: 0.3rem 0.8rem;
-    position: relative;
+    padding: 5px 15px;
     text-align: center;
+    align-items: center;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    outline: none;
     text-decoration: none;
+    cursor: pointer;
     transition: background-color $default-transition, border $default-transition,
         color $default-transition;
 

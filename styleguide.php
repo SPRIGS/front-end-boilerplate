@@ -239,6 +239,35 @@
   </div>
 </section>
 
+<section class="section-padding-top--50">
+  <div class="container s-styleguide">
+  <h2 class="h4">Ratio images</h2>
+      <hr>
+
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <div class="image-ratio">
+          <img src="https://via.placeholder.com/800x800?text=Sample+16:9+image" alt="">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="image-ratio image-ratio-4-3">
+          <img src="https://via.placeholder.com/800x800?text=Sample+4:3+image" alt="">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="image-ratio image-ratio-1-1">
+          <img src="https://via.placeholder.com/800x800?text=Sample+1:1+image" alt="">
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="image-ratio image-ratio--contain">
+          <img src="https://via.placeholder.com/800x800?text=Sample+16:9+image" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section-padding-top--50 section-padding-bottom--100">
   <div class="container s-styleguide">
     <!-- Typography -->
