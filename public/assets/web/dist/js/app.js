@@ -35131,10 +35131,10 @@
 
                 var body = document.getElementsByTagName('body')[0];
                 document.addEventListener('DOMContentLoaded', function() {
-                    menuToggle();
+                    menuFunctionality();
                 });
 
-                var menuToggle = function menuToggle() {
+                var menuFunctionality = function menuFunctionality() {
                     var menuToggle = document.getElementById('js-menu-toggle');
                     menuToggle.addEventListener('click', function() {
                         body.classList.toggle('menu-open');
@@ -35150,6 +35150,7 @@
                             dropdownToggle.addEventListener(
                                 'click',
                                 function() {
+                                    if (window.innerWidth > 767) return;
                                     this.classList.toggle('open');
                                 }
                             );
@@ -35177,10 +35178,10 @@
             /*! no static exports found */
             /***/ function(module, exports, __webpack_require__) {
                 __webpack_require__(
-                    /*! /Users/zana/Projects/front-end-boilerplate/resources/assets/js/app.js */ './resources/assets/js/app.js'
+                    /*! /Users/afronorana/Projects/SPRIGS/front-end-boilerplate/resources/assets/js/app.js */ './resources/assets/js/app.js'
                 );
                 module.exports = __webpack_require__(
-                    /*! /Users/zana/Projects/front-end-boilerplate/resources/assets/sass/app.scss */ './resources/assets/sass/app.scss'
+                    /*! /Users/afronorana/Projects/SPRIGS/front-end-boilerplate/resources/assets/sass/app.scss */ './resources/assets/sass/app.scss'
                 );
 
                 /***/

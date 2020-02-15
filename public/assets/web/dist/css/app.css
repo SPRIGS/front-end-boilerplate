@@ -8670,7 +8670,7 @@ header .menu-item {
 }
 header .menu-link {
     display: block;
-    padding: 10px 15px;
+    padding: 20px 15px;
     text-decoration: none;
     line-height: 1;
 }
@@ -8685,13 +8685,18 @@ header .dropdown-item:hover {
     color: #f5f5f5;
     background-color: #2c2c2c;
 }
+header .menu-link:hover .carret,
+header .dropdown-item:hover .carret {
+    border-bottom: 2px solid #f5f5f5;
+    border-right: 2px solid #f5f5f5;
+}
 header .carret {
     display: inline-block;
     width: 9px;
     height: 9px;
-    margin-left: 8px;
+    margin-left: 0px;
     margin-top: -8px;
-    margin-right: -9px;
+    margin-right: -4px;
     vertical-align: middle;
     border-bottom: 2px solid #333;
     border-right: 2px solid #333;
