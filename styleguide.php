@@ -11,7 +11,7 @@
 
       <div class="col-sm-6">
         <div class="styleguide__buttons">
-          <h2 class="h4">Buttons</h2>
+          <h2 class="h4">Buttons:</h2>
           <hr>
           <div class="row row--justify-center">
             <div class="col-6 col-md-6 col-lg-4"><a href class="button button--primary">Primary</a></div>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-sm-6">
-        <h2 class="h4">Links</h2>
+        <h2 class="h4">Links:</h2>
         <hr>
         <p>
           This is <a href="#">default link</a> style<br>
@@ -241,8 +241,8 @@
 
 <section class="section-padding-top--50">
   <div class="container s-styleguide">
-  <h2 class="h4">Ratio images</h2>
-      <hr>
+    <h2 class="h4">Ratio images</h2>
+    <hr>
 
     <div class="row">
       <div class="col-6 col-md-3">
@@ -281,19 +281,32 @@
       <h4>H4: The wizard quickly jinxed the gnomes before they vaporized</h4><br>
       <h5>H5: The wizard quickly jinxed the gnomes before they vaporized</h5><br>
       <h6>H6: The wizard quickly jinxed the gnomes before they vaporized</h6><br>
-
       <p class="large"><strong>Large paragraph:</strong> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
       <p><strong>Paragraph:</strong> This is regular paragraph copy. Used for longer-form text blocks. Ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum, nibh pellentesque vestibulum mattis, lacus tortor posuere nulla, vel sagittis risus mauris ac tortor. Vestibulum et lacus a tellus sodales iaculis id vel dui. Etiam euismod lacus ornare risus egestas dignissim. Fusce mattis justo vitae congue varius. Suspendisse auctor dapibus ornare. Praesent venenatis lacus a sem interdum tempor et vitae magna. Aenean vel consectetur odio. Curabitur malesuada scelerisque massa varius volutpat.</p>
-
-      <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sapiente repellat officiis earum dicta delectus, deserunt corporis vero natus praesentium, dolorum ad vitae deleniti! Iste sunt repudiandae explicabo rerum officia!</blockquote>
-
       <p class="small"><strong>Small paragraph:</strong> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+      A bulleted list looks like this:
+      <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item</li>
+      </ul>
+      <ol>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ol>
+      <blockquote>This is a Blockquote. Lorem ipsum was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      </blockquote>
 
     </div>
 
     <!-- Buttons -->
+
+
   </div>
 
 </section>
+
 <?php include('partials/footer.php'); ?>

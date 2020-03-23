@@ -35082,7 +35082,7 @@
                 );
                 window.Promise = __webpack_require__(
                     /*! promise */ './node_modules/promise/index.js'
-                );
+                ); // window.objectFitImages = require('object-fit-images');
 
                 /***/
             },

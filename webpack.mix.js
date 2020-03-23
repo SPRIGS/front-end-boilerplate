@@ -7,6 +7,8 @@ mix.webpackConfig({
 
 mix.copy('resources/assets/js/vendor', 'public/assets/web/dist/js/vendor');
 
+//  mix.browserSync('domain.test');
+
 mix.options({
     processCssUrls: false
 });

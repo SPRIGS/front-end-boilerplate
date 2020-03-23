@@ -2,6 +2,8 @@ const body = document.getElementsByTagName('body')[0];
 
 document.addEventListener('DOMContentLoaded', () => {
     menuFunctionality();
+
+    // objectFitImages(document.querySelectorAll('selector'));
 });
 
 const menuFunctionality = () => {
