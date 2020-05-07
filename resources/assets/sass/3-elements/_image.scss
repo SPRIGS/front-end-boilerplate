@@ -8,6 +8,19 @@
 * Wrap image with '.image-ratio'
 */
 
+figure {
+    img {
+        margin-bottom: 10px;
+    }
+    figcaption {
+        font-size: 0.8rem;
+    }
+}
+
+img {
+    width: 100%;
+}
+
 .image-ratio {
     position: relative;
     height: 0px;

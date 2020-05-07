@@ -35,3 +35,13 @@ a.link--accent {
         text-decoration: none;
     }
 }
+
+.dark {
+    a {
+        color: $white-smoke;
+        &:hover {
+            color: $white-smoke;
+            text-decoration: none;
+        }
+    }
+}

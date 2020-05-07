@@ -17,6 +17,7 @@ body {
         font-weight: 700;
         line-height: 1.1;
         margin: 0;
+        margin-bottom: 1rem;
     }
 }
 
@@ -32,7 +33,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 1.17rem; // not set
+    font-size: 1.222222rem; // not set
 }
 
 h4,
@@ -92,7 +93,7 @@ blockquote {
 @include media-breakpoint-up(md) {
     html,
     body {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p {

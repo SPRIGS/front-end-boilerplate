@@ -9,6 +9,7 @@
     padding: 5px 15px;
     text-align: center;
     align-items: center;
+    justify-content: center;
     color: $color-primary;
     border: 1px solid $color-primary;
     outline: none;
@@ -17,10 +18,18 @@
     transition: background-color $default-transition, border $default-transition,
         color $default-transition;
 
-    &:hover {
-        text-decoration: none;
+    &:hover,
+    &.hover {
+        background: $color-primary;
         border-color: $color-primary;
-        color: $color-primary;
+        color: #fff;
+    }
+
+    &:active,
+    &.active {
+        background: $color-primary-hover;
+        border-color: $color-primary-hover;
+        color: #fff;
     }
 
     // Color variants
@@ -28,9 +37,17 @@
         border-color: $color-primary;
         color: $color-primary;
 
-        &:hover {
+        &:hover,
+        &.hover {
             background: $color-primary;
             border-color: $color-primary;
+            color: #fff;
+        }
+
+        &:active,
+        &.active {
+            background: $color-primary-hover;
+            border-color: $color-primary-hover;
             color: #fff;
         }
     }
@@ -39,9 +56,17 @@
         border-color: $color-accent;
         color: $color-accent;
 
-        &:hover {
+        &:hover,
+        &.hover {
             background: $color-accent;
             border-color: $color-accent;
+            color: #fff;
+        }
+
+        &:active,
+        &.active {
+            background: $color-accent-hover;
+            border-color: $color-accent-hover;
             color: #fff;
         }
     }
@@ -50,7 +75,8 @@
         background: $color-primary;
         border-color: $color-primary;
         color: #fff;
-        &:not(.button--arrow):hover {
+        &:not(.button--arrow):hover,
+        &.hover:not(.button--arrow) {
             background: #fff;
             border-color: #fff;
             color: $color-primary;
@@ -62,7 +88,8 @@
         border-color: $color-accent;
         color: #fff;
 
-        &:not(.button--arrow):hover {
+        &:not(.button--arrow):hover,
+        &.hover:not(.button--arrow) {
             background: #fff;
             border-color: #fff;
             color: $color-accent;
@@ -71,7 +98,7 @@
 
     i[class^='icon-'] {
         flex: 0 0 24px;
-        margin-left: 0.7rem;
+        margin-left: 0.5rem;
         transition: transform $default-transition;
     }
 }

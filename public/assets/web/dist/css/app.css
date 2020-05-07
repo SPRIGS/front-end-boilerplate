@@ -8107,6 +8107,7 @@ h1,
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h2,
@@ -8116,6 +8117,7 @@ h2,
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h3,
@@ -8125,6 +8127,7 @@ h3,
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h4,
@@ -8134,6 +8137,7 @@ h4,
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h5,
@@ -8143,6 +8147,7 @@ h5,
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h6,
@@ -8152,6 +8157,7 @@ h6,
     font-weight: 700;
     line-height: 1.1;
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 h1,
@@ -8166,7 +8172,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 1.17rem;
+    font-size: 1.222222rem;
 }
 
 h4,
@@ -8221,7 +8227,7 @@ blockquote {
 @media (min-width: 768px) {
     html,
     body {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 /* App placeholders and mixins
@@ -8287,6 +8293,14 @@ a.link--accent:hover {
     text-decoration: none;
 }
 
+.dark a {
+    color: #f5f5f5;
+}
+.dark a:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
 /*
 ========================================================================== 
     Lists
@@ -8295,6 +8309,12 @@ a.link--accent:hover {
 ul {
     padding: 0;
     list-style: none;
+}
+
+ol li,
+ul li {
+    line-height: 1.25;
+    margin-bottom: 0.4444rem;
 }
 
 /*
@@ -8479,6 +8499,16 @@ ul {
         padding-bottom: calc(4rem * 1);
     }
 }
+/* Animations
+========================================================================== */
+.text--light {
+    color: #999;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
 /*
 ========================================================================== 
     App Buttons
@@ -8491,6 +8521,8 @@ ul {
     text-align: center;
     -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
     color: #1f4e79;
     border: 1px solid #1f4e79;
     outline: none;
@@ -8501,27 +8533,48 @@ ul {
     transition: background-color 200ms linear, border 200ms linear,
         color 200ms linear;
 }
-.button:hover {
-    text-decoration: none;
+.button:hover,
+.button.hover {
+    background: #1f4e79;
     border-color: #1f4e79;
-    color: #1f4e79;
+    color: #fff;
+}
+.button:active,
+.button.active {
+    background: #2968a2;
+    border-color: #2968a2;
+    color: #fff;
 }
 .button--primary {
     border-color: #1f4e79;
     color: #1f4e79;
 }
-.button--primary:hover {
+.button--primary:hover,
+.button--primary.hover {
     background: #1f4e79;
     border-color: #1f4e79;
+    color: #fff;
+}
+.button--primary:active,
+.button--primary.active {
+    background: #2968a2;
+    border-color: #2968a2;
     color: #fff;
 }
 .button--accent {
     border-color: #ff0033;
     color: #ff0033;
 }
-.button--accent:hover {
+.button--accent:hover,
+.button--accent.hover {
     background: #ff0033;
     border-color: #ff0033;
+    color: #fff;
+}
+.button--accent:active,
+.button--accent.active {
+    background: #ff335c;
+    border-color: #ff335c;
     color: #fff;
 }
 .button--primary-full {
@@ -8529,7 +8582,8 @@ ul {
     border-color: #1f4e79;
     color: #fff;
 }
-.button--primary-full:not(.button--arrow):hover {
+.button--primary-full:not(.button--arrow):hover,
+.button--primary-full.hover:not(.button--arrow) {
     background: #fff;
     border-color: #fff;
     color: #1f4e79;
@@ -8539,7 +8593,8 @@ ul {
     border-color: #ff0033;
     color: #fff;
 }
-.button--accent-full:not(.button--arrow):hover {
+.button--accent-full:not(.button--arrow):hover,
+.button--accent-full.hover:not(.button--arrow) {
     background: #fff;
     border-color: #fff;
     color: #ff0033;
@@ -8547,7 +8602,7 @@ ul {
 .button i[class^='icon-'] {
     -webkit-box-flex: 0;
     flex: 0 0 24px;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
     -webkit-transition: -webkit-transform 200ms linear;
     transition: -webkit-transform 200ms linear;
     transition: transform 200ms linear;
@@ -8562,6 +8617,17 @@ ul {
 /*
 * Wrap image with '.image-ratio'
 */
+figure img {
+    margin-bottom: 10px;
+}
+figure figcaption {
+    font-size: 0.8rem;
+}
+
+img {
+    width: 100%;
+}
+
 .image-ratio {
     position: relative;
     height: 0px;
@@ -8578,6 +8644,9 @@ ul {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    font-family: 'object-fit: cover; object-position: center;';
 }
 .image-ratio-1-1 {
     padding-bottom: 100%;
@@ -8585,12 +8654,13 @@ ul {
 .image-ratio-4-3 {
     padding-bottom: 75%;
 }
-.image-ratio-16-9 {
-    padding-bottom: 56.25%;
-}
 .image-ratio--contain img {
     -o-object-fit: contain;
     object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    font-family: 'object-fit: contain; object-position: center;';
 }
 
 /* Footer
@@ -8851,15 +8921,17 @@ header .logo a img {
     Styleguide page
 ========================================================================== 
 */
+.s-styleguide .h3 span {
+    color: #999;
+}
 .s-styleguide .grid .row {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 .s-styleguide .grid-block {
-    background-color: #2c2c2c;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: #f5f5f5;
+    background-color: #f5f5f5;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: center;
 }
 .s-styleguide .styleguide__buttons .col-6 {
@@ -8934,4 +9006,15 @@ header .logo a img {
 }
 .s-styleguide .color-card.color-accent:hover {
     background-color: #ff335c;
+}
+.s-styleguide .icons-wrapper {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.s-styleguide .dark {
+    background: #2c2c2c;
+    color: #f5f5f5;
+    margin: -15px;
+    margin-bottom: 0;
+    padding: 0.5rem 15px;
 }

@@ -5,17 +5,26 @@
 */
 
 .s-styleguide {
+    .h3 span {
+        color: #999;
+    }
+
+    .styleguide__typography {
+        .small.text--light {
+            // margin-top: -0.5rem;
+        }
+    }
+
     .grid .row {
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
 
     .grid-block {
-        background-color: $black-tundora;
-        // height: 1rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        color: $white-smoke;
+        background-color: $white-smoke;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        // color: $white-smoke;
         text-align: center;
     }
 
@@ -95,5 +104,19 @@
                 background-color: $color-accent-hover;
             }
         }
+    }
+
+    .icons-wrapper {
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .dark {
+        background: $black-tundora;
+        color: $white-smoke;
+
+        margin: -$grid-gutter-width/2;
+        margin-bottom: 0;
+        padding: 0.5rem $grid-gutter-width/2;
     }
 }
