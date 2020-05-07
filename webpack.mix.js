@@ -1,8 +1,10 @@
 const mix = require('laravel-mix');
 
+mix.setPublicPath(path.resolve('./'));
+
 var HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 mix.webpackConfig({
-    plugins: [new HardSourceWebpackPlugin()]
+    plugins: [new HardSourceWebpackPlugin()],
 });
 
 mix.copy('resources/assets/js/vendor', 'public/assets/web/dist/js/vendor');
@@ -10,7 +12,7 @@ mix.copy('resources/assets/js/vendor', 'public/assets/web/dist/js/vendor');
 //  mix.browserSync('domain.test');
 
 mix.options({
-    processCssUrls: false
+    processCssUrls: false,
 });
 
 mix.sass('resources/assets/sass/app.scss', 'public/assets/web/dist/css');

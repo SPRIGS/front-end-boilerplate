@@ -1,4 +1,4 @@
-/******/ (function(modules) {
+/******/ (function (modules) {
     // webpackBootstrap
     /******/ // The module cache
     /******/ var installedModules = {}; // The require function
@@ -13,7 +13,7 @@
         /******/ /******/ var module = (installedModules[moduleId] = {
             /******/ i: moduleId,
             /******/ l: false,
-            /******/ exports: {}
+            /******/ exports: {},
             /******/
         }); // Execute the module function
         /******/
@@ -35,21 +35,21 @@
     /******/
     /******/ /******/ __webpack_require__.c = installedModules; // define getter function for harmony exports
     /******/
-    /******/ /******/ __webpack_require__.d = function(exports, name, getter) {
+    /******/ /******/ __webpack_require__.d = function (exports, name, getter) {
         /******/ if (!__webpack_require__.o(exports, name)) {
             /******/ Object.defineProperty(exports, name, {
                 enumerable: true,
-                get: getter
+                get: getter,
             });
             /******/
         }
         /******/
     }; // define __esModule on exports
     /******/
-    /******/ /******/ __webpack_require__.r = function(exports) {
+    /******/ /******/ __webpack_require__.r = function (exports) {
         /******/ if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
             /******/ Object.defineProperty(exports, Symbol.toStringTag, {
-                value: 'Module'
+                value: 'Module',
             });
             /******/
         }
@@ -57,7 +57,7 @@
         /******/
     }; // create a fake namespace object // mode & 1: value is a module id, require it // mode & 2: merge all properties of value into the ns // mode & 4: return value when already ns object // mode & 8|1: behave like require
     /******/
-    /******/ /******/ /******/ /******/ /******/ /******/ __webpack_require__.t = function(
+    /******/ /******/ /******/ /******/ /******/ /******/ __webpack_require__.t = function (
         value,
         mode
     ) {
@@ -74,14 +74,14 @@
         /******/ __webpack_require__.r(ns);
         /******/ Object.defineProperty(ns, 'default', {
             enumerable: true,
-            value: value
+            value: value,
         });
         /******/ if (mode & 2 && typeof value != 'string')
             for (var key in value)
                 __webpack_require__.d(
                     ns,
                     key,
-                    function(key) {
+                    function (key) {
                         return value[key];
                     }.bind(null, key)
                 );
@@ -89,7 +89,7 @@
         /******/
     }; // getDefaultExport function for compatibility with non-harmony modules
     /******/
-    /******/ /******/ __webpack_require__.n = function(module) {
+    /******/ /******/ __webpack_require__.n = function (module) {
         /******/ var getter =
             module && module.__esModule
                 ? /******/ function getDefault() {
@@ -103,7 +103,7 @@
         /******/
     }; // Object.prototype.hasOwnProperty.call
     /******/
-    /******/ /******/ __webpack_require__.o = function(object, property) {
+    /******/ /******/ __webpack_require__.o = function (object, property) {
         return Object.prototype.hasOwnProperty.call(object, property);
     }; // __webpack_public_path__
     /******/
@@ -120,7 +120,7 @@
   !*** ./node_modules/asap/browser-asap.js ***!
   \*******************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 // rawAsap provides everything we need except exception management.
@@ -170,7 +170,7 @@
 
                 // The sole purpose of wrapping the task is to catch the exception and recycle
                 // the task object after its single use.
-                RawTask.prototype.call = function() {
+                RawTask.prototype.call = function () {
                     try {
                         this.task.call();
                     } catch (error) {
@@ -200,9 +200,9 @@
   !*** ./node_modules/asap/browser-raw.js ***!
   \******************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
-                /* WEBPACK VAR INJECTION */ (function(global) {
+                /* WEBPACK VAR INJECTION */ (function (global) {
                     // Use the fastest means possible to execute a task in its own turn, with
                     // priority over other events including IO, animation, reflow, and redraw
                     // events in browsers.
@@ -449,8 +449,8 @@
   !*** ./node_modules/lodash/lodash.js ***!
   \***************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
-                /* WEBPACK VAR INJECTION */ (function(global, module) {
+            /***/ function (module, exports, __webpack_require__) {
+                /* WEBPACK VAR INJECTION */ (function (global, module) {
                     var __WEBPACK_AMD_DEFINE_RESULT__;
                     /**
                      * @license
@@ -460,7 +460,7 @@
                      * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
                      * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
                      */
-                    (function() {
+                    (function () {
                         /** Used as a safe reference for `undefined` in pre-ES5 environments. */
                         var undefined;
 
@@ -539,7 +539,7 @@
                             ['flip', WRAP_FLIP_FLAG],
                             ['partial', WRAP_PARTIAL_FLAG],
                             ['partialRight', WRAP_PARTIAL_RIGHT_FLAG],
-                            ['rearg', WRAP_REARG_FLAG]
+                            ['rearg', WRAP_REARG_FLAG],
                         ];
 
                         /** `Object#toString` result references. */
@@ -742,7 +742,7 @@
                                     rsCombo,
                                     rsRegional,
                                     rsSurrPair,
-                                    rsAstral
+                                    rsAstral,
                                 ].join('|') +
                                 ')';
 
@@ -789,7 +789,7 @@
                                 rsOrdUpper,
                                 rsOrdLower,
                                 rsDigits,
-                                rsEmoji
+                                rsEmoji,
                             ].join('|'),
                             'g'
                         );
@@ -838,7 +838,7 @@
                             'clearTimeout',
                             'isFinite',
                             'parseInt',
-                            'setTimeout'
+                            'setTimeout',
                         ];
 
                         /** Used to make template sourceURLs easier to identify. */
@@ -1093,7 +1093,7 @@
                             Œ: 'Oe',
                             œ: 'oe',
                             ŉ: "'n",
-                            ſ: 's'
+                            ſ: 's',
                         };
 
                         /** Used to map characters to HTML entities. */
@@ -1102,7 +1102,7 @@
                             '<': '&lt;',
                             '>': '&gt;',
                             '"': '&quot;',
-                            "'": '&#39;'
+                            "'": '&#39;',
                         };
 
                         /** Used to map HTML entities to characters. */
@@ -1111,7 +1111,7 @@
                             '&lt;': '<',
                             '&gt;': '>',
                             '&quot;': '"',
-                            '&#39;': "'"
+                            '&#39;': "'",
                         };
 
                         /** Used to escape characters for inclusion in compiled string literals. */
@@ -1121,7 +1121,7 @@
                             '\n': 'n',
                             '\r': 'r',
                             '\u2028': 'u2028',
-                            '\u2029': 'u2029'
+                            '\u2029': 'u2029',
                         };
 
                         /** Built-in method references without a dependency on `root`. */
@@ -1166,7 +1166,7 @@
                         var freeProcess = moduleExports && freeGlobal.process;
 
                         /** Used to access faster Node.js helpers. */
-                        var nodeUtil = (function() {
+                        var nodeUtil = (function () {
                             try {
                                 // Use `util.types` for Node.js 10+.
                                 var types =
@@ -1566,7 +1566,7 @@
                          */
                         function baseFindKey(collection, predicate, eachFunc) {
                             var result;
-                            eachFunc(collection, function(
+                            eachFunc(collection, function (
                                 value,
                                 key,
                                 collection
@@ -1684,7 +1684,7 @@
                          * @returns {Function} Returns the new accessor function.
                          */
                         function baseProperty(key) {
-                            return function(object) {
+                            return function (object) {
                                 return object == null ? undefined : object[key];
                             };
                         }
@@ -1697,7 +1697,7 @@
                          * @returns {Function} Returns the new accessor function.
                          */
                         function basePropertyOf(object) {
-                            return function(key) {
+                            return function (key) {
                                 return object == null ? undefined : object[key];
                             };
                         }
@@ -1722,7 +1722,7 @@
                             initAccum,
                             eachFunc
                         ) {
-                            eachFunc(collection, function(
+                            eachFunc(collection, function (
                                 value,
                                 index,
                                 collection
@@ -1814,7 +1814,7 @@
                          * @returns {Object} Returns the key-value pairs.
                          */
                         function baseToPairs(object, props) {
-                            return arrayMap(props, function(key) {
+                            return arrayMap(props, function (key) {
                                 return [key, object[key]];
                             });
                         }
@@ -1827,7 +1827,7 @@
                          * @returns {Function} Returns the new capped function.
                          */
                         function baseUnary(func) {
-                            return function(value) {
+                            return function (value) {
                                 return func(value);
                             };
                         }
@@ -1843,7 +1843,7 @@
                          * @returns {Object} Returns the array of property values.
                          */
                         function baseValues(object, props) {
-                            return arrayMap(props, function(key) {
+                            return arrayMap(props, function (key) {
                                 return object[key];
                             });
                         }
@@ -2013,7 +2013,7 @@
                             var index = -1,
                                 result = Array(map.size);
 
-                            map.forEach(function(value, key) {
+                            map.forEach(function (value, key) {
                                 result[++index] = [key, value];
                             });
                             return result;
@@ -2028,7 +2028,7 @@
                          * @returns {Function} Returns the new function.
                          */
                         function overArg(func, transform) {
-                            return function(arg) {
+                            return function (arg) {
                                 return func(transform(arg));
                             };
                         }
@@ -2072,7 +2072,7 @@
                             var index = -1,
                                 result = Array(set.size);
 
-                            set.forEach(function(value) {
+                            set.forEach(function (value) {
                                 result[++index] = value;
                             });
                             return result;
@@ -2089,7 +2089,7 @@
                             var index = -1,
                                 result = Array(set.size);
 
-                            set.forEach(function(value) {
+                            set.forEach(function (value) {
                                 result[++index] = [value, value];
                             });
                             return result;
@@ -2279,7 +2279,7 @@
                             var idCounter = 0;
 
                             /** Used to detect methods masquerading as native. */
-                            var maskSrcKey = (function() {
+                            var maskSrcKey = (function () {
                                 var uid = /[^.]+$/.exec(
                                     (coreJsData &&
                                         coreJsData.keys &&
@@ -2342,7 +2342,7 @@
                                     ? Symbol.toStringTag
                                     : undefined;
 
-                            var defineProperty = (function() {
+                            var defineProperty = (function () {
                                 try {
                                     var func = getNative(
                                         Object,
@@ -2563,9 +2563,9 @@
                              * @param {Object} proto The object to inherit from.
                              * @returns {Object} Returns the new object.
                              */
-                            var baseCreate = (function() {
+                            var baseCreate = (function () {
                                 function object() {}
-                                return function(proto) {
+                                return function (proto) {
                                     if (!isObject(proto)) {
                                         return {};
                                     }
@@ -2658,8 +2658,8 @@
                                      * @memberOf _.templateSettings.imports
                                      * @type {Function}
                                      */
-                                    _: lodash
-                                }
+                                    _: lodash,
+                                },
                             };
 
                             // Ensure wrappers are instances of `baseLodash`.
@@ -3081,7 +3081,7 @@
                                 this.__data__ = {
                                     hash: new Hash(),
                                     map: new (Map || ListCache)(),
-                                    string: new Hash()
+                                    string: new Hash(),
                                 };
                             }
 
@@ -3484,7 +3484,7 @@
                                 iteratee,
                                 accumulator
                             ) {
-                                baseEach(collection, function(
+                                baseEach(collection, function (
                                     value,
                                     key,
                                     collection
@@ -3546,7 +3546,7 @@
                                         configurable: true,
                                         enumerable: true,
                                         value: value,
-                                        writable: true
+                                        writable: true,
                                     });
                                 } else {
                                     object[key] = value;
@@ -3695,7 +3695,7 @@
                                 stack.set(value, result);
 
                                 if (isSet(value)) {
-                                    value.forEach(function(subValue) {
+                                    value.forEach(function (subValue) {
                                         result.add(
                                             baseClone(
                                                 subValue,
@@ -3708,7 +3708,7 @@
                                         );
                                     });
                                 } else if (isMap(value)) {
-                                    value.forEach(function(subValue, key) {
+                                    value.forEach(function (subValue, key) {
                                         result.set(
                                             key,
                                             baseClone(
@@ -3732,7 +3732,7 @@
                                     : keys;
 
                                 var props = isArr ? undefined : keysFunc(value);
-                                arrayEach(props || value, function(
+                                arrayEach(props || value, function (
                                     subValue,
                                     key
                                 ) {
@@ -3766,7 +3766,7 @@
                              */
                             function baseConforms(source) {
                                 var props = keys(source);
-                                return function(object) {
+                                return function (object) {
                                     return baseConformsTo(
                                         object,
                                         source,
@@ -3819,7 +3819,7 @@
                                 if (typeof func != 'function') {
                                     throw new TypeError(FUNC_ERROR_TEXT);
                                 }
-                                return setTimeout(function() {
+                                return setTimeout(function () {
                                     func.apply(undefined, args);
                                 }, wait);
                             }
@@ -3927,7 +3927,7 @@
                              */
                             function baseEvery(collection, predicate) {
                                 var result = true;
-                                baseEach(collection, function(
+                                baseEach(collection, function (
                                     value,
                                     index,
                                     collection
@@ -4016,7 +4016,7 @@
                              */
                             function baseFilter(collection, predicate) {
                                 var result = [];
-                                baseEach(collection, function(
+                                baseEach(collection, function (
                                     value,
                                     index,
                                     collection
@@ -4138,7 +4138,7 @@
                              * @returns {Array} Returns the function names.
                              */
                             function baseFunctions(object, props) {
-                                return arrayFilter(props, function(key) {
+                                return arrayFilter(props, function (key) {
                                     return isFunction(object[key]);
                                 });
                             }
@@ -4373,7 +4373,7 @@
                                 iteratee,
                                 accumulator
                             ) {
-                                baseForOwn(object, function(
+                                baseForOwn(object, function (
                                     value,
                                     key,
                                     object
@@ -4867,7 +4867,7 @@
                                         ? Array(collection.length)
                                         : [];
 
-                                baseEach(collection, function(
+                                baseEach(collection, function (
                                     value,
                                     key,
                                     collection
@@ -4896,7 +4896,7 @@
                                         matchData[0][1]
                                     );
                                 }
-                                return function(object) {
+                                return function (object) {
                                     return (
                                         object === source ||
                                         baseIsMatch(object, source, matchData)
@@ -4922,7 +4922,7 @@
                                         srcValue
                                     );
                                 }
-                                return function(object) {
+                                return function (object) {
                                     var objValue = get(object, path);
                                     return objValue === undefined &&
                                         objValue === srcValue
@@ -4959,7 +4959,7 @@
                                 }
                                 baseFor(
                                     source,
-                                    function(srcValue, key) {
+                                    function (srcValue, key) {
                                         stack || (stack = new Stack());
                                         if (isObject(srcValue)) {
                                             baseMergeDeep(
@@ -5146,24 +5146,25 @@
                                     baseUnary(getIteratee())
                                 );
 
-                                var result = baseMap(collection, function(
+                                var result = baseMap(collection, function (
                                     value,
                                     key,
                                     collection
                                 ) {
-                                    var criteria = arrayMap(iteratees, function(
-                                        iteratee
-                                    ) {
-                                        return iteratee(value);
-                                    });
+                                    var criteria = arrayMap(
+                                        iteratees,
+                                        function (iteratee) {
+                                            return iteratee(value);
+                                        }
+                                    );
                                     return {
                                         criteria: criteria,
                                         index: ++index,
-                                        value: value
+                                        value: value,
                                     };
                                 });
 
-                                return baseSortBy(result, function(
+                                return baseSortBy(result, function (
                                     object,
                                     other
                                 ) {
@@ -5185,7 +5186,7 @@
                              * @returns {Object} Returns the new object.
                              */
                             function basePick(object, paths) {
-                                return basePickBy(object, paths, function(
+                                return basePickBy(object, paths, function (
                                     value,
                                     path
                                 ) {
@@ -5230,7 +5231,7 @@
                              * @returns {Function} Returns the new accessor function.
                              */
                             function basePropertyDeep(path) {
-                                return function(object) {
+                                return function (object) {
                                     return baseGet(object, path);
                                 };
                             }
@@ -5489,7 +5490,7 @@
                              */
                             var baseSetData = !metaMap
                                 ? identity
-                                : function(func, data) {
+                                : function (func, data) {
                                       metaMap.set(func, data);
                                       return func;
                                   };
@@ -5504,12 +5505,12 @@
                              */
                             var baseSetToString = !defineProperty
                                 ? identity
-                                : function(func, string) {
+                                : function (func, string) {
                                       return defineProperty(func, 'toString', {
                                           configurable: true,
                                           enumerable: false,
                                           value: constant(string),
-                                          writable: true
+                                          writable: true,
                                       });
                                   };
 
@@ -5567,7 +5568,7 @@
                             function baseSome(collection, predicate) {
                                 var result;
 
-                                baseEach(collection, function(
+                                baseEach(collection, function (
                                     value,
                                     index,
                                     collection
@@ -5935,7 +5936,7 @@
                                 }
                                 return arrayReduce(
                                     actions,
-                                    function(result, action) {
+                                    function (result, action) {
                                         return action.func.apply(
                                             action.thisArg,
                                             arrayPush([result], action.args)
@@ -6087,7 +6088,7 @@
                              */
                             var clearTimeout =
                                 ctxClearTimeout ||
-                                function(id) {
+                                function (id) {
                                     return root.clearTimeout(id);
                                 };
 
@@ -6500,7 +6501,7 @@
                              * @returns {Function} Returns the new aggregator function.
                              */
                             function createAggregator(setter, initializer) {
-                                return function(collection, iteratee) {
+                                return function (collection, iteratee) {
                                     var func = isArray(collection)
                                             ? arrayAggregator
                                             : baseAggregator,
@@ -6525,7 +6526,7 @@
                              * @returns {Function} Returns the new assigner function.
                              */
                             function createAssigner(assigner) {
-                                return baseRest(function(object, sources) {
+                                return baseRest(function (object, sources) {
                                     var index = -1,
                                         length = sources.length,
                                         customizer =
@@ -6578,7 +6579,7 @@
                              * @returns {Function} Returns the new base function.
                              */
                             function createBaseEach(eachFunc, fromRight) {
-                                return function(collection, iteratee) {
+                                return function (collection, iteratee) {
                                     if (collection == null) {
                                         return collection;
                                     }
@@ -6614,7 +6615,7 @@
                              * @returns {Function} Returns the new base function.
                              */
                             function createBaseFor(fromRight) {
-                                return function(object, iteratee, keysFunc) {
+                                return function (object, iteratee, keysFunc) {
                                     var index = -1,
                                         iterable = Object(object),
                                         props = keysFunc(object),
@@ -6674,7 +6675,7 @@
                              * @returns {Function} Returns the new case function.
                              */
                             function createCaseFirst(methodName) {
-                                return function(string) {
+                                return function (string) {
                                     string = toString(string);
 
                                     var strSymbols = hasUnicode(string)
@@ -6701,7 +6702,7 @@
                              * @returns {Function} Returns the new compounder function.
                              */
                             function createCompounder(callback) {
-                                return function(string) {
+                                return function (string) {
                                     return arrayReduce(
                                         words(
                                             deburr(string).replace(reApos, '')
@@ -6721,7 +6722,7 @@
                              * @returns {Function} Returns the new wrapped function.
                              */
                             function createCtor(Ctor) {
-                                return function() {
+                                return function () {
                                     // Use a `switch` statement to work with class constructors. See
                                     // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
                                     // for more details.
@@ -6849,7 +6850,7 @@
                              * @returns {Function} Returns the new find function.
                              */
                             function createFind(findIndexFunc) {
-                                return function(
+                                return function (
                                     collection,
                                     predicate,
                                     fromIndex
@@ -6861,7 +6862,7 @@
                                             3
                                         );
                                         collection = keys(collection);
-                                        predicate = function(key) {
+                                        predicate = function (key) {
                                             return iteratee(
                                                 iterable[key],
                                                 key,
@@ -6892,7 +6893,7 @@
                              * @returns {Function} Returns the new flow function.
                              */
                             function createFlow(fromRight) {
-                                return flatRest(function(funcs) {
+                                return flatRest(function (funcs) {
                                     var length = funcs.length,
                                         index = length,
                                         prereq = LodashWrapper.prototype.thru;
@@ -6950,7 +6951,7 @@
                                                     : wrapper.thru(func);
                                         }
                                     }
-                                    return function() {
+                                    return function () {
                                         var args = arguments,
                                             value = args[0];
 
@@ -7105,7 +7106,7 @@
                              * @returns {Function} Returns the new inverter function.
                              */
                             function createInverter(setter, toIteratee) {
-                                return function(object, iteratee) {
+                                return function (object, iteratee) {
                                     return baseInverter(
                                         object,
                                         setter,
@@ -7127,7 +7128,7 @@
                                 operator,
                                 defaultValue
                             ) {
-                                return function(value, other) {
+                                return function (value, other) {
                                     var result;
                                     if (
                                         value === undefined &&
@@ -7166,14 +7167,14 @@
                              * @returns {Function} Returns the new over function.
                              */
                             function createOver(arrayFunc) {
-                                return flatRest(function(iteratees) {
+                                return flatRest(function (iteratees) {
                                     iteratees = arrayMap(
                                         iteratees,
                                         baseUnary(getIteratee())
                                     );
-                                    return baseRest(function(args) {
+                                    return baseRest(function (args) {
                                         var thisArg = this;
-                                        return arrayFunc(iteratees, function(
+                                        return arrayFunc(iteratees, function (
                                             iteratee
                                         ) {
                                             return apply(
@@ -7278,7 +7279,7 @@
                              * @returns {Function} Returns the new range function.
                              */
                             function createRange(fromRight) {
-                                return function(start, end, step) {
+                                return function (start, end, step) {
                                     if (
                                         step &&
                                         typeof step != 'number' &&
@@ -7317,7 +7318,7 @@
                              * @returns {Function} Returns the new relational operation function.
                              */
                             function createRelationalOperation(operator) {
-                                return function(value, other) {
+                                return function (value, other) {
                                     if (
                                         !(
                                             typeof value == 'string' &&
@@ -7394,7 +7395,7 @@
                                     newHoldersRight,
                                     argPos,
                                     ary,
-                                    arity
+                                    arity,
                                 ];
 
                                 var result = wrapFunc.apply(undefined, newData);
@@ -7414,7 +7415,7 @@
                              */
                             function createRound(methodName) {
                                 var func = Math[methodName];
-                                return function(number, precision) {
+                                return function (number, precision) {
                                     number = toNumber(number);
                                     precision =
                                         precision == null
@@ -7460,7 +7461,7 @@
                                 1 / setToArray(new Set([, -0]))[1] == INFINITY
                             )
                                 ? noop
-                                : function(values) {
+                                : function (values) {
                                       return new Set(values);
                                   };
 
@@ -7472,7 +7473,7 @@
                              * @returns {Function} Returns the new pairs function.
                              */
                             function createToPairs(keysFunc) {
-                                return function(object) {
+                                return function (object) {
                                     var tag = getTag(object);
                                     if (tag == mapTag) {
                                         return mapToArray(object);
@@ -7564,7 +7565,7 @@
                                     holdersRight,
                                     argPos,
                                     ary,
-                                    arity
+                                    arity,
                                 ];
 
                                 if (data) {
@@ -7788,7 +7789,7 @@
                                     // Recursively compare arrays (susceptible to call stack limits).
                                     if (seen) {
                                         if (
-                                            !arraySome(other, function(
+                                            !arraySome(other, function (
                                                 othValue,
                                                 othIndex
                                             ) {
@@ -8050,7 +8051,7 @@
                                     if (
                                         objCtor != othCtor &&
                                         'constructor' in object &&
-                                            'constructor' in other &&
+                                        'constructor' in other &&
                                         !(
                                             typeof objCtor == 'function' &&
                                             objCtor instanceof objCtor &&
@@ -8116,7 +8117,7 @@
                              */
                             var getData = !metaMap
                                 ? noop
-                                : function(func) {
+                                : function (func) {
                                       return metaMap.get(func);
                                   };
 
@@ -8224,7 +8225,7 @@
                                     result[length] = [
                                         key,
                                         value,
-                                        isStrictComparable(value)
+                                        isStrictComparable(value),
                                     ];
                                 }
                                 return result;
@@ -8282,14 +8283,14 @@
                              */
                             var getSymbols = !nativeGetSymbols
                                 ? stubArray
-                                : function(object) {
+                                : function (object) {
                                       if (object == null) {
                                           return [];
                                       }
                                       object = Object(object);
                                       return arrayFilter(
                                           nativeGetSymbols(object),
-                                          function(symbol) {
+                                          function (symbol) {
                                               return propertyIsEnumerable.call(
                                                   object,
                                                   symbol
@@ -8307,7 +8308,7 @@
                              */
                             var getSymbolsIn = !nativeGetSymbols
                                 ? stubArray
-                                : function(object) {
+                                : function (object) {
                                       var result = [];
                                       while (object) {
                                           arrayPush(result, getSymbols(object));
@@ -8336,7 +8337,7 @@
                                 (Set && getTag(new Set()) != setTag) ||
                                 (WeakMap && getTag(new WeakMap()) != weakMapTag)
                             ) {
-                                getTag = function(value) {
+                                getTag = function (value) {
                                     var result = baseGetTag(value),
                                         Ctor =
                                             result == objectTag
@@ -8607,8 +8608,8 @@
                                         (type != 'symbol' &&
                                             reIsUint.test(value))) &&
                                     value > -1 &&
-                                        value % 1 == 0 &&
-                                        value < length
+                                    value % 1 == 0 &&
+                                    value < length
                                 );
                             }
 
@@ -8770,7 +8771,7 @@
                              * @returns {Function} Returns the new spec function.
                              */
                             function matchesStrictComparable(key, srcValue) {
-                                return function(object) {
+                                return function (object) {
                                     if (object == null) {
                                         return false;
                                     }
@@ -8791,7 +8792,7 @@
                              * @returns {Function} Returns the new memoized function.
                              */
                             function memoizeCapped(func) {
-                                var result = memoize(func, function(key) {
+                                var result = memoize(func, function (key) {
                                     if (cache.size === MAX_MEMOIZE_SIZE) {
                                         cache.clear();
                                     }
@@ -8951,7 +8952,7 @@
                                         : start,
                                     0
                                 );
-                                return function() {
+                                return function () {
                                     var args = arguments,
                                         index = -1,
                                         length = nativeMax(
@@ -9063,7 +9064,7 @@
                              */
                             var setTimeout =
                                 ctxSetTimeout ||
-                                function(func, wait) {
+                                function (func, wait) {
                                     return root.setTimeout(func, wait);
                                 };
 
@@ -9118,7 +9119,7 @@
                                 var count = 0,
                                     lastCalled = 0;
 
-                                return function() {
+                                return function () {
                                     var stamp = nativeNow(),
                                         remaining =
                                             HOT_SPAN - (stamp - lastCalled);
@@ -9167,12 +9168,12 @@
                              * @param {string} string The string to convert.
                              * @returns {Array} Returns the property path array.
                              */
-                            var stringToPath = memoizeCapped(function(string) {
+                            var stringToPath = memoizeCapped(function (string) {
                                 var result = [];
                                 if (string.charCodeAt(0) === 46 /* . */) {
                                     result.push('');
                                 }
-                                string.replace(rePropName, function(
+                                string.replace(rePropName, function (
                                     match,
                                     number,
                                     quote,
@@ -9238,7 +9239,7 @@
                              * @returns {Array} Returns `details`.
                              */
                             function updateWrapDetails(details, bitmask) {
-                                arrayEach(wrapFlags, function(pair) {
+                                arrayEach(wrapFlags, function (pair) {
                                     var value = '_.' + pair[0];
                                     if (
                                         bitmask & pair[1] &&
@@ -9415,7 +9416,7 @@
                              * _.difference([2, 1], [2, 3]);
                              * // => [1]
                              */
-                            var difference = baseRest(function(array, values) {
+                            var difference = baseRest(function (array, values) {
                                 return isArrayLikeObject(array)
                                     ? baseDifference(
                                           array,
@@ -9455,7 +9456,7 @@
                              * _.differenceBy([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], 'x');
                              * // => [{ 'x': 2 }]
                              */
-                            var differenceBy = baseRest(function(
+                            var differenceBy = baseRest(function (
                                 array,
                                 values
                             ) {
@@ -9500,7 +9501,7 @@
                              * _.differenceWith(objects, [{ 'x': 1, 'y': 2 }], _.isEqual);
                              * // => [{ 'x': 2, 'y': 1 }]
                              */
-                            var differenceWith = baseRest(function(
+                            var differenceWith = baseRest(function (
                                 array,
                                 values
                             ) {
@@ -10037,7 +10038,7 @@
                              * _.intersection([2, 1], [2, 3]);
                              * // => [2]
                              */
-                            var intersection = baseRest(function(arrays) {
+                            var intersection = baseRest(function (arrays) {
                                 var mapped = arrayMap(
                                     arrays,
                                     castArrayLikeObject
@@ -10070,7 +10071,7 @@
                              * _.intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
                              * // => [{ 'x': 1 }]
                              */
-                            var intersectionBy = baseRest(function(arrays) {
+                            var intersectionBy = baseRest(function (arrays) {
                                 var iteratee = last(arrays),
                                     mapped = arrayMap(
                                         arrays,
@@ -10111,7 +10112,7 @@
                              * _.intersectionWith(objects, others, _.isEqual);
                              * // => [{ 'x': 1, 'y': 2 }]
                              */
-                            var intersectionWith = baseRest(function(arrays) {
+                            var intersectionWith = baseRest(function (arrays) {
                                 var comparator = last(arrays),
                                     mapped = arrayMap(
                                         arrays,
@@ -10396,13 +10397,13 @@
                              * console.log(pulled);
                              * // => ['b', 'd']
                              */
-                            var pullAt = flatRest(function(array, indexes) {
+                            var pullAt = flatRest(function (array, indexes) {
                                 var length = array == null ? 0 : array.length,
                                     result = baseAt(array, indexes);
 
                                 basePullAt(
                                     array,
-                                    arrayMap(indexes, function(index) {
+                                    arrayMap(indexes, function (index) {
                                         return isIndex(index, length)
                                             ? +index
                                             : index;
@@ -10938,7 +10939,7 @@
                              * _.union([2], [1, 2]);
                              * // => [2, 1]
                              */
-                            var union = baseRest(function(arrays) {
+                            var union = baseRest(function (arrays) {
                                 return baseUniq(
                                     baseFlatten(
                                         arrays,
@@ -10972,7 +10973,7 @@
                              * _.unionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
                              * // => [{ 'x': 1 }, { 'x': 2 }]
                              */
-                            var unionBy = baseRest(function(arrays) {
+                            var unionBy = baseRest(function (arrays) {
                                 var iteratee = last(arrays);
                                 if (isArrayLikeObject(iteratee)) {
                                     iteratee = undefined;
@@ -11009,7 +11010,7 @@
                              * _.unionWith(objects, others, _.isEqual);
                              * // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
                              */
-                            var unionWith = baseRest(function(arrays) {
+                            var unionWith = baseRest(function (arrays) {
                                 var comparator = last(arrays);
                                 comparator =
                                     typeof comparator == 'function'
@@ -11134,7 +11135,7 @@
                                     return [];
                                 }
                                 var length = 0;
-                                array = arrayFilter(array, function(group) {
+                                array = arrayFilter(array, function (group) {
                                     if (isArrayLikeObject(group)) {
                                         length = nativeMax(
                                             group.length,
@@ -11143,7 +11144,7 @@
                                         return true;
                                     }
                                 });
-                                return baseTimes(length, function(index) {
+                                return baseTimes(length, function (index) {
                                     return arrayMap(array, baseProperty(index));
                                 });
                             }
@@ -11177,7 +11178,7 @@
                                 if (iteratee == null) {
                                     return result;
                                 }
-                                return arrayMap(result, function(group) {
+                                return arrayMap(result, function (group) {
                                     return apply(iteratee, undefined, group);
                                 });
                             }
@@ -11202,7 +11203,7 @@
                              * _.without([2, 1, 2, 3], 1, 2);
                              * // => [3]
                              */
-                            var without = baseRest(function(array, values) {
+                            var without = baseRest(function (array, values) {
                                 return isArrayLikeObject(array)
                                     ? baseDifference(array, values)
                                     : [];
@@ -11226,7 +11227,7 @@
                              * _.xor([2, 1], [2, 3]);
                              * // => [1, 3]
                              */
-                            var xor = baseRest(function(arrays) {
+                            var xor = baseRest(function (arrays) {
                                 return baseXor(
                                     arrayFilter(arrays, isArrayLikeObject)
                                 );
@@ -11255,7 +11256,7 @@
                              * _.xorBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
                              * // => [{ 'x': 2 }]
                              */
-                            var xorBy = baseRest(function(arrays) {
+                            var xorBy = baseRest(function (arrays) {
                                 var iteratee = last(arrays);
                                 if (isArrayLikeObject(iteratee)) {
                                     iteratee = undefined;
@@ -11287,7 +11288,7 @@
                              * _.xorWith(objects, others, _.isEqual);
                              * // => [{ 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
                              */
-                            var xorWith = baseRest(function(arrays) {
+                            var xorWith = baseRest(function (arrays) {
                                 var comparator = last(arrays);
                                 comparator =
                                     typeof comparator == 'function'
@@ -11385,7 +11386,7 @@
                              * });
                              * // => [111, 222]
                              */
-                            var zipWith = baseRest(function(arrays) {
+                            var zipWith = baseRest(function (arrays) {
                                 var length = arrays.length,
                                     iteratee =
                                         length > 1
@@ -11507,11 +11508,11 @@
                              * _(object).at(['a[0].b.c', 'a[1]']).value();
                              * // => [3, 4]
                              */
-                            var wrapperAt = flatRest(function(paths) {
+                            var wrapperAt = flatRest(function (paths) {
                                 var length = paths.length,
                                     start = length ? paths[0] : 0,
                                     value = this.__wrapped__,
-                                    interceptor = function(object) {
+                                    interceptor = function (object) {
                                         return baseAt(object, paths);
                                     };
 
@@ -11530,12 +11531,12 @@
                                 value.__actions__.push({
                                     func: thru,
                                     args: [interceptor],
-                                    thisArg: undefined
+                                    thisArg: undefined,
                                 });
                                 return new LodashWrapper(
                                     value,
                                     this.__chain__
-                                ).thru(function(array) {
+                                ).thru(function (array) {
                                     if (length && !array.length) {
                                         array.push(undefined);
                                     }
@@ -11740,7 +11741,7 @@
                                     wrapped.__actions__.push({
                                         func: thru,
                                         args: [reverse],
-                                        thisArg: undefined
+                                        thisArg: undefined,
                                     });
                                     return new LodashWrapper(
                                         wrapped,
@@ -11795,7 +11796,7 @@
                              * _.countBy(['one', 'two', 'three'], 'length');
                              * // => { '3': 2, '5': 1 }
                              */
-                            var countBy = createAggregator(function(
+                            var countBy = createAggregator(function (
                                 result,
                                 value,
                                 key
@@ -12148,7 +12149,7 @@
                              * _.groupBy(['one', 'two', 'three'], 'length');
                              * // => { '3': ['one', 'two'], '5': ['three'] }
                              */
-                            var groupBy = createAggregator(function(
+                            var groupBy = createAggregator(function (
                                 result,
                                 value,
                                 key
@@ -12246,7 +12247,7 @@
                              * _.invokeMap([123, 456], String.prototype.split, '');
                              * // => [['1', '2', '3'], ['4', '5', '6']]
                              */
-                            var invokeMap = baseRest(function(
+                            var invokeMap = baseRest(function (
                                 collection,
                                 path,
                                 args
@@ -12257,7 +12258,7 @@
                                         ? Array(collection.length)
                                         : [];
 
-                                baseEach(collection, function(value) {
+                                baseEach(collection, function (value) {
                                     result[++index] = isFunc
                                         ? apply(path, value, args)
                                         : baseInvoke(value, path, args);
@@ -12293,7 +12294,7 @@
                              * _.keyBy(array, 'dir');
                              * // => { 'left': { 'dir': 'left', 'code': 97 }, 'right': { 'dir': 'right', 'code': 100 } }
                              */
-                            var keyBy = createAggregator(function(
+                            var keyBy = createAggregator(function (
                                 result,
                                 value,
                                 key
@@ -12443,10 +12444,10 @@
                              * // => objects for [['fred'], ['barney', 'pebbles']]
                              */
                             var partition = createAggregator(
-                                function(result, value, key) {
+                                function (result, value, key) {
                                     result[key ? 0 : 1].push(value);
                                 },
-                                function() {
+                                function () {
                                     return [[], []];
                                 }
                             );
@@ -12785,7 +12786,7 @@
                              * _.sortBy(users, ['user', 'age']);
                              * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
                              */
-                            var sortBy = baseRest(function(
+                            var sortBy = baseRest(function (
                                 collection,
                                 iteratees
                             ) {
@@ -12839,7 +12840,7 @@
                              */
                             var now =
                                 ctxNow ||
-                                function() {
+                                function () {
                                     return root.Date.now();
                                 };
 
@@ -12874,7 +12875,7 @@
                                     throw new TypeError(FUNC_ERROR_TEXT);
                                 }
                                 n = toInteger(n);
-                                return function() {
+                                return function () {
                                     if (--n < 1) {
                                         return func.apply(this, arguments);
                                     }
@@ -12935,7 +12936,7 @@
                                     throw new TypeError(FUNC_ERROR_TEXT);
                                 }
                                 n = toInteger(n);
-                                return function() {
+                                return function () {
                                     if (--n > 0) {
                                         result = func.apply(this, arguments);
                                     }
@@ -12981,7 +12982,7 @@
                              * bound('hi');
                              * // => 'hi fred!'
                              */
-                            var bind = baseRest(function(
+                            var bind = baseRest(function (
                                 func,
                                 thisArg,
                                 partials
@@ -13048,7 +13049,7 @@
                              * bound('hi');
                              * // => 'hiya fred!'
                              */
-                            var bindKey = baseRest(function(
+                            var bindKey = baseRest(function (
                                 object,
                                 key,
                                 partials
@@ -13408,7 +13409,7 @@
                              * }, 'deferred');
                              * // => Logs 'deferred' after one millisecond.
                              */
-                            var defer = baseRest(function(func, args) {
+                            var defer = baseRest(function (func, args) {
                                 return baseDelay(func, 1, args);
                             });
 
@@ -13431,7 +13432,7 @@
                              * }, 1000, 'later');
                              * // => Logs 'later' after one second.
                              */
-                            var delay = baseRest(function(func, wait, args) {
+                            var delay = baseRest(function (func, wait, args) {
                                 return baseDelay(
                                     func,
                                     toNumber(wait) || 0,
@@ -13513,7 +13514,7 @@
                                 ) {
                                     throw new TypeError(FUNC_ERROR_TEXT);
                                 }
-                                var memoized = function() {
+                                var memoized = function () {
                                     var args = arguments,
                                         key = resolver
                                             ? resolver.apply(this, args)
@@ -13560,7 +13561,7 @@
                                 if (typeof predicate != 'function') {
                                     throw new TypeError(FUNC_ERROR_TEXT);
                                 }
-                                return function() {
+                                return function () {
                                     var args = arguments;
                                     switch (args.length) {
                                         case 0:
@@ -13641,7 +13642,10 @@
                              * func(10, 5);
                              * // => [100, 10]
                              */
-                            var overArgs = castRest(function(func, transforms) {
+                            var overArgs = castRest(function (
+                                func,
+                                transforms
+                            ) {
                                 transforms =
                                     transforms.length == 1 &&
                                     isArray(transforms[0])
@@ -13655,7 +13659,7 @@
                                           );
 
                                 var funcsLength = transforms.length;
-                                return baseRest(function(args) {
+                                return baseRest(function (args) {
                                     var index = -1,
                                         length = nativeMin(
                                             args.length,
@@ -13705,7 +13709,7 @@
                              * greetFred('hi');
                              * // => 'hi fred'
                              */
-                            var partial = baseRest(function(func, partials) {
+                            var partial = baseRest(function (func, partials) {
                                 var holders = replaceHolders(
                                     partials,
                                     getHolder(partial)
@@ -13751,7 +13755,7 @@
                              * sayHelloTo('fred');
                              * // => 'hello fred'
                              */
-                            var partialRight = baseRest(function(
+                            var partialRight = baseRest(function (
                                 func,
                                 partials
                             ) {
@@ -13790,7 +13794,7 @@
                              * rearged('b', 'c', 'a')
                              * // => ['a', 'b', 'c']
                              */
-                            var rearg = flatRest(function(func, indexes) {
+                            var rearg = flatRest(function (func, indexes) {
                                 return createWrap(
                                     func,
                                     WRAP_REARG_FLAG,
@@ -13879,7 +13883,7 @@
                                     start == null
                                         ? 0
                                         : nativeMax(toInteger(start), 0);
-                                return baseRest(function(args) {
+                                return baseRest(function (args) {
                                     var array = args[start],
                                         otherArgs = castSlice(args, 0, start);
 
@@ -13954,7 +13958,7 @@
                                 return debounce(func, wait, {
                                     leading: leading,
                                     maxWait: wait,
-                                    trailing: trailing
+                                    trailing: trailing,
                                 });
                             }
 
@@ -14302,7 +14306,7 @@
                              * _.gte(1, 3);
                              * // => false
                              */
-                            var gte = createRelationalOperation(function(
+                            var gte = createRelationalOperation(function (
                                 value,
                                 other
                             ) {
@@ -14328,12 +14332,12 @@
                              * // => false
                              */
                             var isArguments = baseIsArguments(
-                                (function() {
+                                (function () {
                                     return arguments;
                                 })()
                             )
                                 ? baseIsArguments
-                                : function(value) {
+                                : function (value) {
                                       return (
                                           isObjectLike(value) &&
                                           hasOwnProperty.call(
@@ -15488,7 +15492,7 @@
                              * _.lte(3, 1);
                              * // => false
                              */
-                            var lte = createRelationalOperation(function(
+                            var lte = createRelationalOperation(function (
                                 value,
                                 other
                             ) {
@@ -15829,7 +15833,7 @@
                              * _.assign({ 'a': 0 }, new Foo, new Bar);
                              * // => { 'a': 1, 'c': 3 }
                              */
-                            var assign = createAssigner(function(
+                            var assign = createAssigner(function (
                                 object,
                                 source
                             ) {
@@ -15878,7 +15882,7 @@
                              * _.assignIn({ 'a': 0 }, new Foo, new Bar);
                              * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
                              */
-                            var assignIn = createAssigner(function(
+                            var assignIn = createAssigner(function (
                                 object,
                                 source
                             ) {
@@ -15914,7 +15918,7 @@
                              * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
                              * // => { 'a': 1, 'b': 2 }
                              */
-                            var assignInWith = createAssigner(function(
+                            var assignInWith = createAssigner(function (
                                 object,
                                 source,
                                 srcIndex,
@@ -15956,7 +15960,7 @@
                              * defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
                              * // => { 'a': 1, 'b': 2 }
                              */
-                            var assignWith = createAssigner(function(
+                            var assignWith = createAssigner(function (
                                 object,
                                 source,
                                 srcIndex,
@@ -16051,7 +16055,7 @@
                              * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
                              * // => { 'a': 1, 'b': 2 }
                              */
-                            var defaults = baseRest(function(object, sources) {
+                            var defaults = baseRest(function (object, sources) {
                                 object = Object(object);
 
                                 var index = -1;
@@ -16114,7 +16118,7 @@
                              * _.defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
                              * // => { 'a': { 'b': 2, 'c': 3 } }
                              */
-                            var defaultsDeep = baseRest(function(args) {
+                            var defaultsDeep = baseRest(function (args) {
                                 args.push(undefined, customDefaultsMerge);
                                 return apply(mergeWith, undefined, args);
                             });
@@ -16528,7 +16532,7 @@
                              * _.invert(object);
                              * // => { '1': 'c', '2': 'b' }
                              */
-                            var invert = createInverter(function(
+                            var invert = createInverter(function (
                                 result,
                                 value,
                                 key
@@ -16570,7 +16574,7 @@
                              * });
                              * // => { 'group1': ['a', 'c'], 'group2': ['b'] }
                              */
-                            var invertBy = createInverter(function(
+                            var invertBy = createInverter(function (
                                 result,
                                 value,
                                 key
@@ -16698,7 +16702,7 @@
                                 var result = {};
                                 iteratee = getIteratee(iteratee, 3);
 
-                                baseForOwn(object, function(
+                                baseForOwn(object, function (
                                     value,
                                     key,
                                     object
@@ -16744,7 +16748,7 @@
                                 var result = {};
                                 iteratee = getIteratee(iteratee, 3);
 
-                                baseForOwn(object, function(
+                                baseForOwn(object, function (
                                     value,
                                     key,
                                     object
@@ -16789,7 +16793,7 @@
                              * _.merge(object, other);
                              * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
                              */
-                            var merge = createAssigner(function(
+                            var merge = createAssigner(function (
                                 object,
                                 source,
                                 srcIndex
@@ -16828,7 +16832,7 @@
                              * _.mergeWith(object, other, customizer);
                              * // => { 'a': [1, 3], 'b': [2, 4] }
                              */
-                            var mergeWith = createAssigner(function(
+                            var mergeWith = createAssigner(function (
                                 object,
                                 source,
                                 srcIndex,
@@ -16857,13 +16861,13 @@
                              * _.omit(object, ['a', 'c']);
                              * // => { 'b': '2' }
                              */
-                            var omit = flatRest(function(object, paths) {
+                            var omit = flatRest(function (object, paths) {
                                 var result = {};
                                 if (object == null) {
                                     return result;
                                 }
                                 var isDeep = false;
-                                paths = arrayMap(paths, function(path) {
+                                paths = arrayMap(paths, function (path) {
                                     path = castPath(path, object);
                                     isDeep || (isDeep = path.length > 1);
                                     return path;
@@ -16933,7 +16937,7 @@
                              * _.pick(object, ['a', 'c']);
                              * // => { 'a': 1, 'c': 3 }
                              */
-                            var pick = flatRest(function(object, paths) {
+                            var pick = flatRest(function (object, paths) {
                                 return object == null
                                     ? {}
                                     : basePick(object, paths);
@@ -16963,12 +16967,12 @@
                                 }
                                 var props = arrayMap(
                                     getAllKeysIn(object),
-                                    function(prop) {
+                                    function (prop) {
                                         return [prop];
                                     }
                                 );
                                 predicate = getIteratee(predicate);
-                                return basePickBy(object, props, function(
+                                return basePickBy(object, props, function (
                                     value,
                                     path
                                 ) {
@@ -17204,7 +17208,7 @@
                                 }
                                 (isArrLike ? arrayEach : baseForOwn)(
                                     object,
-                                    function(value, index, object) {
+                                    function (value, index, object) {
                                         return iteratee(
                                             accumulator,
                                             value,
@@ -17592,7 +17596,7 @@
                              * _.camelCase('__FOO_BAR__');
                              * // => 'fooBar'
                              */
-                            var camelCase = createCompounder(function(
+                            var camelCase = createCompounder(function (
                                 result,
                                 word,
                                 index
@@ -17778,7 +17782,7 @@
                              * _.kebabCase('__FOO_BAR__');
                              * // => 'foo-bar'
                              */
-                            var kebabCase = createCompounder(function(
+                            var kebabCase = createCompounder(function (
                                 result,
                                 word,
                                 index
@@ -17810,7 +17814,7 @@
                              * _.lowerCase('__FOO_BAR__');
                              * // => 'foo bar'
                              */
-                            var lowerCase = createCompounder(function(
+                            var lowerCase = createCompounder(function (
                                 result,
                                 word,
                                 index
@@ -18071,7 +18075,7 @@
                              * _.snakeCase('--FOO-BAR--');
                              * // => 'foo_bar'
                              */
-                            var snakeCase = createCompounder(function(
+                            var snakeCase = createCompounder(function (
                                 result,
                                 word,
                                 index
@@ -18157,7 +18161,7 @@
                              * _.startCase('__FOO_BAR__');
                              * // => 'FOO BAR'
                              */
-                            var startCase = createCompounder(function(
+                            var startCase = createCompounder(function (
                                 result,
                                 word,
                                 index
@@ -18387,7 +18391,7 @@
                                           ']') +
                                     '\n';
 
-                                string.replace(reDelimiters, function(
+                                string.replace(reDelimiters, function (
                                     match,
                                     escapeValue,
                                     interpolateValue,
@@ -18470,7 +18474,7 @@
                                     source +
                                     'return __p\n}';
 
-                                var result = attempt(function() {
+                                var result = attempt(function () {
                                     return Function(
                                         importsKeys,
                                         sourceURL + 'return ' + source
@@ -18820,7 +18824,7 @@
                              * _.upperCase('__foo_bar__');
                              * // => 'FOO BAR'
                              */
-                            var upperCase = createCompounder(function(
+                            var upperCase = createCompounder(function (
                                 result,
                                 word,
                                 index
@@ -18906,7 +18910,7 @@
                              *   elements = [];
                              * }
                              */
-                            var attempt = baseRest(function(func, args) {
+                            var attempt = baseRest(function (func, args) {
                                 try {
                                     return apply(func, undefined, args);
                                 } catch (e) {
@@ -18940,11 +18944,11 @@
                              * jQuery(element).on('click', view.click);
                              * // => Logs 'clicked docs' when clicked.
                              */
-                            var bindAll = flatRest(function(
+                            var bindAll = flatRest(function (
                                 object,
                                 methodNames
                             ) {
-                                arrayEach(methodNames, function(key) {
+                                arrayEach(methodNames, function (key) {
                                     key = toKey(key);
                                     baseAssignValue(
                                         object,
@@ -18990,7 +18994,7 @@
 
                                 pairs = !length
                                     ? []
-                                    : arrayMap(pairs, function(pair) {
+                                    : arrayMap(pairs, function (pair) {
                                           if (typeof pair[1] != 'function') {
                                               throw new TypeError(
                                                   FUNC_ERROR_TEXT
@@ -18999,7 +19003,7 @@
                                           return [toIteratee(pair[0]), pair[1]];
                                       });
 
-                                return baseRest(function(args) {
+                                return baseRest(function (args) {
                                     var index = -1;
                                     while (++index < length) {
                                         var pair = pairs[index];
@@ -19060,7 +19064,7 @@
                              * // => true
                              */
                             function constant(value) {
-                                return function() {
+                                return function () {
                                     return value;
                                 };
                             }
@@ -19299,8 +19303,8 @@
                              * _.map(objects, _.method(['a', 'b']));
                              * // => [2, 1]
                              */
-                            var method = baseRest(function(path, args) {
-                                return function(object) {
+                            var method = baseRest(function (path, args) {
+                                return function (object) {
                                     return baseInvoke(object, path, args);
                                 };
                             });
@@ -19328,8 +19332,8 @@
                              * _.map([['a', '2'], ['c', '0']], _.methodOf(object));
                              * // => [2, 0]
                              */
-                            var methodOf = baseRest(function(object, args) {
-                                return function(path) {
+                            var methodOf = baseRest(function (object, args) {
+                                return function (path) {
                                     return baseInvoke(object, path, args);
                                 };
                             });
@@ -19396,13 +19400,13 @@
                                         ) || !!options.chain,
                                     isFunc = isFunction(object);
 
-                                arrayEach(methodNames, function(methodName) {
+                                arrayEach(methodNames, function (methodName) {
                                     var func = source[methodName];
                                     object[methodName] = func;
                                     if (isFunc) {
                                         object.prototype[
                                             methodName
-                                        ] = function() {
+                                        ] = function () {
                                             var chainAll = this.__chain__;
                                             if (chain || chainAll) {
                                                 var result = object(
@@ -19415,7 +19419,7 @@
                                                 actions.push({
                                                     func: func,
                                                     args: arguments,
-                                                    thisArg: object
+                                                    thisArg: object,
                                                 });
                                                 result.__chain__ = chainAll;
                                                 return result;
@@ -19492,7 +19496,7 @@
                              */
                             function nthArg(n) {
                                 n = toInteger(n);
-                                return baseRest(function(args) {
+                                return baseRest(function (args) {
                                     return baseNth(args, n);
                                 });
                             }
@@ -19619,7 +19623,7 @@
                              * // => [2, 0]
                              */
                             function propertyOf(object) {
-                                return function(path) {
+                                return function (path) {
                                     return object == null
                                         ? undefined
                                         : baseGet(object, path);
@@ -19904,7 +19908,7 @@
                              * _.add(6, 4);
                              * // => 10
                              */
-                            var add = createMathOperation(function(
+                            var add = createMathOperation(function (
                                 augend,
                                 addend
                             ) {
@@ -19950,7 +19954,7 @@
                              * _.divide(6, 4);
                              * // => 1.5
                              */
-                            var divide = createMathOperation(function(
+                            var divide = createMathOperation(function (
                                 dividend,
                                 divisor
                             ) {
@@ -20158,7 +20162,7 @@
                              * _.multiply(6, 4);
                              * // => 24
                              */
-                            var multiply = createMathOperation(function(
+                            var multiply = createMathOperation(function (
                                 multiplier,
                                 multiplicand
                             ) {
@@ -20204,7 +20208,7 @@
                              * _.subtract(6, 4);
                              * // => 2
                              */
-                            var subtract = createMathOperation(function(
+                            var subtract = createMathOperation(function (
                                 minuend,
                                 subtrahend
                             ) {
@@ -20583,9 +20587,9 @@
 
                             mixin(
                                 lodash,
-                                (function() {
+                                (function () {
                                     var source = {};
-                                    baseForOwn(lodash, function(
+                                    baseForOwn(lodash, function (
                                         func,
                                         methodName
                                     ) {
@@ -20622,19 +20626,19 @@
                                     'curry',
                                     'curryRight',
                                     'partial',
-                                    'partialRight'
+                                    'partialRight',
                                 ],
-                                function(methodName) {
+                                function (methodName) {
                                     lodash[methodName].placeholder = lodash;
                                 }
                             );
 
                             // Add `LazyWrapper` methods for `_.drop` and `_.take` variants.
-                            arrayEach(['drop', 'take'], function(
+                            arrayEach(['drop', 'take'], function (
                                 methodName,
                                 index
                             ) {
-                                LazyWrapper.prototype[methodName] = function(
+                                LazyWrapper.prototype[methodName] = function (
                                     n
                                 ) {
                                     n =
@@ -20662,7 +20666,7 @@
                                                 methodName +
                                                 (result.__dir__ < 0
                                                     ? 'Right'
-                                                    : '')
+                                                    : ''),
                                         });
                                     }
                                     return result;
@@ -20670,7 +20674,7 @@
 
                                 LazyWrapper.prototype[
                                     methodName + 'Right'
-                                ] = function(n) {
+                                ] = function (n) {
                                     return this.reverse()
                                         [methodName](n)
                                         .reverse();
@@ -20678,7 +20682,7 @@
                             });
 
                             // Add `LazyWrapper` methods that accept an `iteratee` value.
-                            arrayEach(['filter', 'map', 'takeWhile'], function(
+                            arrayEach(['filter', 'map', 'takeWhile'], function (
                                 methodName,
                                 index
                             ) {
@@ -20687,13 +20691,13 @@
                                         type == LAZY_FILTER_FLAG ||
                                         type == LAZY_WHILE_FLAG;
 
-                                LazyWrapper.prototype[methodName] = function(
+                                LazyWrapper.prototype[methodName] = function (
                                     iteratee
                                 ) {
                                     var result = this.clone();
                                     result.__iteratees__.push({
                                         iteratee: getIteratee(iteratee, 3),
-                                        type: type
+                                        type: type,
                                     });
                                     result.__filtered__ =
                                         result.__filtered__ || isFilter;
@@ -20702,64 +20706,72 @@
                             });
 
                             // Add `LazyWrapper` methods for `_.head` and `_.last`.
-                            arrayEach(['head', 'last'], function(
+                            arrayEach(['head', 'last'], function (
                                 methodName,
                                 index
                             ) {
                                 var takeName = 'take' + (index ? 'Right' : '');
 
-                                LazyWrapper.prototype[methodName] = function() {
+                                LazyWrapper.prototype[
+                                    methodName
+                                ] = function () {
                                     return this[takeName](1).value()[0];
                                 };
                             });
 
                             // Add `LazyWrapper` methods for `_.initial` and `_.tail`.
-                            arrayEach(['initial', 'tail'], function(
+                            arrayEach(['initial', 'tail'], function (
                                 methodName,
                                 index
                             ) {
                                 var dropName = 'drop' + (index ? '' : 'Right');
 
-                                LazyWrapper.prototype[methodName] = function() {
+                                LazyWrapper.prototype[
+                                    methodName
+                                ] = function () {
                                     return this.__filtered__
                                         ? new LazyWrapper(this)
                                         : this[dropName](1);
                                 };
                             });
 
-                            LazyWrapper.prototype.compact = function() {
+                            LazyWrapper.prototype.compact = function () {
                                 return this.filter(identity);
                             };
 
-                            LazyWrapper.prototype.find = function(predicate) {
+                            LazyWrapper.prototype.find = function (predicate) {
                                 return this.filter(predicate).head();
                             };
 
-                            LazyWrapper.prototype.findLast = function(
+                            LazyWrapper.prototype.findLast = function (
                                 predicate
                             ) {
                                 return this.reverse().find(predicate);
                             };
 
-                            LazyWrapper.prototype.invokeMap = baseRest(function(
-                                path,
-                                args
-                            ) {
-                                if (typeof path == 'function') {
-                                    return new LazyWrapper(this);
+                            LazyWrapper.prototype.invokeMap = baseRest(
+                                function (path, args) {
+                                    if (typeof path == 'function') {
+                                        return new LazyWrapper(this);
+                                    }
+                                    return this.map(function (value) {
+                                        return baseInvoke(value, path, args);
+                                    });
                                 }
-                                return this.map(function(value) {
-                                    return baseInvoke(value, path, args);
-                                });
-                            });
+                            );
 
-                            LazyWrapper.prototype.reject = function(predicate) {
+                            LazyWrapper.prototype.reject = function (
+                                predicate
+                            ) {
                                 return this.filter(
                                     negate(getIteratee(predicate))
                                 );
                             };
 
-                            LazyWrapper.prototype.slice = function(start, end) {
+                            LazyWrapper.prototype.slice = function (
+                                start,
+                                end
+                            ) {
                                 start = toInteger(start);
 
                                 var result = this;
@@ -20784,7 +20796,7 @@
                                 return result;
                             };
 
-                            LazyWrapper.prototype.takeRightWhile = function(
+                            LazyWrapper.prototype.takeRightWhile = function (
                                 predicate
                             ) {
                                 return this.reverse()
@@ -20792,12 +20804,12 @@
                                     .reverse();
                             };
 
-                            LazyWrapper.prototype.toArray = function() {
+                            LazyWrapper.prototype.toArray = function () {
                                 return this.take(MAX_ARRAY_LENGTH);
                             };
 
                             // Add `LazyWrapper` methods to `lodash.prototype`.
-                            baseForOwn(LazyWrapper.prototype, function(
+                            baseForOwn(LazyWrapper.prototype, function (
                                 func,
                                 methodName
                             ) {
@@ -20822,14 +20834,14 @@
                                 if (!lodashFunc) {
                                     return;
                                 }
-                                lodash.prototype[methodName] = function() {
+                                lodash.prototype[methodName] = function () {
                                     var value = this.__wrapped__,
                                         args = isTaker ? [1] : arguments,
                                         isLazy = value instanceof LazyWrapper,
                                         iteratee = args[0],
                                         useLazy = isLazy || isArray(value);
 
-                                    var interceptor = function(value) {
+                                    var interceptor = function (value) {
                                         var result = lodashFunc.apply(
                                             lodash,
                                             arrayPush([value], args)
@@ -20861,7 +20873,7 @@
                                         result.__actions__.push({
                                             func: thru,
                                             args: [interceptor],
-                                            thisArg: undefined
+                                            thisArg: undefined,
                                         });
                                         return new LodashWrapper(
                                             result,
@@ -20888,9 +20900,9 @@
                                     'shift',
                                     'sort',
                                     'splice',
-                                    'unshift'
+                                    'unshift',
                                 ],
-                                function(methodName) {
+                                function (methodName) {
                                     var func = arrayProto[methodName],
                                         chainName = /^(?:push|sort|unshift)$/.test(
                                             methodName
@@ -20901,7 +20913,7 @@
                                             methodName
                                         );
 
-                                    lodash.prototype[methodName] = function() {
+                                    lodash.prototype[methodName] = function () {
                                         var args = arguments;
                                         if (retUnwrapped && !this.__chain__) {
                                             var value = this.value();
@@ -20910,7 +20922,9 @@
                                                 args
                                             );
                                         }
-                                        return this[chainName](function(value) {
+                                        return this[chainName](function (
+                                            value
+                                        ) {
                                             return func.apply(
                                                 isArray(value) ? value : [],
                                                 args
@@ -20921,7 +20935,7 @@
                             );
 
                             // Map minified method names to their real names.
-                            baseForOwn(LazyWrapper.prototype, function(
+                            baseForOwn(LazyWrapper.prototype, function (
                                 func,
                                 methodName
                             ) {
@@ -20933,7 +20947,7 @@
                                     }
                                     realNames[key].push({
                                         name: methodName,
-                                        func: lodashFunc
+                                        func: lodashFunc,
                                     });
                                 }
                             });
@@ -20943,8 +20957,8 @@
                             ] = [
                                 {
                                     name: 'wrapper',
-                                    func: undefined
-                                }
+                                    func: undefined,
+                                },
                             ];
 
                             // Add methods to `LazyWrapper`.
@@ -20987,7 +21001,7 @@
 
                             // Define as an anonymous module so, through path mapping, it can be
                             // referenced as the "underscore" module.
-                            !((__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+                            !((__WEBPACK_AMD_DEFINE_RESULT__ = function () {
                                 return _;
                             }.call(
                                 exports,
@@ -21022,7 +21036,7 @@
   !*** ./node_modules/promise/index.js ***!
   \***************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 module.exports = __webpack_require__(
@@ -21037,7 +21051,7 @@
   !*** ./node_modules/promise/lib/core.js ***!
   \******************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 var asap = __webpack_require__(
@@ -21103,18 +21117,18 @@
                             "Promise constructor's argument is not a function"
                         );
                     }
-                    this._h = 0;
-                    this._i = 0;
-                    this._j = null;
-                    this._k = null;
+                    this._U = 0;
+                    this._V = 0;
+                    this._W = null;
+                    this._X = null;
                     if (fn === noop) return;
                     doResolve(fn, this);
                 }
-                Promise._l = null;
-                Promise._m = null;
-                Promise._n = noop;
+                Promise._Y = null;
+                Promise._Z = null;
+                Promise._0 = noop;
 
-                Promise.prototype.then = function(onFulfilled, onRejected) {
+                Promise.prototype.then = function (onFulfilled, onRejected) {
                     if (this.constructor !== Promise) {
                         return safeThen(this, onFulfilled, onRejected);
                     }
@@ -21124,51 +21138,51 @@
                 };
 
                 function safeThen(self, onFulfilled, onRejected) {
-                    return new self.constructor(function(resolve, reject) {
+                    return new self.constructor(function (resolve, reject) {
                         var res = new Promise(noop);
                         res.then(resolve, reject);
                         handle(self, new Handler(onFulfilled, onRejected, res));
                     });
                 }
                 function handle(self, deferred) {
-                    while (self._i === 3) {
-                        self = self._j;
+                    while (self._V === 3) {
+                        self = self._W;
                     }
-                    if (Promise._l) {
-                        Promise._l(self);
+                    if (Promise._Y) {
+                        Promise._Y(self);
                     }
-                    if (self._i === 0) {
-                        if (self._h === 0) {
-                            self._h = 1;
-                            self._k = deferred;
+                    if (self._V === 0) {
+                        if (self._U === 0) {
+                            self._U = 1;
+                            self._X = deferred;
                             return;
                         }
-                        if (self._h === 1) {
-                            self._h = 2;
-                            self._k = [self._k, deferred];
+                        if (self._U === 1) {
+                            self._U = 2;
+                            self._X = [self._X, deferred];
                             return;
                         }
-                        self._k.push(deferred);
+                        self._X.push(deferred);
                         return;
                     }
                     handleResolved(self, deferred);
                 }
 
                 function handleResolved(self, deferred) {
-                    asap(function() {
+                    asap(function () {
                         var cb =
-                            self._i === 1
+                            self._V === 1
                                 ? deferred.onFulfilled
                                 : deferred.onRejected;
                         if (cb === null) {
-                            if (self._i === 1) {
-                                resolve(deferred.promise, self._j);
+                            if (self._V === 1) {
+                                resolve(deferred.promise, self._W);
                             } else {
-                                reject(deferred.promise, self._j);
+                                reject(deferred.promise, self._W);
                             }
                             return;
                         }
-                        var ret = tryCallOne(cb, self._j);
+                        var ret = tryCallOne(cb, self._W);
                         if (ret === IS_ERROR) {
                             reject(deferred.promise, LAST_ERROR);
                         } else {
@@ -21196,8 +21210,8 @@
                             return reject(self, LAST_ERROR);
                         }
                         if (then === self.then && newValue instanceof Promise) {
-                            self._i = 3;
-                            self._j = newValue;
+                            self._V = 3;
+                            self._W = newValue;
                             finale(self);
                             return;
                         } else if (typeof then === 'function') {
@@ -21205,29 +21219,29 @@
                             return;
                         }
                     }
-                    self._i = 1;
-                    self._j = newValue;
+                    self._V = 1;
+                    self._W = newValue;
                     finale(self);
                 }
 
                 function reject(self, newValue) {
-                    self._i = 2;
-                    self._j = newValue;
-                    if (Promise._m) {
-                        Promise._m(self, newValue);
+                    self._V = 2;
+                    self._W = newValue;
+                    if (Promise._Z) {
+                        Promise._Z(self, newValue);
                     }
                     finale(self);
                 }
                 function finale(self) {
-                    if (self._h === 1) {
-                        handle(self, self._k);
-                        self._k = null;
+                    if (self._U === 1) {
+                        handle(self, self._X);
+                        self._X = null;
                     }
-                    if (self._h === 2) {
-                        for (var i = 0; i < self._k.length; i++) {
-                            handle(self, self._k[i]);
+                    if (self._U === 2) {
+                        for (var i = 0; i < self._X.length; i++) {
+                            handle(self, self._X[i]);
                         }
-                        self._k = null;
+                        self._X = null;
                     }
                 }
 
@@ -21249,12 +21263,12 @@
                     var done = false;
                     var res = tryCallTwo(
                         fn,
-                        function(value) {
+                        function (value) {
                             if (done) return;
                             done = true;
                             resolve(promise, value);
                         },
-                        function(reason) {
+                        function (reason) {
                             if (done) return;
                             done = true;
                             reject(promise, reason);
@@ -21274,7 +21288,7 @@
   !*** ./node_modules/promise/lib/done.js ***!
   \******************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 var Promise = __webpack_require__(
@@ -21282,12 +21296,12 @@
                 );
 
                 module.exports = Promise;
-                Promise.prototype.done = function(onFulfilled, onRejected) {
+                Promise.prototype.done = function (onFulfilled, onRejected) {
                     var self = arguments.length
                         ? this.then.apply(this, arguments)
                         : this;
-                    self.then(null, function(err) {
-                        setTimeout(function() {
+                    self.then(null, function (err) {
+                        setTimeout(function () {
                             throw err;
                         }, 0);
                     });
@@ -21301,7 +21315,7 @@
   !*** ./node_modules/promise/lib/es6-extensions.js ***!
   \****************************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 //This file contains the ES6 extensions to the core Promises/A+ API
@@ -21322,12 +21336,12 @@
                 var EMPTYSTRING = valuePromise('');
 
                 function valuePromise(value) {
-                    var p = new Promise(Promise._n);
-                    p._i = 1;
-                    p._j = value;
+                    var p = new Promise(Promise._0);
+                    p._V = 1;
+                    p._W = value;
                     return p;
                 }
-                Promise.resolve = function(value) {
+                Promise.resolve = function (value) {
                     if (value instanceof Promise) return value;
 
                     if (value === null) return NULL;
@@ -21347,7 +21361,7 @@
                                 return new Promise(then.bind(value));
                             }
                         } catch (ex) {
-                            return new Promise(function(resolve, reject) {
+                            return new Promise(function (resolve, reject) {
                                 reject(ex);
                             });
                         }
@@ -21355,10 +21369,24 @@
                     return valuePromise(value);
                 };
 
-                Promise.all = function(arr) {
-                    var args = Array.prototype.slice.call(arr);
+                var iterableToArray = function (iterable) {
+                    if (typeof Array.from === 'function') {
+                        // ES2015+, iterables exist
+                        iterableToArray = Array.from;
+                        return Array.from(iterable);
+                    }
 
-                    return new Promise(function(resolve, reject) {
+                    // ES5, only arrays and array-likes exist
+                    iterableToArray = function (x) {
+                        return Array.prototype.slice.call(x);
+                    };
+                    return Array.prototype.slice.call(iterable);
+                };
+
+                Promise.all = function (arr) {
+                    var args = iterableToArray(arr);
+
+                    return new Promise(function (resolve, reject) {
                         if (args.length === 0) return resolve([]);
                         var remaining = args.length;
                         function res(i, val) {
@@ -21371,12 +21399,12 @@
                                     val instanceof Promise &&
                                     val.then === Promise.prototype.then
                                 ) {
-                                    while (val._i === 3) {
-                                        val = val._j;
+                                    while (val._V === 3) {
+                                        val = val._W;
                                     }
-                                    if (val._i === 1) return res(i, val._j);
-                                    if (val._i === 2) reject(val._j);
-                                    val.then(function(val) {
+                                    if (val._V === 1) return res(i, val._W);
+                                    if (val._V === 2) reject(val._W);
+                                    val.then(function (val) {
                                         res(i, val);
                                     }, reject);
                                     return;
@@ -21384,7 +21412,7 @@
                                     var then = val.then;
                                     if (typeof then === 'function') {
                                         var p = new Promise(then.bind(val));
-                                        p.then(function(val) {
+                                        p.then(function (val) {
                                             res(i, val);
                                         }, reject);
                                         return;
@@ -21402,15 +21430,15 @@
                     });
                 };
 
-                Promise.reject = function(value) {
-                    return new Promise(function(resolve, reject) {
+                Promise.reject = function (value) {
+                    return new Promise(function (resolve, reject) {
                         reject(value);
                     });
                 };
 
-                Promise.race = function(values) {
-                    return new Promise(function(resolve, reject) {
-                        values.forEach(function(value) {
+                Promise.race = function (values) {
+                    return new Promise(function (resolve, reject) {
+                        iterableToArray(values).forEach(function (value) {
                             Promise.resolve(value).then(resolve, reject);
                         });
                     });
@@ -21418,7 +21446,7 @@
 
                 /* Prototype Methods */
 
-                Promise.prototype['catch'] = function(onRejected) {
+                Promise.prototype['catch'] = function (onRejected) {
                     return this.then(null, onRejected);
                 };
 
@@ -21430,7 +21458,7 @@
   !*** ./node_modules/promise/lib/finally.js ***!
   \*********************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 var Promise = __webpack_require__(
@@ -21438,15 +21466,15 @@
                 );
 
                 module.exports = Promise;
-                Promise.prototype.finally = function(f) {
+                Promise.prototype.finally = function (f) {
                     return this.then(
-                        function(value) {
-                            return Promise.resolve(f()).then(function() {
+                        function (value) {
+                            return Promise.resolve(f()).then(function () {
                                 return value;
                             });
                         },
-                        function(err) {
-                            return Promise.resolve(f()).then(function() {
+                        function (err) {
+                            return Promise.resolve(f()).then(function () {
                                 throw err;
                             });
                         }
@@ -21461,7 +21489,7 @@
   !*** ./node_modules/promise/lib/index.js ***!
   \*******************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 module.exports = __webpack_require__(
@@ -21491,7 +21519,7 @@
   !*** ./node_modules/promise/lib/node-extensions.js ***!
   \*****************************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 // This file contains then/promise specific extensions that are only useful
@@ -21508,7 +21536,7 @@
 
                 /* Static Functions */
 
-                Promise.denodeify = function(fn, argumentCount) {
+                Promise.denodeify = function (fn, argumentCount) {
                     if (
                         typeof argumentCount === 'number' &&
                         argumentCount !== Infinity
@@ -21533,17 +21561,14 @@
                         'var self = this;',
                         'return new Promise(function (rs, rj) {',
                         'var res = fn.call(',
-                        ['self']
-                            .concat(args)
-                            .concat([callbackFn])
-                            .join(','),
+                        ['self'].concat(args).concat([callbackFn]).join(','),
                         ');',
                         'if (res &&',
                         '(typeof res === "object" || typeof res === "function") &&',
                         'typeof res.then === "function"',
                         ') {rs(res);}',
                         '});',
-                        '};'
+                        '};',
                     ].join('');
                     return Function(['Promise', 'fn'], body)(Promise, fn);
                 }
@@ -21570,7 +21595,7 @@
                         'switch (argLength) {',
                         args
                             .concat(['extra'])
-                            .map(function(_, index) {
+                            .map(function (_, index) {
                                 return (
                                     'case ' +
                                     index +
@@ -21595,14 +21620,14 @@
                         'typeof res.then === "function"',
                         ') {rs(res);}',
                         '});',
-                        '};'
+                        '};',
                     ].join('');
 
                     return Function(['Promise', 'fn'], body)(Promise, fn);
                 }
 
-                Promise.nodeify = function(fn) {
-                    return function() {
+                Promise.nodeify = function (fn) {
+                    return function () {
                         var args = Array.prototype.slice.call(arguments);
                         var callback =
                             typeof args[args.length - 1] === 'function'
@@ -21618,11 +21643,11 @@
                                 callback === null ||
                                 typeof callback == 'undefined'
                             ) {
-                                return new Promise(function(resolve, reject) {
+                                return new Promise(function (resolve, reject) {
                                     reject(ex);
                                 });
                             } else {
-                                asap(function() {
+                                asap(function () {
                                     callback.call(ctx, ex);
                                 });
                             }
@@ -21630,17 +21655,17 @@
                     };
                 };
 
-                Promise.prototype.nodeify = function(callback, ctx) {
+                Promise.prototype.nodeify = function (callback, ctx) {
                     if (typeof callback != 'function') return this;
 
                     this.then(
-                        function(value) {
-                            asap(function() {
+                        function (value) {
+                            asap(function () {
                                 callback.call(ctx, null, value);
                             });
                         },
-                        function(err) {
-                            asap(function() {
+                        function (err) {
+                            asap(function () {
                                 callback.call(ctx, err);
                             });
                         }
@@ -21655,7 +21680,7 @@
   !*** ./node_modules/promise/lib/synchronous.js ***!
   \*************************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 'use strict';
 
                 var Promise = __webpack_require__(
@@ -21663,22 +21688,22 @@
                 );
 
                 module.exports = Promise;
-                Promise.enableSynchronous = function() {
-                    Promise.prototype.isPending = function() {
+                Promise.enableSynchronous = function () {
+                    Promise.prototype.isPending = function () {
                         return this.getState() == 0;
                     };
 
-                    Promise.prototype.isFulfilled = function() {
+                    Promise.prototype.isFulfilled = function () {
                         return this.getState() == 1;
                     };
 
-                    Promise.prototype.isRejected = function() {
+                    Promise.prototype.isRejected = function () {
                         return this.getState() == 2;
                     };
 
-                    Promise.prototype.getValue = function() {
-                        if (this._i === 3) {
-                            return this._j.getValue();
+                    Promise.prototype.getValue = function () {
+                        if (this._V === 3) {
+                            return this._W.getValue();
                         }
 
                         if (!this.isFulfilled()) {
@@ -21687,12 +21712,12 @@
                             );
                         }
 
-                        return this._j;
+                        return this._W;
                     };
 
-                    Promise.prototype.getReason = function() {
-                        if (this._i === 3) {
-                            return this._j.getReason();
+                    Promise.prototype.getReason = function () {
+                        if (this._V === 3) {
+                            return this._W.getReason();
                         }
 
                         if (!this.isRejected()) {
@@ -21701,22 +21726,22 @@
                             );
                         }
 
-                        return this._j;
+                        return this._W;
                     };
 
-                    Promise.prototype.getState = function() {
-                        if (this._i === 3) {
-                            return this._j.getState();
+                    Promise.prototype.getState = function () {
+                        if (this._V === 3) {
+                            return this._W.getState();
                         }
-                        if (this._i === -1 || this._i === -2) {
+                        if (this._V === -1 || this._V === -2) {
                             return 0;
                         }
 
-                        return this._i;
+                        return this._V;
                     };
                 };
 
-                Promise.disableSynchronous = function() {
+                Promise.disableSynchronous = function () {
                     Promise.prototype.isPending = undefined;
                     Promise.prototype.isFulfilled = undefined;
                     Promise.prototype.isRejected = undefined;
@@ -21733,11 +21758,11 @@
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
             /*! no static exports found */
-            /***/ function(module, exports) {
+            /***/ function (module, exports) {
                 var g;
 
                 // This works in non-strict mode
-                g = (function() {
+                g = (function () {
                     return this;
                 })();
 
@@ -21763,24 +21788,24 @@
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
             /*! no static exports found */
-            /***/ function(module, exports) {
-                module.exports = function(module) {
+            /***/ function (module, exports) {
+                module.exports = function (module) {
                     if (!module.webpackPolyfill) {
-                        module.deprecate = function() {};
+                        module.deprecate = function () {};
                         module.paths = [];
                         // module.parent = undefined by default
                         if (!module.children) module.children = [];
                         Object.defineProperty(module, 'loaded', {
                             enumerable: true,
-                            get: function() {
+                            get: function () {
                                 return module.l;
-                            }
+                            },
                         });
                         Object.defineProperty(module, 'id', {
                             enumerable: true,
-                            get: function() {
+                            get: function () {
                                 return module.i;
-                            }
+                            },
                         });
                         module.webpackPolyfill = 1;
                     }
@@ -21795,7 +21820,7 @@
   !*** ./resources/assets/js/app.js ***!
   \************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 __webpack_require__(
                     /*! ./core/bootstrap */ './resources/assets/js/core/bootstrap.js'
                 );
@@ -21812,7 +21837,7 @@
   !*** ./resources/assets/js/core/bootstrap.js ***!
   \***********************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 window._ = __webpack_require__(
                     /*! lodash */ './node_modules/lodash/lodash.js'
                 ); // window.$ = window.jQuery = require('jquery');
@@ -21829,51 +21854,64 @@
   !*** ./resources/assets/js/core/plugins.js ***!
   \*********************************************/
             /*! no static exports found */
-            /***/ function(module, exports) {
+            /***/ function (module, exports) {
                 function _toConsumableArray(arr) {
                     return (
                         _arrayWithoutHoles(arr) ||
                         _iterableToArray(arr) ||
+                        _unsupportedIterableToArray(arr) ||
                         _nonIterableSpread()
                     );
                 }
 
                 function _nonIterableSpread() {
                     throw new TypeError(
-                        'Invalid attempt to spread non-iterable instance'
+                        'Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
                     );
+                }
+
+                function _unsupportedIterableToArray(o, minLen) {
+                    if (!o) return;
+                    if (typeof o === 'string')
+                        return _arrayLikeToArray(o, minLen);
+                    var n = Object.prototype.toString.call(o).slice(8, -1);
+                    if (n === 'Object' && o.constructor) n = o.constructor.name;
+                    if (n === 'Map' || n === 'Set') return Array.from(o);
+                    if (
+                        n === 'Arguments' ||
+                        /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)
+                    )
+                        return _arrayLikeToArray(o, minLen);
                 }
 
                 function _iterableToArray(iter) {
                     if (
-                        Symbol.iterator in Object(iter) ||
-                        Object.prototype.toString.call(iter) ===
-                            '[object Arguments]'
+                        typeof Symbol !== 'undefined' &&
+                        Symbol.iterator in Object(iter)
                     )
                         return Array.from(iter);
                 }
 
                 function _arrayWithoutHoles(arr) {
-                    if (Array.isArray(arr)) {
-                        for (
-                            var i = 0, arr2 = new Array(arr.length);
-                            i < arr.length;
-                            i++
-                        ) {
-                            arr2[i] = arr[i];
-                        }
-                        return arr2;
+                    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+                }
+
+                function _arrayLikeToArray(arr, len) {
+                    if (len == null || len > arr.length) len = arr.length;
+                    for (var i = 0, arr2 = new Array(len); i < len; i++) {
+                        arr2[i] = arr[i];
                     }
+                    return arr2;
                 }
 
                 var body = document.getElementsByTagName('body')[0];
-                document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function () {
                     menuFunctionality(); // objectFitImages(document.querySelectorAll('selector'));
                 });
 
                 var menuFunctionality = function menuFunctionality() {
                     var menuToggle = document.getElementById('js-menu-toggle');
-                    menuToggle.addEventListener('click', function() {
+                    menuToggle.addEventListener('click', function () {
                         body.classList.toggle('menu-open');
                     });
                     var menuDropdowns = document.getElementsByClassName(
@@ -21881,12 +21919,12 @@
                     );
 
                     if (menuDropdowns) {
-                        _toConsumableArray(menuDropdowns).forEach(function(
+                        _toConsumableArray(menuDropdowns).forEach(function (
                             dropdownToggle
                         ) {
                             dropdownToggle.addEventListener(
                                 'click',
-                                function() {
+                                function () {
                                     if (window.innerWidth > 767) return;
                                     this.classList.toggle('open');
                                 }
@@ -21903,7 +21941,7 @@
   !*** ./resources/assets/sass/app.scss ***!
   \****************************************/
             /*! no static exports found */
-            /***/ function(module, exports) {
+            /***/ function (module, exports) {
                 // removed by extract-text-webpack-plugin
                 /***/
             },
@@ -21913,7 +21951,7 @@
   !*** multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss ***!
   \***************************************************************************/
             /*! no static exports found */
-            /***/ function(module, exports, __webpack_require__) {
+            /***/ function (module, exports, __webpack_require__) {
                 __webpack_require__(
                     /*! /Users/afronorana/Projects/SPRIGS/front-end-boilerplate/resources/assets/js/app.js */ './resources/assets/js/app.js'
                 );
@@ -21922,7 +21960,7 @@
                 );
 
                 /***/
-            }
+            },
 
         /******/
     }
