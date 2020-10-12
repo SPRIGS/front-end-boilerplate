@@ -16,15 +16,15 @@ mix.options({
 });
 
 mix.sass('resources/assets/sass/app.scss', 'public/assets/web/dist/css');
-// mix.sourceMaps(false, 'source-map').
+if (mix.inProduction())
+    mix.sourceMaps(false, 'source-map')
+        // mix.styles(
+        //     ['public/assets/web/dist/css/app.css'],
+        //     'public/assets/web/dist/css/app.css',
+        //     './'
+        // );
 
-mix.styles(
-    ['public/assets/web/dist/css/app.css'],
-    'public/assets/web/dist/css/app.css',
-    './'
-);
-
-mix.version('public/assets/web/dist/css/app.css');
+        .mix.version('public/assets/web/dist/css/app.css');
 
 mix.js('resources/assets/js/app.js', 'public/assets/web/dist/js');
 

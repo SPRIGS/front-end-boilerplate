@@ -465,7 +465,7 @@
                         var undefined;
 
                         /** Used as the semantic version number. */
-                        var VERSION = '4.17.15';
+                        var VERSION = '4.17.20';
 
                         /** Used as the size to enable large array optimizations. */
                         var LARGE_ARRAY_SIZE = 200;
@@ -903,197 +903,197 @@
                         /** Used to map Latin Unicode letters to basic Latin letters. */
                         var deburredLetters = {
                             // Latin-1 Supplement block.
-                            À: 'A',
-                            Á: 'A',
-                            Â: 'A',
-                            Ã: 'A',
-                            Ä: 'A',
-                            Å: 'A',
-                            à: 'a',
-                            á: 'a',
-                            â: 'a',
-                            ã: 'a',
-                            ä: 'a',
-                            å: 'a',
-                            Ç: 'C',
-                            ç: 'c',
-                            Ð: 'D',
-                            ð: 'd',
-                            È: 'E',
-                            É: 'E',
-                            Ê: 'E',
-                            Ë: 'E',
-                            è: 'e',
-                            é: 'e',
-                            ê: 'e',
-                            ë: 'e',
-                            Ì: 'I',
-                            Í: 'I',
-                            Î: 'I',
-                            Ï: 'I',
-                            ì: 'i',
-                            í: 'i',
-                            î: 'i',
-                            ï: 'i',
-                            Ñ: 'N',
-                            ñ: 'n',
-                            Ò: 'O',
-                            Ó: 'O',
-                            Ô: 'O',
-                            Õ: 'O',
-                            Ö: 'O',
-                            Ø: 'O',
-                            ò: 'o',
-                            ó: 'o',
-                            ô: 'o',
-                            õ: 'o',
-                            ö: 'o',
-                            ø: 'o',
-                            Ù: 'U',
-                            Ú: 'U',
-                            Û: 'U',
-                            Ü: 'U',
-                            ù: 'u',
-                            ú: 'u',
-                            û: 'u',
-                            ü: 'u',
-                            Ý: 'Y',
-                            ý: 'y',
-                            ÿ: 'y',
-                            Æ: 'Ae',
-                            æ: 'ae',
-                            Þ: 'Th',
-                            þ: 'th',
-                            ß: 'ss',
+                            '\xc0': 'A',
+                            '\xc1': 'A',
+                            '\xc2': 'A',
+                            '\xc3': 'A',
+                            '\xc4': 'A',
+                            '\xc5': 'A',
+                            '\xe0': 'a',
+                            '\xe1': 'a',
+                            '\xe2': 'a',
+                            '\xe3': 'a',
+                            '\xe4': 'a',
+                            '\xe5': 'a',
+                            '\xc7': 'C',
+                            '\xe7': 'c',
+                            '\xd0': 'D',
+                            '\xf0': 'd',
+                            '\xc8': 'E',
+                            '\xc9': 'E',
+                            '\xca': 'E',
+                            '\xcb': 'E',
+                            '\xe8': 'e',
+                            '\xe9': 'e',
+                            '\xea': 'e',
+                            '\xeb': 'e',
+                            '\xcc': 'I',
+                            '\xcd': 'I',
+                            '\xce': 'I',
+                            '\xcf': 'I',
+                            '\xec': 'i',
+                            '\xed': 'i',
+                            '\xee': 'i',
+                            '\xef': 'i',
+                            '\xd1': 'N',
+                            '\xf1': 'n',
+                            '\xd2': 'O',
+                            '\xd3': 'O',
+                            '\xd4': 'O',
+                            '\xd5': 'O',
+                            '\xd6': 'O',
+                            '\xd8': 'O',
+                            '\xf2': 'o',
+                            '\xf3': 'o',
+                            '\xf4': 'o',
+                            '\xf5': 'o',
+                            '\xf6': 'o',
+                            '\xf8': 'o',
+                            '\xd9': 'U',
+                            '\xda': 'U',
+                            '\xdb': 'U',
+                            '\xdc': 'U',
+                            '\xf9': 'u',
+                            '\xfa': 'u',
+                            '\xfb': 'u',
+                            '\xfc': 'u',
+                            '\xdd': 'Y',
+                            '\xfd': 'y',
+                            '\xff': 'y',
+                            '\xc6': 'Ae',
+                            '\xe6': 'ae',
+                            '\xde': 'Th',
+                            '\xfe': 'th',
+                            '\xdf': 'ss',
                             // Latin Extended-A block.
-                            Ā: 'A',
-                            Ă: 'A',
-                            Ą: 'A',
-                            ā: 'a',
-                            ă: 'a',
-                            ą: 'a',
-                            Ć: 'C',
-                            Ĉ: 'C',
-                            Ċ: 'C',
-                            Č: 'C',
-                            ć: 'c',
-                            ĉ: 'c',
-                            ċ: 'c',
-                            č: 'c',
-                            Ď: 'D',
-                            Đ: 'D',
-                            ď: 'd',
-                            đ: 'd',
-                            Ē: 'E',
-                            Ĕ: 'E',
-                            Ė: 'E',
-                            Ę: 'E',
-                            Ě: 'E',
-                            ē: 'e',
-                            ĕ: 'e',
-                            ė: 'e',
-                            ę: 'e',
-                            ě: 'e',
-                            Ĝ: 'G',
-                            Ğ: 'G',
-                            Ġ: 'G',
-                            Ģ: 'G',
-                            ĝ: 'g',
-                            ğ: 'g',
-                            ġ: 'g',
-                            ģ: 'g',
-                            Ĥ: 'H',
-                            Ħ: 'H',
-                            ĥ: 'h',
-                            ħ: 'h',
-                            Ĩ: 'I',
-                            Ī: 'I',
-                            Ĭ: 'I',
-                            Į: 'I',
-                            İ: 'I',
-                            ĩ: 'i',
-                            ī: 'i',
-                            ĭ: 'i',
-                            į: 'i',
-                            ı: 'i',
-                            Ĵ: 'J',
-                            ĵ: 'j',
-                            Ķ: 'K',
-                            ķ: 'k',
-                            ĸ: 'k',
-                            Ĺ: 'L',
-                            Ļ: 'L',
-                            Ľ: 'L',
-                            Ŀ: 'L',
-                            Ł: 'L',
-                            ĺ: 'l',
-                            ļ: 'l',
-                            ľ: 'l',
-                            ŀ: 'l',
-                            ł: 'l',
-                            Ń: 'N',
-                            Ņ: 'N',
-                            Ň: 'N',
-                            Ŋ: 'N',
-                            ń: 'n',
-                            ņ: 'n',
-                            ň: 'n',
-                            ŋ: 'n',
-                            Ō: 'O',
-                            Ŏ: 'O',
-                            Ő: 'O',
-                            ō: 'o',
-                            ŏ: 'o',
-                            ő: 'o',
-                            Ŕ: 'R',
-                            Ŗ: 'R',
-                            Ř: 'R',
-                            ŕ: 'r',
-                            ŗ: 'r',
-                            ř: 'r',
-                            Ś: 'S',
-                            Ŝ: 'S',
-                            Ş: 'S',
-                            Š: 'S',
-                            ś: 's',
-                            ŝ: 's',
-                            ş: 's',
-                            š: 's',
-                            Ţ: 'T',
-                            Ť: 'T',
-                            Ŧ: 'T',
-                            ţ: 't',
-                            ť: 't',
-                            ŧ: 't',
-                            Ũ: 'U',
-                            Ū: 'U',
-                            Ŭ: 'U',
-                            Ů: 'U',
-                            Ű: 'U',
-                            Ų: 'U',
-                            ũ: 'u',
-                            ū: 'u',
-                            ŭ: 'u',
-                            ů: 'u',
-                            ű: 'u',
-                            ų: 'u',
-                            Ŵ: 'W',
-                            ŵ: 'w',
-                            Ŷ: 'Y',
-                            ŷ: 'y',
-                            Ÿ: 'Y',
-                            Ź: 'Z',
-                            Ż: 'Z',
-                            Ž: 'Z',
-                            ź: 'z',
-                            ż: 'z',
-                            ž: 'z',
-                            Ĳ: 'IJ',
-                            ĳ: 'ij',
-                            Œ: 'Oe',
-                            œ: 'oe',
-                            ŉ: "'n",
-                            ſ: 's',
+                            '\u0100': 'A',
+                            '\u0102': 'A',
+                            '\u0104': 'A',
+                            '\u0101': 'a',
+                            '\u0103': 'a',
+                            '\u0105': 'a',
+                            '\u0106': 'C',
+                            '\u0108': 'C',
+                            '\u010a': 'C',
+                            '\u010c': 'C',
+                            '\u0107': 'c',
+                            '\u0109': 'c',
+                            '\u010b': 'c',
+                            '\u010d': 'c',
+                            '\u010e': 'D',
+                            '\u0110': 'D',
+                            '\u010f': 'd',
+                            '\u0111': 'd',
+                            '\u0112': 'E',
+                            '\u0114': 'E',
+                            '\u0116': 'E',
+                            '\u0118': 'E',
+                            '\u011a': 'E',
+                            '\u0113': 'e',
+                            '\u0115': 'e',
+                            '\u0117': 'e',
+                            '\u0119': 'e',
+                            '\u011b': 'e',
+                            '\u011c': 'G',
+                            '\u011e': 'G',
+                            '\u0120': 'G',
+                            '\u0122': 'G',
+                            '\u011d': 'g',
+                            '\u011f': 'g',
+                            '\u0121': 'g',
+                            '\u0123': 'g',
+                            '\u0124': 'H',
+                            '\u0126': 'H',
+                            '\u0125': 'h',
+                            '\u0127': 'h',
+                            '\u0128': 'I',
+                            '\u012a': 'I',
+                            '\u012c': 'I',
+                            '\u012e': 'I',
+                            '\u0130': 'I',
+                            '\u0129': 'i',
+                            '\u012b': 'i',
+                            '\u012d': 'i',
+                            '\u012f': 'i',
+                            '\u0131': 'i',
+                            '\u0134': 'J',
+                            '\u0135': 'j',
+                            '\u0136': 'K',
+                            '\u0137': 'k',
+                            '\u0138': 'k',
+                            '\u0139': 'L',
+                            '\u013b': 'L',
+                            '\u013d': 'L',
+                            '\u013f': 'L',
+                            '\u0141': 'L',
+                            '\u013a': 'l',
+                            '\u013c': 'l',
+                            '\u013e': 'l',
+                            '\u0140': 'l',
+                            '\u0142': 'l',
+                            '\u0143': 'N',
+                            '\u0145': 'N',
+                            '\u0147': 'N',
+                            '\u014a': 'N',
+                            '\u0144': 'n',
+                            '\u0146': 'n',
+                            '\u0148': 'n',
+                            '\u014b': 'n',
+                            '\u014c': 'O',
+                            '\u014e': 'O',
+                            '\u0150': 'O',
+                            '\u014d': 'o',
+                            '\u014f': 'o',
+                            '\u0151': 'o',
+                            '\u0154': 'R',
+                            '\u0156': 'R',
+                            '\u0158': 'R',
+                            '\u0155': 'r',
+                            '\u0157': 'r',
+                            '\u0159': 'r',
+                            '\u015a': 'S',
+                            '\u015c': 'S',
+                            '\u015e': 'S',
+                            '\u0160': 'S',
+                            '\u015b': 's',
+                            '\u015d': 's',
+                            '\u015f': 's',
+                            '\u0161': 's',
+                            '\u0162': 'T',
+                            '\u0164': 'T',
+                            '\u0166': 'T',
+                            '\u0163': 't',
+                            '\u0165': 't',
+                            '\u0167': 't',
+                            '\u0168': 'U',
+                            '\u016a': 'U',
+                            '\u016c': 'U',
+                            '\u016e': 'U',
+                            '\u0170': 'U',
+                            '\u0172': 'U',
+                            '\u0169': 'u',
+                            '\u016b': 'u',
+                            '\u016d': 'u',
+                            '\u016f': 'u',
+                            '\u0171': 'u',
+                            '\u0173': 'u',
+                            '\u0174': 'W',
+                            '\u0175': 'w',
+                            '\u0176': 'Y',
+                            '\u0177': 'y',
+                            '\u0178': 'Y',
+                            '\u0179': 'Z',
+                            '\u017b': 'Z',
+                            '\u017d': 'Z',
+                            '\u017a': 'z',
+                            '\u017c': 'z',
+                            '\u017e': 'z',
+                            '\u0132': 'IJ',
+                            '\u0133': 'ij',
+                            '\u0152': 'Oe',
+                            '\u0153': 'oe',
+                            '\u0149': "'n",
+                            '\u017f': 's',
                         };
 
                         /** Used to map characters to HTML entities. */
@@ -5140,9 +5140,29 @@
                                 iteratees,
                                 orders
                             ) {
+                                if (iteratees.length) {
+                                    iteratees = arrayMap(iteratees, function (
+                                        iteratee
+                                    ) {
+                                        if (isArray(iteratee)) {
+                                            return function (value) {
+                                                return baseGet(
+                                                    value,
+                                                    iteratee.length === 1
+                                                        ? iteratee[0]
+                                                        : iteratee
+                                                );
+                                            };
+                                        }
+                                        return iteratee;
+                                    });
+                                } else {
+                                    iteratees = [identity];
+                                }
+
                                 var index = -1;
                                 iteratees = arrayMap(
-                                    iteratees.length ? iteratees : [identity],
+                                    iteratees,
                                     baseUnary(getIteratee())
                                 );
 
@@ -5461,6 +5481,14 @@
                                     var key = toKey(path[index]),
                                         newValue = value;
 
+                                    if (
+                                        key === '__proto__' ||
+                                        key === 'constructor' ||
+                                        key === 'prototype'
+                                    ) {
+                                        return object;
+                                    }
+
                                     if (index != lastIndex) {
                                         var objValue = nested[key];
                                         newValue = customizer
@@ -5649,11 +5677,14 @@
                                 iteratee,
                                 retHighest
                             ) {
-                                value = iteratee(value);
-
                                 var low = 0,
-                                    high = array == null ? 0 : array.length,
-                                    valIsNaN = value !== value,
+                                    high = array == null ? 0 : array.length;
+                                if (high === 0) {
+                                    return 0;
+                                }
+
+                                value = iteratee(value);
+                                var valIsNaN = value !== value,
                                     valIsNull = value === null,
                                     valIsSymbol = isSymbol(value),
                                     valIsUndefined = value === undefined;
@@ -7740,10 +7771,14 @@
                                 ) {
                                     return false;
                                 }
-                                // Assume cyclic values are equal.
-                                var stacked = stack.get(array);
-                                if (stacked && stack.get(other)) {
-                                    return stacked == other;
+                                // Check that cyclic values are equal.
+                                var arrStacked = stack.get(array);
+                                var othStacked = stack.get(other);
+                                if (arrStacked && othStacked) {
+                                    return (
+                                        arrStacked == other &&
+                                        othStacked == array
+                                    );
                                 }
                                 var index = -1,
                                     result = true,
@@ -7990,10 +8025,14 @@
                                         return false;
                                     }
                                 }
-                                // Assume cyclic values are equal.
-                                var stacked = stack.get(object);
-                                if (stacked && stack.get(other)) {
-                                    return stacked == other;
+                                // Check that cyclic values are equal.
+                                var objStacked = stack.get(object);
+                                var othStacked = stack.get(other);
+                                if (objStacked && othStacked) {
+                                    return (
+                                        objStacked == other &&
+                                        othStacked == object
+                                    );
                                 }
                                 var result = true;
                                 stack.set(object, other);
@@ -11901,6 +11940,10 @@
                              * // The `_.property` iteratee shorthand.
                              * _.filter(users, 'active');
                              * // => objects for ['barney']
+                             *
+                             * // Combining several predicates using `_.overEvery` or `_.overSome`.
+                             * _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
+                             * // => objects for ['fred', 'barney']
                              */
                             function filter(collection, predicate) {
                                 var func = isArray(collection)
@@ -12776,15 +12819,15 @@
                              * var users = [
                              *   { 'user': 'fred',   'age': 48 },
                              *   { 'user': 'barney', 'age': 36 },
-                             *   { 'user': 'fred',   'age': 40 },
+                             *   { 'user': 'fred',   'age': 30 },
                              *   { 'user': 'barney', 'age': 34 }
                              * ];
                              *
                              * _.sortBy(users, [function(o) { return o.user; }]);
-                             * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+                             * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 30]]
                              *
                              * _.sortBy(users, ['user', 'age']);
-                             * // => objects for [['barney', 34], ['barney', 36], ['fred', 40], ['fred', 48]]
+                             * // => objects for [['barney', 34], ['barney', 36], ['fred', 30], ['fred', 48]]
                              */
                             var sortBy = baseRest(function (
                                 collection,
@@ -18377,13 +18420,13 @@
 
                                 // Use a sourceURL for easier debugging.
                                 // The sourceURL gets injected into the source that's eval-ed, so be careful
-                                // with lookup (in case of e.g. prototype pollution), and strip newlines if any.
-                                // A newline wouldn't be a valid sourceURL anyway, and it'd enable code injection.
+                                // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
+                                // and escape the comment, thus injecting code that gets evaled.
                                 var sourceURL =
                                     '//# sourceURL=' +
                                     (hasOwnProperty.call(options, 'sourceURL')
                                         ? (options.sourceURL + '').replace(
-                                              /[\r\n]/g,
+                                              /\s/g,
                                               ' '
                                           )
                                         : 'lodash.templateSources[' +
@@ -18442,8 +18485,6 @@
 
                                 // If `variable` is not specified wrap a with-statement around the generated
                                 // code to add the data object to the top of the scope chain.
-                                // Like with sourceURL, we take care to not check the option's prototype,
-                                // as this configuration is a code injection vector.
                                 var variable =
                                     hasOwnProperty.call(options, 'variable') &&
                                     options.variable;
@@ -19224,6 +19265,9 @@
                              * values against any array or object value, respectively. See `_.isEqual`
                              * for a list of supported value comparisons.
                              *
+                             * **Note:** Multiple values can be checked by combining several matchers
+                             * using `_.overSome`
+                             *
                              * @static
                              * @memberOf _
                              * @since 3.0.0
@@ -19239,6 +19283,10 @@
                              *
                              * _.filter(objects, _.matches({ 'a': 4, 'c': 6 }));
                              * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
+                             *
+                             * // Checking for several possible values
+                             * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+                             * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
                              */
                             function matches(source) {
                                 return baseMatches(
@@ -19254,6 +19302,9 @@
                              * **Note:** Partial comparisons will match empty array and empty object
                              * `srcValue` values against any array or object value, respectively. See
                              * `_.isEqual` for a list of supported value comparisons.
+                             *
+                             * **Note:** Multiple values can be checked by combining several matchers
+                             * using `_.overSome`
                              *
                              * @static
                              * @memberOf _
@@ -19271,6 +19322,10 @@
                              *
                              * _.find(objects, _.matchesProperty('a', 4));
                              * // => { 'a': 4, 'b': 5, 'c': 6 }
+                             *
+                             * // Checking for several possible values
+                             * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
+                             * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
                              */
                             function matchesProperty(path, srcValue) {
                                 return baseMatchesProperty(
@@ -19525,6 +19580,10 @@
                              * Creates a function that checks if **all** of the `predicates` return
                              * truthy when invoked with the arguments it receives.
                              *
+                             * Following shorthands are possible for providing predicates.
+                             * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+                             * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+                             *
                              * @static
                              * @memberOf _
                              * @since 4.0.0
@@ -19551,6 +19610,10 @@
                              * Creates a function that checks if **any** of the `predicates` return
                              * truthy when invoked with the arguments it receives.
                              *
+                             * Following shorthands are possible for providing predicates.
+                             * Pass an `Object` and it will be used as an parameter for `_.matches` to create the predicate.
+                             * Pass an `Array` of parameters for `_.matchesProperty` and the predicate will be created using them.
+                             *
                              * @static
                              * @memberOf _
                              * @since 4.0.0
@@ -19570,6 +19633,9 @@
                              *
                              * func(NaN);
                              * // => false
+                             *
+                             * var matchesFunc = _.overSome([{ 'a': 1 }, { 'a': 2 }])
+                             * var matchesPropertyFunc = _.overSome([['a', 1], ['a', 2]])
                              */
                             var overSome = createOver(arraySome);
 
@@ -21953,10 +22019,10 @@
             /*! no static exports found */
             /***/ function (module, exports, __webpack_require__) {
                 __webpack_require__(
-                    /*! /Users/afronorana/Projects/SPRIGS/front-end-boilerplate/resources/assets/js/app.js */ './resources/assets/js/app.js'
+                    /*! /Users/afronorana/Projects/SPRIGS/kiesmij/resources/assets/js/app.js */ './resources/assets/js/app.js'
                 );
                 module.exports = __webpack_require__(
-                    /*! /Users/afronorana/Projects/SPRIGS/front-end-boilerplate/resources/assets/sass/app.scss */ './resources/assets/sass/app.scss'
+                    /*! /Users/afronorana/Projects/SPRIGS/kiesmij/resources/assets/sass/app.scss */ './resources/assets/sass/app.scss'
                 );
 
                 /***/
