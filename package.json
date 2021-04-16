@@ -13,6 +13,7 @@
         "commit-msg": "node scripts/verify-commit-msg.js"
     },
     "keywords": [],
+    "author": "Afron Orana <afron.orana@gmail.com>",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.14",

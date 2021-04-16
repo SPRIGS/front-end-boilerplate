@@ -1,74 +1,70 @@
 <?php include('partials/header.php'); ?>
 
-<section class="section-padding-top--100">
-  <div class="container s-styleguide">
-    <h1 class="my-3">Style Guide</h1>
-    <div class="row">
-      <div class="col-12 col-sm-8">
-        <p>
-          This is a style guide template for new projects. The template includes colors, typography, icons, buttons, forms, grid and images.
-        </p>
-      </div>
-    </div>
+<section class="pt-10 pb-5">
+  <div class="container mx-auto">
+    <h1 class="text-5xl mb-2">Style Guide</h1>
+    <p class="text-xl w-8/12">
+      This is a style guide template for new projects. The template includes colors, typography, icons, buttons, forms, grid and images.
+    </p>
   </div>
 </section>
 
 <!-- Colors -->
-<section class="section-padding-top--50">
-  <div class="container s-styleguide">
+<section class="pb-5">
+  <div class="container mx-auto">
     <div class="colors">
-      <h2 class="h3"><span>01</span> Color palette:</h2>
+      <h2 class="text-3xl mb-2"><span>01</span> Color palette:</h2>
 
-      <div class="row">
-        <div class="col-6 col-md-3">
-          <div class="color-card color_base">
-            <strong class="text_color-white">Base</strong>
-            <p class="small text_color-white">Black Tundora<br>
-              #2c2c2c
-            </p>
-          </div>
+
+      <div class="col-6 col-md-3">
+        <div class="color-card color_base">
+          <strong class="text_color-white">Base</strong>
+          <p class="small text_color-white">Black Tundora<br>
+            #2c2c2c
+          </p>
         </div>
-
-        <div class="col-6 col-md-3">
-          <div class="color-card color-primary">
-            <strong class="text_color-white">Primary</strong>
-            <p class="small text_color-white">Blue Bahama<br>
-              #1f4e79
-            </p>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="color-card color-secondary">
-            <strong class="text_color-white">Secondary</strong>
-
-            <p class="small text_color-white">Blue Malibu<br>
-              #66b7e1
-            </p>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="color-card color-accent">
-            <strong class="text_color-white">Accent</strong>
-            <p class="small text_color-white">Red Torch<br>
-              #ff0033
-            </p>
-          </div>
-        </div>
-
       </div>
+
+      <div class="col-6 col-md-3">
+        <div class="color-card color-primary">
+          <strong class="text_color-white">Primary</strong>
+          <p class="small text_color-white">Blue Bahama<br>
+            #1f4e79
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="color-card color-secondary">
+          <strong class="text_color-white">Secondary</strong>
+
+          <p class="small text_color-white">Blue Malibu<br>
+            #66b7e1
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="color-card color-accent">
+          <strong class="text_color-white">Accent</strong>
+          <p class="small text_color-white">Red Torch<br>
+            #ff0033
+          </p>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </section>
 
 
 <!-- Typography -->
-<section class="section-padding-top--50">
-  <div class="container s-styleguide">
+<section class="pb-5">
+  <div class="container mx-auto">
 
     <div class="styleguide__typography">
-      <h2 class="h3"><span>02</span> Typography</h2>
+      <h2 class="text-3xl mb-2"><span>02</span> Typography</h2>
       <div class="row">
         <div class="col-12 col-sm-8">
           <p>
@@ -98,7 +94,7 @@
       <p class="small"><strong>Small paragraph:</strong> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
       <div class="row">
-      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="col-12 col-sm-6 col-lg-4">
 
           <ul>
             <li>Bulleted list item.</li>
@@ -128,11 +124,11 @@
 
 
 <!-- Icons -->
-<section class="section-padding-top--50">
-  <div class="container s-styleguide">
+<section class="pb-5">
+  <div class="container mx-auto">
 
     <div class="styleguide__typography">
-      <h2 class="h3"><span>03</span> Icons</h2>
+      <h2 class="text-3xl mb-2"><span>03</span> Icons</h2>
       <div class="row">
         <div class="col-12 col-sm-8">
           <p>
@@ -165,13 +161,13 @@
 
 
 <!-- Buttons & links -->
-<section class="section-padding-top--50">
-  <div class="container s-styleguide">
+<section class="pb-5">
+  <div class="container mx-auto">
     <div class="row">
 
       <div class="col-sm-6">
         <div class="styleguide__buttons">
-          <h2 class="h3"><span>04</span> Buttons:</h2>
+          <h2 class="text-3xl mb-2"><span>04</span> Buttons:</h2>
           <p>List of buttons, in default, hover and active.
             Add all variants used in the project.
           </p>
@@ -195,7 +191,7 @@
       </div>
 
       <div class="col-sm-6">
-        <h2 class="h3"><span>05</span> Links:</h2>
+        <h2 class="text-3xl mb-2"><span>05</span> Links:</h2>
         </p>
         <hr>
         <p>
@@ -215,10 +211,10 @@
 </section>
 
 <!-- Grid -->
-<section class="section-padding-top--50">
-  <div class="container s-styleguide">
+<section class="pb-5">
+  <div class="container mx-auto">
     <div class="grid">
-      <h2 class="h3"><span>06</span> Container: </h2>
+      <h2 class="text-3xl mb-2"><span>06</span> Container: </h2>
       <div class="row">
         <div class="col-12 col-sm-8">
           <p>
@@ -307,11 +303,11 @@
 </section>
 
 <!-- Grid fluid -->
-<section class="section-padding-top--50">
-  <div class="container s-styleguide">
+<section class="pb-5">
+  <div class="container mx-auto">
     <!-- Grid layout -->
     <div class="grid">
-      <h2 class="h3"><span>07.1</span> Container fluid:</h2>
+      <h2 class="text-3xl mb-2"><span>07.1</span> Container fluid:</h2>
     </div>
   </div>
 
@@ -392,9 +388,9 @@
 </section>
 
 <!-- Images -->
-<section class="section-padding-top--50 section-padding-bottom--100">
-  <div class="container s-styleguide">
-    <h2 class="h3"><span>08</span> Images</h2>
+<section class="pb-5">
+  <div class="container mx-auto">
+    <h2 class="text-3xl mb-2"><span>08</span> Images</h2>
     <div class="row">
       <div class="col-12 col-md-8">
         <p>Images are always 100% width of the container. Image captions/descriptions should always be 16px and placed directly under the image with a 10px margin from the image.</p>
