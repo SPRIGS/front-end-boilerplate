@@ -4,101 +4,101 @@
 ========================================================================== 
 */
 
-.button {
-    display: inline-flex;
-    padding: 5px 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: $color-primary;
-    border: 1px solid $color-primary;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color $default-transition, border $default-transition,
-        color $default-transition;
+// .button {
+//     display: inline-flex;
+//     padding: 5px 15px;
+//     text-align: center;
+//     align-items: center;
+//     justify-content: center;
+//     color: $color-primary;
+//     border: 1px solid $color-primary;
+//     outline: none;
+//     text-decoration: none;
+//     cursor: pointer;
+//     transition: background-color $default-transition, border $default-transition,
+//         color $default-transition;
 
-    &:hover,
-    &.hover {
-        background: $color-primary;
-        border-color: $color-primary;
-        color: #fff;
-    }
+//     &:hover,
+//     &.hover {
+//         background: $color-primary;
+//         border-color: $color-primary;
+//         color: #fff;
+//     }
 
-    &:active,
-    &.active {
-        background: $color-primary-hover;
-        border-color: $color-primary-hover;
-        color: #fff;
-    }
+//     &:active,
+//     &.active {
+//         background: $color-primary-hover;
+//         border-color: $color-primary-hover;
+//         color: #fff;
+//     }
 
-    // Color variants
-    &--primary {
-        border-color: $color-primary;
-        color: $color-primary;
+//     // Color variants
+//     &--primary {
+//         border-color: $color-primary;
+//         color: $color-primary;
 
-        &:hover,
-        &.hover {
-            background: $color-primary;
-            border-color: $color-primary;
-            color: #fff;
-        }
+//         &:hover,
+//         &.hover {
+//             background: $color-primary;
+//             border-color: $color-primary;
+//             color: #fff;
+//         }
 
-        &:active,
-        &.active {
-            background: $color-primary-hover;
-            border-color: $color-primary-hover;
-            color: #fff;
-        }
-    }
+//         &:active,
+//         &.active {
+//             background: $color-primary-hover;
+//             border-color: $color-primary-hover;
+//             color: #fff;
+//         }
+//     }
 
-    &--accent {
-        border-color: $color-accent;
-        color: $color-accent;
+//     &--accent {
+//         border-color: $color-accent;
+//         color: $color-accent;
 
-        &:hover,
-        &.hover {
-            background: $color-accent;
-            border-color: $color-accent;
-            color: #fff;
-        }
+//         &:hover,
+//         &.hover {
+//             background: $color-accent;
+//             border-color: $color-accent;
+//             color: #fff;
+//         }
 
-        &:active,
-        &.active {
-            background: $color-accent-hover;
-            border-color: $color-accent-hover;
-            color: #fff;
-        }
-    }
+//         &:active,
+//         &.active {
+//             background: $color-accent-hover;
+//             border-color: $color-accent-hover;
+//             color: #fff;
+//         }
+//     }
 
-    &--primary-full {
-        background: $color-primary;
-        border-color: $color-primary;
-        color: #fff;
-        &:not(.button--arrow):hover,
-        &.hover:not(.button--arrow) {
-            background: #fff;
-            border-color: #fff;
-            color: $color-primary;
-        }
-    }
+//     &--primary-full {
+//         background: $color-primary;
+//         border-color: $color-primary;
+//         color: #fff;
+//         &:not(.button--arrow):hover,
+//         &.hover:not(.button--arrow) {
+//             background: #fff;
+//             border-color: #fff;
+//             color: $color-primary;
+//         }
+//     }
 
-    &--accent-full {
-        background: $color-accent;
-        border-color: $color-accent;
-        color: #fff;
+//     &--accent-full {
+//         background: $color-accent;
+//         border-color: $color-accent;
+//         color: #fff;
 
-        &:not(.button--arrow):hover,
-        &.hover:not(.button--arrow) {
-            background: #fff;
-            border-color: #fff;
-            color: $color-accent;
-        }
-    }
+//         &:not(.button--arrow):hover,
+//         &.hover:not(.button--arrow) {
+//             background: #fff;
+//             border-color: #fff;
+//             color: $color-accent;
+//         }
+//     }
 
-    i[class^='icon-'] {
-        flex: 0 0 24px;
-        margin-left: 0.5rem;
-        transition: transform $default-transition;
-    }
-}
+//     i[class^='icon-'] {
+//         flex: 0 0 24px;
+//         margin-left: 0.5rem;
+//         transition: transform $default-transition;
+//     }
+// }

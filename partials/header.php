@@ -9,51 +9,49 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="/favicon.ico">
     <link href="./public/assets/web/dist/css/app.css?v=1" rel="stylesheet">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
 <body>
     <main>
+        <header class="p-4">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <div class="w-40 z-20">
+                        <a href="/index.php">
+                            <img class="w-full" src="./public/assets/img/logo.svg" alt="">
+                        </a>
+                    </div>
 
-        <header>
-            <div class="header__container">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./public/assets/img/logo.svg" alt="">
+                    <nav class="apply:main-nav">
+                        <ul class="flex flex-nowrap items-center flex-col md:flex-row">
+                            <li class="">
+                                <a class="p-2 block" href="#">Menu item</a>
+                            </li>
+                            <li class="">
+                                <a class="p-2 block" href="#">Menu item</a>
+                            </li>
+                            <li class="dropdown relative text-center">
+                                <a class="p-2 block dropdown-toggle" href="javascript:void(0);">
+                                    Dropdown 
+                                </a>
+                                <div class="dropdown-menu apply:dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="p-2 block" href="#">Sub Menu item 1</a>
+                                    <a class="p-2 block" href="#">Sub Menu item 2</a>
+                                    <a class="p-2 block" href="#">Sub Menu item 3</a>
+                                </div>
+                            </li>
+                            <li class="">
+                                <a class="p-2 block" href="#">Sub Menu item</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="javascript:void(0);" id="js-navigation-toggle" class="navigation-toggle md:hidden z-20">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </a>
                 </div>
-
-                <a href="javascript:void(0);" id="js-menu-toggle" class="navigation-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
             </div>
 
-                <nav class="nav">
-                    <ul class="menu">
-                        <li class="menu-item active">
-                            <a class="menu-link" href="#">Menu item</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Menu item</a>
-                        </li>
-                        <li class="menu-item dropdown">
-                            <a class="menu-link dropdown-toggle" href="javascript:void(0);">
-                                Menu dropdown <div class="carret"></div>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Sub Menu item</a>
-                                <a class="dropdown-item" href="#">Sub Menu item</a>
-                                <a class="dropdown-item" href="#">Sub Menu item</a>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Sub Menu item</a>
-                        </li>
-                    </ul>
-                </nav>
-
         </header>
-
-        

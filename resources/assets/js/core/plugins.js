@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const menuFunctionality = () => {
-    let menuToggle = document.getElementById('js-menu-toggle');
+    let menuToggle = document.getElementById('js-navigation-toggle');
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
             body.classList.toggle('menu-open');

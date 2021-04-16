@@ -4,186 +4,40 @@
 ========================================================================== 
 */
 
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    background-color: #fff;
-    padding: 10px 15px;
-    position: relative;
-    z-index: 100;
+.apply\:main-nav {
+    @apply -translate-y-full transform transition-transform absolute bg-yellow-300 left-0 pt-20 top-0 w-full z-10 h-full md:h-auto md:relative md:w-auto md:pt-0 md:transform-none md:bg-transparent;
 
-    @include media-breakpoint-up(md) {
-        display: inline-flex;
-        background-color: transparent;
+    .menu-open &{
+        @apply -translate-y-0
     }
 }
 
-header {
-    position: relative;
-    background-color: $white-smoke;
-    .nav {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background-color: $white-smoke;
-        top: 100%;
-        z-index: 99;
-        transform: translateY(-100%);
-        transition: transform $default-transition;
-        .menu-open & {
-            transform: translateY(0%);
-        }
-        @include media-breakpoint-up(md) {
-            position: relative;
-            top: 0;
-            transform: none;
-            display: inline-flex;
-            width: auto;
-        }
-    }
 
-    ul.menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+.apply\:dropdown-menu {
+    @apply flex-col hidden h-full md:h-auto  md:absolute md:p-2 md:right-0 md:shadow md:top-full md:w-44;
+}
 
-    .menu-item {
-        display: block;
-    }
-
-    .menu-link {
-        display: block;
-        padding: 20px 15px;
-        text-decoration: none;
-        line-height: 1;
-    }
-
-    .menu-link,
-    .dropdown-item {
-        color: $color_base;
-        transform: color $default-transition,
-            background-color $default-transition;
-        &:hover {
-            color: $white-smoke;
-            background-color: $color_base;
-            .carret {
-                border-bottom: 2px solid $white-smoke;
-                border-right: 2px solid $white-smoke;
-            }
-        }
-    }
-
-    .carret {
-        display: inline-block;
-        width: 9px;
-        height: 9px;
-        margin-left: 0px;
-        margin-top: -8px;
-        margin-right: -4px;
-        vertical-align: middle;
-        border-bottom: 2px solid #333;
-        border-right: 2px solid #333;
-        border-left: 2px solid transparent;
-        border-top: 2px solid transparent;
-        transition: transform $default-transition;
-        transform: rotate(45deg);
-        transform-origin: 6px 6px;
-    }
-
-    .open .carret {
-        transform: rotate(225deg);
-    }
-
-    .dropdown-menu {
-        position: relative;
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        background-color: $white-smoke;
-
-        .dropdown-item {
-            display: block;
-            padding: 5px 15px 5px 30px;
-            text-decoration: none;
-        }
-    }
-    .open + .dropdown-menu {
-        max-height: 100vh;
-    }
-
-    @include media-breakpoint-up(md) {
-        display: flex;
-        align-items: center;
-
-        .menu-item {
-            display: inline-flex;
-            position: relative;
-
-            &.dropdown:hover {
-                .dropdown-menu {
-                    display: block;
-                }
-            }
-        }
+@screen md {
+    .dropdown:hover {
         .dropdown-menu {
-            display: none;
-            max-height: unset;
-            position: absolute;
-            top: 100%;
-            width: 100%;
-
-            .dropdown-item {
-                padding: 5px 15px;
-            }
+            @apply flex;
         }
     }
 }
 
-/*
-========================================================================== 
-    Logo
-========================================================================== 
-*/
-header {
-    .logo {
-        width: 170px;
-        display: flex;
-        align-items: center;
-
-        a {
-            display: block;
-            img {
-                height: auto;
-                display: block;
-
-                width: 100%;
-            }
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        .logo {
-            width: 110px;
-        }
-    }
+.dropdown-toggle.open + .dropdown-menu {
+    @apply flex;
 }
 
-/*
-========================================================================== 
-    Mobile toggle
-========================================================================== 
-*/
+// Todo: Refractor
 .navigation-toggle {
-    display: block;
     position: relative;
     height: 40px;
     width: 40px;
     pointer-events: all;
 
     span {
-        background-color: $color_base;
+        background-color: black;
         display: block;
         height: 3px;
         border-radius: 1.5px;
@@ -219,9 +73,5 @@ header {
                 transform: translateY(0px) rotate(-45deg);
             }
         }
-    }
-
-    @include media-breakpoint-up(md) {
-        display: none;
     }
 }

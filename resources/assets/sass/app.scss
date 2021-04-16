@@ -2,73 +2,34 @@
 █▀ █▀█ █▀█ █ █▀▀ █▀   █▀ █▀▀ █▀ █▀
 ▄█ █▀▀ █▀▄ █ █▄█ ▄█   ▄█ █▄▄ ▄█ ▄█
 
-
-scss/
-|
-|– 0 Variables/
-|   |– _colors.scss      # Color variables
-|   |– _font.scss        # Font family variables
-|   |– _grid.scss        # Grid overwriting variables
-|   |– _transitions.scss # Transition and timing variables for consistent animations
-|
-|– 1 Generic/                                  
-|   |– font/
-|   |   |- icomoon.scss
-|   |   | (Add font families as needed)
-|
-|– 2 Utilities/                                  
-|   |– animations       #
-|   |– functions        #
-|   |– links            #
-|   |– lists            #
-|   |– sections         #
-|
-|– 3 Elements/
-|   |– _button.scss
-|   |– _typography.scss
-|
-|– 4 Sections/                       
-|   |– footer.scss
-|   |– header.scss
-|   (Add components as needed)
-|
-|– 5 Components/
-|   |– _breadcrumbs.scss
-|   |– _pagination.scss
-|   (Add components as needed)
-|
-|– pages/
-|   |– home.scss        # Specific styles per page
-|   (Add components as needed)
-|
-/– _vendor.scss             # 3rd party scss
-/– main.scss             # main Scss file where everything is imported
-
 ========================================================================== */
 
-@import '0-variables/color';
-@import '0-variables/font';
-@import '0-variables/grid';
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @import '0-variables/transitions';
 
+// Vendor:
 @import '1-generic/vendor';
-@import '1-generic/font';
-@import '1-generic/typography';
 
+// Mixins and animations:
 @import '2-utilities/functions';
 @import '2-utilities/animations';
-@import '2-utilities/links';
-@import '2-utilities/lists';
-@import '2-utilities/sections';
-@import '2-utilities/text';
 
+// Elements:
 @import '3-elements/button';
 @import '3-elements/image';
 
+// Generic sections:
 @import '4-sections/footer';
 @import '4-sections/header';
 
-@import '5-components/breadcrumbs';
-@import '5-components/pagination';
 
-@import '6-pages/styleguide.scss';
+// Add component boilerplates here:
+// @import '5-components/breadcrumbs';
+// @import '5-components/pagination';
+
+// @import '6-pages/styleguide.scss';
+
