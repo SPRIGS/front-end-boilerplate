@@ -1,14 +1,13 @@
 {
     "private": true,
     "name": "ninxha-boilerplate",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "scripts": {
-        "dev": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch-poll": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "hot": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "commit": "git-cz"
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production"
     },
     "gitHooks": {
         "commit-msg": "node scripts/verify-commit-msg.js"
@@ -16,26 +15,25 @@
     "keywords": [],
     "license": "ISC",
     "devDependencies": {
+        "browser-sync": "^2.26.14",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "chalk": "^4.1.0",
         "hard-source-webpack-plugin": "^0.13.1",
-        "husky": "^4.3.0",
-        "laravel-mix": "^5.0.7",
-        "prettier": "^2.1.2",
-        "pretty-quick": "^3.0.2",
-        "resolve-url-loader": "^3.1.1",
-        "sass": "^1.27.0",
-        "sass-loader": "^10.0.3",
-        "vue-template-compiler": "^2.6.12"
+        "husky": "^6.0.0",
+        "laravel-mix": "^6.0.16",
+        "prettier": "^2.2.1",
+        "pretty-quick": "^3.1.0",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.8",
+        "sass-loader": "^11.0.1"
     },
     "dependencies": {
         "bootstrap": "^4.5.2",
-        "cross-env": "^7.0.2",
+        "cross-env": "^7.0.3",
         "family.scss": "^1.0.8",
-        "jquery": "^3.5.1",
-        "lodash": "^4.17.20",
+        "lodash": "^4.17.21",
         "normalize.css": "8.0.1",
         "object-fit-images": "^3.2.4",
-        "pezull": "^1.0.6",
         "popper.js": "^1.16.1",
         "promise": "^8.1.0"
     }
