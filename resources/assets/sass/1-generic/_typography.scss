@@ -4,105 +4,27 @@
 ========================================================================== 
 */
 
-html,
-body {
-    font-size: 16px;
-}
-
-@for $i from 1 through 6 {
-    h#{$i},
-    .h#{$i} {
-        color: $color_base;
-        font-family: $font-family-heading;
-        font-weight: 700;
-        line-height: 1.1;
-        margin: 0;
-        margin-bottom: 1rem;
+.richtext {
+    h1 {
+        @apply text-5xl my-5;
     }
-}
-
-h1,
-.h1 {
-    font-size: 2rem;
-}
-
-h2,
-.h2 {
-    font-size: 1.5rem; // To be fixed
-}
-
-h3,
-.h3 {
-    font-size: 1.222222rem; // not set
-}
-
-h4,
-.h4 {
-    font-size: 1rem; // not set
-}
-
-h5,
-.h5 {
-    font-size: 0.83rem; // not set
-}
-
-h6,
-.h6 {
-    font-size: 0.67rem; // not set
-}
-
-// Paragraph styling
-p {
-    font-size: 1rem;
-    line-height: 1.25;
-    padding: 0;
-    margin-bottom: 1rem;
-
-    &:last-child {
-        margin-bottom: 0, 8rem;
+    h2 {
+        @apply text-4xl my-3;
     }
-
-    &.large,
-    .large & {
-        font-size: 1.1rem;
-        // line-height: 1.68;
+    h3 {
+        @apply text-3xl my-2;
     }
-
-    &.small,
-    .small & {
-        font-size: 0.9rem;
+    h4 {
+        @apply text-xl my-1;
     }
-}
-
-a {
-    color: $black;
-    text-decoration: underline;
-    transition: color 0.1s linear;
-
-    &:hover {
-        color: $black;
-        text-decoration: none;
+    h5 {
+        @apply text-base my-1;
     }
-}
-
-blockquote {
-    padding-left: 1.2rem;
-    border-left: 3px solid $color_base;
-}
-
-@include media-breakpoint-up(md) {
-    html,
-    body {
-        font-size: 18px;
+    h6 {
+        @apply text-sm my-1;
     }
 
     p {
-        // padding: 0;
-        // margin-bottom: 2.5rem;
-
-        &.small,
-        .small & {
-            // margin-bottom: 1rem;
-        }
+        @apply mb-3;
     }
 }

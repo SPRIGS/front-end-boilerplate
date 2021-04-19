@@ -1,4 +1,5 @@
 /.idea
 /.vcode
 /node_modules
+report.*
 yarn-error.log

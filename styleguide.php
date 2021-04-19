@@ -2,8 +2,8 @@
 
 <section class="pt-10 pb-5">
   <div class="container mx-auto">
-    <h1 class="text-5xl mb-2">Style Guide</h1>
-    <p class="text-xl w-8/12">
+    <h1 class="text-5xl mb-5">Style Guide</h1>
+    <p class="text-2xl md:w-8/12">
       This is a style guide template for new projects. The template includes colors, typography, icons, buttons, forms, grid and images.
     </p>
   </div>
@@ -13,46 +13,29 @@
 <section class="pb-5">
   <div class="container mx-auto">
     <div class="colors">
-      <h2 class="text-3xl mb-2"><span>01</span> Color palette:</h2>
+      <h2 class="text-3xl mb-3"><span>01</span> Color palette:</h2>
 
-
-      <div class="col-6 col-md-3">
-        <div class="color-card color_base">
-          <strong class="text_color-white">Base</strong>
-          <p class="small text_color-white">Black Tundora<br>
-            #2c2c2c
-          </p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-7">
+      <div class="rounded bg-black text-white h-40 p-4 flex flex-col justify-end">
+          <strong class="text-2xl">Base</strong>
+          <p>Black<br>#2c2c2c</p>
         </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="color-card color-primary">
-          <strong class="text_color-white">Primary</strong>
-          <p class="small text_color-white">Blue Bahama<br>
-            #1f4e79
-          </p>
+        <div class="rounded bg-blue-600 text-white h-40 p-4 flex flex-col justify-end">
+          <strong class="text-2xl">Primary</strong>
+          <p>Blue<br>#2c2c2c</p>
         </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="color-card color-secondary">
-          <strong class="text_color-white">Secondary</strong>
-
-          <p class="small text_color-white">Blue Malibu<br>
-            #66b7e1
-          </p>
+        <div class="rounded bg-green-600 text-white h-40 p-4 flex flex-col justify-end">
+          <strong class="text-2xl">Secondary</strong>
+          <p>Green<br>#2c2c2c</p>
         </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="color-card color-accent">
-          <strong class="text_color-white">Accent</strong>
-          <p class="small text_color-white">Red Torch<br>
-            #ff0033
-          </p>
+        <div class="rounded bg-yellow-500 text-black h-40 p-4 flex flex-col justify-end">
+          <strong class="text-2xl">Accent</strong>
+          <p>Orange<br>#2c2c2c</p>
         </div>
-      </div>
 
+        
+
+      </div>
 
     </div>
   </div>
@@ -62,61 +45,74 @@
 <!-- Typography -->
 <section class="pb-5">
   <div class="container mx-auto">
-
-    <div class="styleguide__typography">
-      <h2 class="text-3xl mb-2"><span>02</span> Typography</h2>
-      <div class="row">
-        <div class="col-12 col-sm-8">
-          <p>
-            Below is specified the project typography.
-            Including a preview of headings font-family, font-size, font-weight, line-height <br>
-            and paragraphs, lists and blockqutes.
-            You may add any special cases of typography as needed.
-          </p>
-        </div>
-      </div>
+    <h2 class="text-3xl mb-3"><span>02</span> Typography</h2>
+    <p class="text-xl md:w-8/12 mb-2">
+      Below is specified the project typography.
+      Including a preview of headings font-family, font-size, font-weight, line-height <br>
+      and paragraphs, lists and blockqutes.
+      You may add any special cases of typography as needed.
+    </p>
 
 
-      <h1>H1: The wizard quickly jinxed<br> the gnomes before they vaporized</h1>
-      <p class="small text--light"><i>Font-family: Helvetica Neue — Font-size: 36px — Font-weight: bold — Line-height: 39.6px / 1.1 / 110% — Colour: #2C2C2C</i></p>
-      <h2>H2: The wizard quickly jinxed the gnomes<br> before they vaporized</h2>
-      <p class="small text--light"><i>Font-size: 27px — Line-height: 29.7px</i></p>
-      <h3>H3: The wizard quickly jinxed the gnomes<br> before they vaporized</h3>
-      <p class="small text--light"><i>Font-size: 22px — Line-height: 24.2px</i></p>
-      <h4>H4: The wizard quickly jinxed the gnomes before they vaporized</h4>
-      <h5>H5: The wizard quickly jinxed the gnomes before they vaporized</h5>
-      <h6>H6: The wizard quickly jinxed the gnomes before they vaporized</h6>
+
+    <div class="richtext">
+      <h1><strong>H1:</strong> The wizard quickly jinxed<br> the gnomes before they vaporized</h1>
+      <p class="text-sm text-gray-600">
+        Font-size: 3rem — Line-height: 3rem
+      </p>
+
+      <h2><strong>H2:</strong> The wizard quickly jinxed the gnomes<br> before they vaporized</h2>
+      <p class="text-sm text-gray-600">
+        Font-size: 2.25rem — Line-height: 2.5rem
+      </p>
+
+      <h3><strong>H3:</strong> The wizard quickly jinxed the gnomes<br> before they vaporized</h3>
+      <p class="text-sm text-gray-600">
+        Font-size: 1.875rem — Line-height: 2.25rem
+      </p>
+
+      <h4><strong>H4:</strong> The wizard quickly jinxed the gnomes before they vaporized</h4>
+      <p class="text-sm text-gray-600">
+        Font-size: 1.25rem — Line-height: 1.75rem
+      </p>
+
+      <h5><strong>H5:</strong> The wizard quickly jinxed the gnomes before they vaporized</h5>
+      <p class="text-sm text-gray-600">
+        Font-size: 1rem — Line-height: 1.5rem
+      </p>
+
+      <h6><strong>H6:</strong> The wizard quickly jinxed the gnomes before they vaporized</h6>
+      <p class="text-sm text-gray-600">
+        Font-size: 0.875rem — Line-height: 1.25rem
+      </p>
 
       <p><strong>Paragraph:</strong> This is regular paragraph. Used for longer-form text blocks. Ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>And another paragraph, nibh pellentesque vestibulum mattis, lacus tortor posuere nulla, vel sagittis risus mauris ac tortor. Vestibulum et lacus a tellus sodales iaculis id vel dui. Etiam euismod lacus ornare risus egestas dignissim. Fusce mattis justo vitae congue varius. Suspendisse auctor dapibus ornare. .</p>
 
-      <p class="large"><strong>Large paragraph:</strong> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p class="small"><strong>Small paragraph:</strong> Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
 
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4">
+        <ul>
+          <li>Bulleted list item.</li>
+          <li>Another item.</li>
+          <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
+          <li>Cras ornare tristique elit.</li>
+        </ul>
+      </div>
 
-          <ul>
-            <li>Bulleted list item.</li>
-            <li>Another item.</li>
-            <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
-            <li>Cras ornare tristique elit.</li>
-          </ul>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-4">
-          <ol>
-            <li>Numbered list item.</li>
-            <li>Another item.</li>
-            <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
-            <li>Cras ornare tristique elit.</li>
-          </ol>
-        </div>
-        <div class="col-12">
-          <blockquote>
-            This is a Blockquote. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          </blockquote>
-        </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <ol>
+          <li>Numbered list item.</li>
+          <li>Another item.</li>
+          <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
+          <li>Cras ornare tristique elit.</li>
+        </ol>
+      </div>
+      <div class="col-12">
+        <blockquote>
+          This is a Blockquote. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </blockquote>
       </div>
     </div>
 </section>
@@ -128,7 +124,7 @@
   <div class="container mx-auto">
 
     <div class="styleguide__typography">
-      <h2 class="text-3xl mb-2"><span>03</span> Icons</h2>
+      <h2 class="text-3xl mb-3"><span>03</span> Icons</h2>
       <div class="row">
         <div class="col-12 col-sm-8">
           <p>
@@ -167,7 +163,7 @@
 
       <div class="col-sm-6">
         <div class="styleguide__buttons">
-          <h2 class="text-3xl mb-2"><span>04</span> Buttons:</h2>
+          <h2 class="text-3xl mb-3"><span>04</span> Buttons:</h2>
           <p>List of buttons, in default, hover and active.
             Add all variants used in the project.
           </p>
@@ -191,7 +187,7 @@
       </div>
 
       <div class="col-sm-6">
-        <h2 class="text-3xl mb-2"><span>05</span> Links:</h2>
+        <h2 class="text-3xl mb-3"><span>05</span> Links:</h2>
         </p>
         <hr>
         <p>
@@ -214,7 +210,7 @@
 <section class="pb-5">
   <div class="container mx-auto">
     <div class="grid">
-      <h2 class="text-3xl mb-2"><span>06</span> Container: </h2>
+      <h2 class="text-3xl mb-3"><span>06</span> Container: </h2>
       <div class="row">
         <div class="col-12 col-sm-8">
           <p>
@@ -307,7 +303,7 @@
   <div class="container mx-auto">
     <!-- Grid layout -->
     <div class="grid">
-      <h2 class="text-3xl mb-2"><span>07.1</span> Container fluid:</h2>
+      <h2 class="text-3xl mb-3"><span>07.1</span> Container fluid:</h2>
     </div>
   </div>
 
@@ -390,7 +386,7 @@
 <!-- Images -->
 <section class="pb-5">
   <div class="container mx-auto">
-    <h2 class="text-3xl mb-2"><span>08</span> Images</h2>
+    <h2 class="text-3xl mb-3"><span>08</span> Images</h2>
     <div class="row">
       <div class="col-12 col-md-8">
         <p>Images are always 100% width of the container. Image captions/descriptions should always be 16px and placed directly under the image with a 10px margin from the image.</p>
