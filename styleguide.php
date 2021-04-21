@@ -55,41 +55,21 @@
 
 
 
-    <div class="richtext">
-      <h1><strong>H1:</strong> The wizard quickly jinxed<br> the gnomes before they vaporized</h1>
-      <p class="text-sm text-gray-600">
-        Font-size: 3rem — Line-height: 3rem
-      </p>
-
-      <h2><strong>H2:</strong> The wizard quickly jinxed the gnomes<br> before they vaporized</h2>
-      <p class="text-sm text-gray-600">
-        Font-size: 2.25rem — Line-height: 2.5rem
-      </p>
-
-      <h3><strong>H3:</strong> The wizard quickly jinxed the gnomes<br> before they vaporized</h3>
-      <p class="text-sm text-gray-600">
-        Font-size: 1.875rem — Line-height: 2.25rem
-      </p>
-
-      <h4><strong>H4:</strong> The wizard quickly jinxed the gnomes before they vaporized</h4>
-      <p class="text-sm text-gray-600">
-        Font-size: 1.25rem — Line-height: 1.75rem
-      </p>
-
-      <h5><strong>H5:</strong> The wizard quickly jinxed the gnomes before they vaporized</h5>
-      <p class="text-sm text-gray-600">
-        Font-size: 1rem — Line-height: 1.5rem
-      </p>
-
-      <h6><strong>H6:</strong> The wizard quickly jinxed the gnomes before they vaporized</h6>
-      <p class="text-sm text-gray-600">
-        Font-size: 0.875rem — Line-height: 1.25rem
-      </p>
-
+    <article class="prose pt-10">
+      <h1>H1: The wizard quickly jinxed<br> the gnomes before they vaporized</h1>
+      <h2>H2: The wizard quickly jinxed the gnomes<br> before they vaporized</h2>
+      <h3>H3: The wizard quickly jinxed the gnomes<br> before they vaporized</h3>
+      <h4>H4: The wizard quickly jinxed the gnomes before they vaporized</h4>
+      <h5>H5: The wizard quickly jinxed the gnomes before they vaporized</h5>
+      <h6>H6: The wizard quickly jinxed the gnomes before they vaporized</h6>
       <p><strong>Paragraph:</strong> This is regular paragraph. Used for longer-form text blocks. Ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>And another paragraph, nibh pellentesque vestibulum mattis, lacus tortor posuere nulla, vel sagittis risus mauris ac tortor. Vestibulum et lacus a tellus sodales iaculis id vel dui. Etiam euismod lacus ornare risus egestas dignissim. Fusce mattis justo vitae congue varius. Suspendisse auctor dapibus ornare. .</p>
 
-    </div>
+      <pre>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt incidunt aliquam ullam est labore animi architecto iure consequuntur expedita aliquid, eligendi quae quisquam quas quibusdam doloremque fugit, dolor provident?
+      </pre>
+    </article>
+    
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4">
 
