@@ -1,6 +1,6 @@
-<?php include('partials/header.php'); ?>
+<?php include('partials/header-with-navigation.php'); ?>
 
-<section class="pt-10 pb-5">
+<section class="pt-40 pb-5 px-4 ">
   <div class="container mx-auto">
     <h1 class="text-5xl mb-5">Style Guide</h1>
     <p class="text-2xl md:w-8/12">
@@ -9,31 +9,42 @@
   </div>
 </section>
 
+<hr class="mb-4">
+
 <!-- Colors -->
-<section class="pb-5">
+<section class="pb-5 px-4 ">
   <div class="container mx-auto">
     <div class="colors">
       <h2 class="text-3xl mb-3"><span>01</span> Color palette:</h2>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-7">
-      <div class="rounded bg-black text-white h-40 p-4 flex flex-col justify-end">
-          <strong class="text-2xl">Base</strong>
-          <p>Black<br>#2c2c2c</p>
-        </div>
-        <div class="rounded bg-blue-600 text-white h-40 p-4 flex flex-col justify-end">
-          <strong class="text-2xl">Primary</strong>
-          <p>Blue<br>#2c2c2c</p>
-        </div>
-        <div class="rounded bg-green-600 text-white h-40 p-4 flex flex-col justify-end">
-          <strong class="text-2xl">Secondary</strong>
-          <p>Green<br>#2c2c2c</p>
-        </div>
-        <div class="rounded bg-yellow-500 text-black h-40 p-4 flex flex-col justify-end">
-          <strong class="text-2xl">Accent</strong>
-          <p>Orange<br>#2c2c2c</p>
+      <div class="flex flex-wrap -mx-2 md:-mx-4">
+        <div class="px-2 pb-4 w-1/2 md:px-4 md:pb-8 md:w-1/4">
+          <div class="rounded bg-black text-white h-40 p-4 flex flex-col justify-end">
+            <strong class="text-2xl">Base</strong>
+            <p>Black<br>#2c2c2c</p>
+          </div>
         </div>
 
-        
+        <div class="px-2 pb-4 w-1/2 md:px-4 md:pb-8 md:w-1/4">
+          <div class="rounded bg-blue-600 text-white h-40 p-4 flex flex-col justify-end">
+            <strong class="text-2xl">Primary</strong>
+            <p>Blue<br>#2c2c2c</p>
+          </div>
+        </div>
+        <div class="px-2 pb-4 w-1/2 md:px-4 md:pb-8 md:w-1/4">
+          <div class="rounded bg-green-600 text-white h-40 p-4 flex flex-col justify-end">
+            <strong class="text-2xl">Secondary</strong>
+            <p>Green<br>#2c2c2c</p>
+          </div>
+        </div>
+        <div class="px-2 pb-4 w-1/2 md:px-4 md:pb-8 md:w-1/4">
+          <div class="rounded bg-yellow-500 text-black h-40 p-4 flex flex-col justify-end">
+            <strong class="text-2xl">Accent</strong>
+            <p>Orange<br>#2c2c2c</p>
+          </div>
+        </div>
+
+
 
       </div>
 
@@ -41,21 +52,28 @@
   </div>
 </section>
 
+<hr class="mb-4">
 
 <!-- Typography -->
-<section class="pb-5">
+<section class="pb-5 px-4">
   <div class="container mx-auto">
     <h2 class="text-3xl mb-3"><span>02</span> Typography</h2>
-    <p class="text-xl md:w-8/12 mb-2">
-      Below is specified the project typography.
-      Including a preview of headings font-family, font-size, font-weight, line-height <br>
-      and paragraphs, lists and blockqutes.
+
+    <p class="text-xl md:w-8/12 mb-4">
+      The projects typography is separated in two parts: <br>
+      The <span class="underline">design typography</span> and user <span class="underline">generated typoghraphy</span> .
+      <br><br>
+
+      First one is the typography styling on each design element. <br>
+      And the second is a preview of headings, paragraphs, lists and blockqutes etc and the default spacing between them.
+
       You may add any special cases of typography as needed.
     </p>
 
+    <hr class="mb-4">
 
-
-    <article class="prose pt-10">
+    <h3 class="text-2xl">User generated example:</h3>
+    <article class="prose max-w-full pt-10">
       <h1>H1: The wizard quickly jinxed<br> the gnomes before they vaporized</h1>
       <h2>H2: The wizard quickly jinxed the gnomes<br> before they vaporized</h2>
       <h3>H3: The wizard quickly jinxed the gnomes<br> before they vaporized</h3>
@@ -65,42 +83,41 @@
       <p><strong>Paragraph:</strong> This is regular paragraph. Used for longer-form text blocks. Ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <p>And another paragraph, nibh pellentesque vestibulum mattis, lacus tortor posuere nulla, vel sagittis risus mauris ac tortor. Vestibulum et lacus a tellus sodales iaculis id vel dui. Etiam euismod lacus ornare risus egestas dignissim. Fusce mattis justo vitae congue varius. Suspendisse auctor dapibus ornare. .</p>
 
-      <pre>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt incidunt aliquam ullam est labore animi architecto iure consequuntur expedita aliquid, eligendi quae quisquam quas quibusdam doloremque fugit, dolor provident?
+      <pre class="whitespace-normal">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nesciunt incidunt aliquam ullam est labore animi architecto iure consequuntur expedita aliquid, eligendi quae quisquam quas quibusdam doloremque fugit, dolor provident?
       </pre>
+
+      <div class="flex flex-wrap -mx-2 md:-mx-4">
+        <div class="px-2 pb-4 w-full md:px-4 md:pb-8 md:w-1/2 lg:w-1/3">
+          <ul>
+            <li>Bulleted list item.</li>
+            <li>Another item.</li>
+            <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
+            <li>Cras ornare tristique elit.</li>
+          </ul>
+        </div>
+
+        <div class="px-2 pb-4 w-full md:px-4 md:pb-8 md:w-1/2 lg:w-1/3">
+          <ol>
+            <li>Numbered list item.</li>
+            <li>Another item.</li>
+            <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
+            <li>Cras ornare tristique elit.</li>
+          </ol>
+        </div>
+      </div>
+      <blockquote>
+        This is a Blockquote. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </blockquote>
     </article>
-    
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-4">
 
-        <ul>
-          <li>Bulleted list item.</li>
-          <li>Another item.</li>
-          <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
-          <li>Cras ornare tristique elit.</li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-sm-6 col-lg-4">
-        <ol>
-          <li>Numbered list item.</li>
-          <li>Another item.</li>
-          <li>List item with two lines. nibh pellentesque vestibulum mattis. Aliquam tincidunt mauris. </li>
-          <li>Cras ornare tristique elit.</li>
-        </ol>
-      </div>
-      <div class="col-12">
-        <blockquote>
-          This is a Blockquote. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        </blockquote>
-      </div>
-    </div>
+  </div>
 </section>
 
-
+<hr class="mb-4">
 
 <!-- Icons -->
-<section class="pb-5">
+<section class="pb-5 px-4 ">
   <div class="container mx-auto">
 
     <div class="styleguide__typography">
@@ -135,9 +152,10 @@
   </div>
 </section>
 
+<hr class="mb-4">
 
 <!-- Buttons & links -->
-<section class="pb-5">
+<section class="pb-5 px-4 ">
   <div class="container mx-auto">
     <div class="row">
 
@@ -186,9 +204,12 @@
 
 </section>
 
+<hr class="mb-4">
+
 <!-- Grid -->
-<section class="pb-5">
+<section class="pb-5 px-4 ">
   <div class="container mx-auto">
+
     <div class="grid">
       <h2 class="text-3xl mb-3"><span>06</span> Container: </h2>
       <div class="row">
@@ -199,54 +220,24 @@
         </div>
       </div>
 
+      <div class="resize-x overflow-auto">
+
       <div class="text-center">
-        <span class="d-block d-sm-none">Up to 576px container width is 100%</span>
-        <span class="d-none d-sm-block d-md-none">Up to 768px container width is 540px</span>
-        <span class="d-none d-md-block d-lg-none">Up to 992px container width is 720px</span>
-        <span class="d-none d-lg-block d-xl-none">Up to 1200px container width is 960px</span>
-        <span class="d-none d-xl-block">1200 and above container width is 1140px</span>
+        <span class="block sm:hidden">Up to 640px container width is 100%</span>
+        <span class="hidden sm:block md:hidden">Up to 768px container width is 640px</span>
+        <span class="hidden md:block lg:hidden">Up to 1024px container width is 768px</span>
+        <span class="hidden lg:block xl:hidden">Up to 1280px container width is 1024px</span>
+        <span class="hidden xl:block">1536px and above container width is 1280px</span>
       </div>
       <hr>
-
-      <div class="row d-none d-md-flex">
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
-        </div>
-        <div class="col-1">
-          <div class="grid-block">col-1</div>
+        <div class="h-screen relative">
+          <iframe class="h-screen overflow-auto resize-x w-full border-black border-2" src="styleguide-grid.php" frameborder="0"></iframe>
         </div>
       </div>
 
+
+      <!-- <div class=" hidden md:flex flex-wrap -mx-2 md:-mx-4">
+        <div class="px-2 pb-4 w-1/12 md:px-4 md:pb-8 md:w-1/4"> -->
 
       <div class="row">
         <div class="col-3">
@@ -279,7 +270,7 @@
 </section>
 
 <!-- Grid fluid -->
-<section class="pb-5">
+<section class="pb-5 px-4 ">
   <div class="container mx-auto">
     <!-- Grid layout -->
     <div class="grid">
@@ -364,7 +355,7 @@
 </section>
 
 <!-- Images -->
-<section class="pb-5">
+<section class="pb-5 px-4 ">
   <div class="container mx-auto">
     <h2 class="text-3xl mb-3"><span>08</span> Images</h2>
     <div class="row">

@@ -5,7 +5,7 @@
 */
 
 .apply\:main-nav {
-    @apply -translate-y-full transform transition-transform absolute bg-yellow-300 left-0 pt-20 top-0 w-full z-10 h-full md:h-auto md:relative md:w-auto md:pt-0 md:transform-none md:bg-transparent;
+    @apply -translate-y-full transform transition-transform absolute bg-yellow-300 left-0 pt-20 pb-4 top-0 w-full z-10 md:h-auto md:relative md:w-auto md:pt-0 md:pb-0 md:transform-none md:bg-transparent;
 
     .menu-open &{
         @apply -translate-y-0

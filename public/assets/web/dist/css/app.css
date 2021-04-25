@@ -375,7 +375,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Rubik, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -524,7 +524,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Rubik, sans-serif;
 }
 
 /**
@@ -12554,15 +12554,23 @@ video {
 }
 
 .font-sans{
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Rubik, sans-serif;
 }
 
 .font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Rubik, sans-serif;
 }
 
 .font-mono{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Rubik, sans-serif;
+}
+
+.font-display{
+  font-family: Rubik, sans-serif;
+}
+
+.font-body{
+  font-family: Rubik, sans-serif;
 }
 
 .font-thin{
@@ -33422,7 +33430,7 @@ img {
 .apply\:main-nav {
   --tw-bg-opacity: 1;
   background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
-  height: 100%;
+  padding-bottom: 1rem;
   padding-top: 5rem;
   position: absolute;
   top: 0px;
@@ -33448,6 +33456,7 @@ img {
     background-color: transparent;
     height: auto;
     padding-top: 0px;
+    padding-bottom: 0px;
     position: relative;
     width: auto;
     transform: none;
@@ -45528,15 +45537,23 @@ img {
   }
 
   .sm\:font-sans{
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Rubik, sans-serif;
   }
 
   .sm\:font-serif{
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Rubik, sans-serif;
   }
 
   .sm\:font-mono{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Rubik, sans-serif;
+  }
+
+  .sm\:font-display{
+    font-family: Rubik, sans-serif;
+  }
+
+  .sm\:font-body{
+    font-family: Rubik, sans-serif;
   }
 
   .sm\:font-thin{
@@ -77958,15 +77975,23 @@ img {
   }
 
   .md\:font-sans{
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Rubik, sans-serif;
   }
 
   .md\:font-serif{
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Rubik, sans-serif;
   }
 
   .md\:font-mono{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Rubik, sans-serif;
+  }
+
+  .md\:font-display{
+    font-family: Rubik, sans-serif;
+  }
+
+  .md\:font-body{
+    font-family: Rubik, sans-serif;
   }
 
   .md\:font-thin{
@@ -110388,15 +110413,23 @@ img {
   }
 
   .lg\:font-sans{
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Rubik, sans-serif;
   }
 
   .lg\:font-serif{
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Rubik, sans-serif;
   }
 
   .lg\:font-mono{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Rubik, sans-serif;
+  }
+
+  .lg\:font-display{
+    font-family: Rubik, sans-serif;
+  }
+
+  .lg\:font-body{
+    font-family: Rubik, sans-serif;
   }
 
   .lg\:font-thin{
@@ -142818,15 +142851,23 @@ img {
   }
 
   .xl\:font-sans{
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Rubik, sans-serif;
   }
 
   .xl\:font-serif{
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Rubik, sans-serif;
   }
 
   .xl\:font-mono{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Rubik, sans-serif;
+  }
+
+  .xl\:font-display{
+    font-family: Rubik, sans-serif;
+  }
+
+  .xl\:font-body{
+    font-family: Rubik, sans-serif;
   }
 
   .xl\:font-thin{
@@ -175248,15 +175289,23 @@ img {
   }
 
   .\32xl\:font-sans{
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Rubik, sans-serif;
   }
 
   .\32xl\:font-serif{
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Rubik, sans-serif;
   }
 
   .\32xl\:font-mono{
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Rubik, sans-serif;
+  }
+
+  .\32xl\:font-display{
+    font-family: Rubik, sans-serif;
+  }
+
+  .\32xl\:font-body{
+    font-family: Rubik, sans-serif;
   }
 
   .\32xl\:font-thin{
