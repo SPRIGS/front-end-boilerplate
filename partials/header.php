@@ -8,7 +8,7 @@
     <title>Front End Boilerplate</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="./public/assets/web/dist/css/app.css?v=1" rel="stylesheet">
+    <link href="./public/assets/web/dist/css/app.css" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 

@@ -1,4 +1,4 @@
-<?php include('partials/header.php'); ?>
+<?php include('./partials/header.php'); ?>
 
 <section class="section-padding-top--100">
   <div class="container s-styleguide">
@@ -432,4 +432,4 @@
 </section>
 
 
-<?php include('partials/footer.php'); ?>
+<?php include('./partials/footer.php'); ?>

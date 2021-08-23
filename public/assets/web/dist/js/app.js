@@ -312,35 +312,11 @@ rawAsap.makeRequestCallFromTimer = makeRequestCallFromTimer;
 
 /***/ }),
 
-/***/ "./resources/assets/js/app.js":
-/*!************************************!*\
-  !*** ./resources/assets/js/app.js ***!
-  \************************************/
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-__webpack_require__(/*! ./core/bootstrap */ "./resources/assets/js/core/bootstrap.js");
-
-__webpack_require__(/*! ./core/plugins */ "./resources/assets/js/core/plugins.js");
-
-/***/ }),
-
-/***/ "./resources/assets/js/core/bootstrap.js":
-/*!***********************************************!*\
-  !*** ./resources/assets/js/core/bootstrap.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js"); // window.$ = window.jQuery = require('jquery');
-
-window.Promise = __webpack_require__(/*! promise */ "./node_modules/promise/index.js"); // window.objectFitImages = require('object-fit-images');
-
-/***/ }),
-
-/***/ "./resources/assets/js/core/plugins.js":
-/*!*********************************************!*\
-  !*** ./resources/assets/js/core/plugins.js ***!
-  \*********************************************/
-/***/ (() => {
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
@@ -348,22 +324,31 @@ function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread n
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+__webpack_require__(/*! ./core/bootstrap */ "./src/assets/js/core/bootstrap.js");
+
+__webpack_require__(/*! ./core/plugins */ "./src/assets/js/core/plugins.js");
+
 var body = document.getElementsByTagName('body')[0];
 document.addEventListener('DOMContentLoaded', function () {
-  menuFunctionality(); // objectFitImages(document.querySelectorAll('selector'));
+  menuFunctionality();
+  objectFitImages(document.querySelectorAll('selector'));
 });
 
 var menuFunctionality = function menuFunctionality() {
   var menuToggle = document.getElementById('js-menu-toggle');
-  menuToggle.addEventListener('click', function () {
-    body.classList.toggle('menu-open');
-  });
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function () {
+      body.classList.toggle('menu-open');
+    });
+  }
+
   var menuDropdowns = document.getElementsByClassName('dropdown-toggle');
 
   if (menuDropdowns) {
@@ -375,6 +360,28 @@ var menuFunctionality = function menuFunctionality() {
     });
   }
 };
+
+/***/ }),
+
+/***/ "./src/assets/js/core/bootstrap.js":
+/*!*****************************************!*\
+  !*** ./src/assets/js/core/bootstrap.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+window.Promise = __webpack_require__(/*! promise */ "./node_modules/promise/index.js");
+window.objectFitImages = __webpack_require__(/*! object-fit-images */ "./node_modules/object-fit-images/dist/ofi.common-js.js");
+
+/***/ }),
+
+/***/ "./src/assets/js/core/plugins.js":
+/*!***************************************!*\
+  !*** ./src/assets/js/core/plugins.js ***!
+  \***************************************/
+/***/ (() => {
+
+
 
 /***/ }),
 
@@ -17590,15 +17597,257 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/assets/sass/app.scss":
-/*!****************************************!*\
-  !*** ./resources/assets/sass/app.scss ***!
-  \****************************************/
+/***/ "./src/assets/scss/app.scss":
+/*!**********************************!*\
+  !*** ./src/assets/scss/app.scss ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/object-fit-images/dist/ofi.common-js.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/object-fit-images/dist/ofi.common-js.js ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+"use strict";
+/*! npm.im/object-fit-images 3.2.4 */
+
+
+var OFI = 'bfred-it:object-fit-images';
+var propRegex = /(object-fit|object-position)\s*:\s*([-.\w\s%]+)/g;
+var testImg = typeof Image === 'undefined' ? {style: {'object-position': 1}} : new Image();
+var supportsObjectFit = 'object-fit' in testImg.style;
+var supportsObjectPosition = 'object-position' in testImg.style;
+var supportsOFI = 'background-size' in testImg.style;
+var supportsCurrentSrc = typeof testImg.currentSrc === 'string';
+var nativeGetAttribute = testImg.getAttribute;
+var nativeSetAttribute = testImg.setAttribute;
+var autoModeEnabled = false;
+
+function createPlaceholder(w, h) {
+	return ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='" + w + "' height='" + h + "'%3E%3C/svg%3E");
+}
+
+function polyfillCurrentSrc(el) {
+	if (el.srcset && !supportsCurrentSrc && window.picturefill) {
+		var pf = window.picturefill._;
+		// parse srcset with picturefill where currentSrc isn't available
+		if (!el[pf.ns] || !el[pf.ns].evaled) {
+			// force synchronous srcset parsing
+			pf.fillImg(el, {reselect: true});
+		}
+
+		if (!el[pf.ns].curSrc) {
+			// force picturefill to parse srcset
+			el[pf.ns].supported = false;
+			pf.fillImg(el, {reselect: true});
+		}
+
+		// retrieve parsed currentSrc, if any
+		el.currentSrc = el[pf.ns].curSrc || el.src;
+	}
+}
+
+function getStyle(el) {
+	var style = getComputedStyle(el).fontFamily;
+	var parsed;
+	var props = {};
+	while ((parsed = propRegex.exec(style)) !== null) {
+		props[parsed[1]] = parsed[2];
+	}
+	return props;
+}
+
+function setPlaceholder(img, width, height) {
+	// Default: fill width, no height
+	var placeholder = createPlaceholder(width || 1, height || 0);
+
+	// Only set placeholder if it's different
+	if (nativeGetAttribute.call(img, 'src') !== placeholder) {
+		nativeSetAttribute.call(img, 'src', placeholder);
+	}
+}
+
+function onImageReady(img, callback) {
+	// naturalWidth is only available when the image headers are loaded,
+	// this loop will poll it every 100ms.
+	if (img.naturalWidth) {
+		callback(img);
+	} else {
+		setTimeout(onImageReady, 100, img, callback);
+	}
+}
+
+function fixOne(el) {
+	var style = getStyle(el);
+	var ofi = el[OFI];
+	style['object-fit'] = style['object-fit'] || 'fill'; // default value
+
+	// Avoid running where unnecessary, unless OFI had already done its deed
+	if (!ofi.img) {
+		// fill is the default behavior so no action is necessary
+		if (style['object-fit'] === 'fill') {
+			return;
+		}
+
+		// Where object-fit is supported and object-position isn't (Safari < 10)
+		if (
+			!ofi.skipTest && // unless user wants to apply regardless of browser support
+			supportsObjectFit && // if browser already supports object-fit
+			!style['object-position'] // unless object-position is used
+		) {
+			return;
+		}
+	}
+
+	// keep a clone in memory while resetting the original to a blank
+	if (!ofi.img) {
+		ofi.img = new Image(el.width, el.height);
+		ofi.img.srcset = nativeGetAttribute.call(el, "data-ofi-srcset") || el.srcset;
+		ofi.img.src = nativeGetAttribute.call(el, "data-ofi-src") || el.src;
+
+		// preserve for any future cloneNode calls
+		// https://github.com/bfred-it/object-fit-images/issues/53
+		nativeSetAttribute.call(el, "data-ofi-src", el.src);
+		if (el.srcset) {
+			nativeSetAttribute.call(el, "data-ofi-srcset", el.srcset);
+		}
+
+		setPlaceholder(el, el.naturalWidth || el.width, el.naturalHeight || el.height);
+
+		// remove srcset because it overrides src
+		if (el.srcset) {
+			el.srcset = '';
+		}
+		try {
+			keepSrcUsable(el);
+		} catch (err) {
+			if (window.console) {
+				console.warn('https://bit.ly/ofi-old-browser');
+			}
+		}
+	}
+
+	polyfillCurrentSrc(ofi.img);
+
+	el.style.backgroundImage = "url(\"" + ((ofi.img.currentSrc || ofi.img.src).replace(/"/g, '\\"')) + "\")";
+	el.style.backgroundPosition = style['object-position'] || 'center';
+	el.style.backgroundRepeat = 'no-repeat';
+	el.style.backgroundOrigin = 'content-box';
+
+	if (/scale-down/.test(style['object-fit'])) {
+		onImageReady(ofi.img, function () {
+			if (ofi.img.naturalWidth > el.width || ofi.img.naturalHeight > el.height) {
+				el.style.backgroundSize = 'contain';
+			} else {
+				el.style.backgroundSize = 'auto';
+			}
+		});
+	} else {
+		el.style.backgroundSize = style['object-fit'].replace('none', 'auto').replace('fill', '100% 100%');
+	}
+
+	onImageReady(ofi.img, function (img) {
+		setPlaceholder(el, img.naturalWidth, img.naturalHeight);
+	});
+}
+
+function keepSrcUsable(el) {
+	var descriptors = {
+		get: function get(prop) {
+			return el[OFI].img[prop ? prop : 'src'];
+		},
+		set: function set(value, prop) {
+			el[OFI].img[prop ? prop : 'src'] = value;
+			nativeSetAttribute.call(el, ("data-ofi-" + prop), value); // preserve for any future cloneNode
+			fixOne(el);
+			return value;
+		}
+	};
+	Object.defineProperty(el, 'src', descriptors);
+	Object.defineProperty(el, 'currentSrc', {
+		get: function () { return descriptors.get('currentSrc'); }
+	});
+	Object.defineProperty(el, 'srcset', {
+		get: function () { return descriptors.get('srcset'); },
+		set: function (ss) { return descriptors.set(ss, 'srcset'); }
+	});
+}
+
+function hijackAttributes() {
+	function getOfiImageMaybe(el, name) {
+		return el[OFI] && el[OFI].img && (name === 'src' || name === 'srcset') ? el[OFI].img : el;
+	}
+	if (!supportsObjectPosition) {
+		HTMLImageElement.prototype.getAttribute = function (name) {
+			return nativeGetAttribute.call(getOfiImageMaybe(this, name), name);
+		};
+
+		HTMLImageElement.prototype.setAttribute = function (name, value) {
+			return nativeSetAttribute.call(getOfiImageMaybe(this, name), name, String(value));
+		};
+	}
+}
+
+function fix(imgs, opts) {
+	var startAutoMode = !autoModeEnabled && !imgs;
+	opts = opts || {};
+	imgs = imgs || 'img';
+
+	if ((supportsObjectPosition && !opts.skipTest) || !supportsOFI) {
+		return false;
+	}
+
+	// use imgs as a selector or just select all images
+	if (imgs === 'img') {
+		imgs = document.getElementsByTagName('img');
+	} else if (typeof imgs === 'string') {
+		imgs = document.querySelectorAll(imgs);
+	} else if (!('length' in imgs)) {
+		imgs = [imgs];
+	}
+
+	// apply fix to all
+	for (var i = 0; i < imgs.length; i++) {
+		imgs[i][OFI] = imgs[i][OFI] || {
+			skipTest: opts.skipTest
+		};
+		fixOne(imgs[i]);
+	}
+
+	if (startAutoMode) {
+		document.body.addEventListener('load', function (e) {
+			if (e.target.tagName === 'IMG') {
+				fix(e.target, {
+					skipTest: opts.skipTest
+				});
+			}
+		}, true);
+		autoModeEnabled = true;
+		imgs = 'img'; // reset to a generic selector for watchMQ
+	}
+
+	// if requested, watch media queries for object-fit change
+	if (opts.watchMQ) {
+		window.addEventListener('resize', fix.bind(null, imgs, {
+			skipTest: opts.skipTest
+		}));
+	}
+}
+
+fix.supportsObjectFit = supportsObjectFit;
+fix.supportsObjectPosition = supportsObjectPosition;
+
+hijackAttributes();
+
+module.exports = fix;
 
 
 /***/ }),
@@ -18312,7 +18561,8 @@ Promise.disableSynchronous = function() {
 /******/ 				}
 /******/ 				if(fulfilled) {
 /******/ 					deferred.splice(i--, 1)
-/******/ 					result = fn();
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
@@ -18386,12 +18636,14 @@ Promise.disableSynchronous = function() {
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			for(moduleId in moreModules) {
-/******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 					__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
 /******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
 /******/ 			}
-/******/ 			if(runtime) runtime(__webpack_require__);
 /******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
 /******/ 			for(;i < chunkIds.length; i++) {
 /******/ 				chunkId = chunkIds[i];
@@ -18400,7 +18652,7 @@ Promise.disableSynchronous = function() {
 /******/ 				}
 /******/ 				installedChunks[chunkIds[i]] = 0;
 /******/ 			}
-/******/ 			__webpack_require__.O();
+/******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
 /******/ 		var chunkLoadingGlobal = self["webpackChunkninxha_boilerplate"] = self["webpackChunkninxha_boilerplate"] || [];
@@ -18413,8 +18665,8 @@ Promise.disableSynchronous = function() {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["public/assets/web/dist/css/app"], () => (__webpack_require__("./resources/assets/js/app.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/assets/web/dist/css/app"], () => (__webpack_require__("./resources/assets/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["public/assets/web/dist/css/app"], () => (__webpack_require__("./src/assets/js/app.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/assets/web/dist/css/app"], () => (__webpack_require__("./src/assets/scss/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -1,3 +1,6 @@
+require('./core/bootstrap');
+require('./core/plugins');
+
 const body = document.getElementsByTagName('body')[0];
 
 document.addEventListener('DOMContentLoaded', () => {
