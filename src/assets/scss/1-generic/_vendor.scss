@@ -4,21 +4,31 @@
 ========================================================================== 
 */
 
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ */
+// @import "~some-node-module";
+
+
 /* Bootstrap base 
     (import only what's needed)
 */
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/utilities';
+// @import '~bootstrap/scss/functions';
+// @import '~bootstrap/scss/variables';
+// @import '~bootstrap/scss/mixins';
+// @import '~bootstrap/scss/reboot';
+// @import '~bootstrap/scss/grid';
+// @import '~bootstrap/scss/utilities';
+
+@import "~bootstrap/scss/bootstrap";
 
 /* Normalize */
 @import '~normalize.css/normalize';
 
 /* Family.scss */
-@import '~family.scss/source/src/family';
+// @import '~family.scss/source/src/family';
 
 /* Swiper */
 // @import "~swiper/swiper.scss";

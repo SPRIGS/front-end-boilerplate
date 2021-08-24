@@ -46,10 +46,17 @@ scss/
 
 ========================================================================== */
 
+
+
+
 @import '0-variables/color';
 @import '0-variables/font';
 @import '0-variables/grid';
 @import '0-variables/transitions';
+
+
+/** Import everything from autoload */
+// @import "autoload/**/*";
 
 @import '1-generic/vendor';
 @import '1-generic/font';
@@ -71,7 +78,16 @@ scss/
 @import '5-components/breadcrumbs';
 @import '5-components/forms';
 @import '5-components/pagination';
+@import '5-components/wp-classes';
 
 @import '6-pages/404.scss';
 @import '6-pages/search-results.scss';
 @import '6-pages/styleguide.scss';
+
+
+
+#__bs_notify__ {
+    border-radius: 0 !important;
+    bottom: 0 !important;
+    top: auto !important;
+}

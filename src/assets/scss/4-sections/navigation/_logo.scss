@@ -1,0 +1,29 @@
+/* 
+══════════════════════════════════════════════════════════════
+    Logo
+    * Header logo styling *
+══════════════════════════════════════════════════════════════ 
+*/
+header {
+    .logo {
+        width: 170px;
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+            img {
+                height: auto;
+                display: block;
+
+                width: 100%;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .logo {
+            width: 110px;
+        }
+    }
+}

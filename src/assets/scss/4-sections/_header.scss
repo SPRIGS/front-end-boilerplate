@@ -4,6 +4,32 @@
 ========================================================================== 
 */
 
+html,
+body {
+    scroll-padding-top: 65px;
+}
+
+header {
+    background-color: $white-smoke;
+    will-change: transform;
+    transition: transform 200ms linear;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -13,215 +39,13 @@
     position: relative;
     z-index: 100;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         display: inline-flex;
         background-color: transparent;
     }
 }
 
-header {
-    position: relative;
-    background-color: $white-smoke;
-    .nav {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background-color: $white-smoke;
-        top: 100%;
-        z-index: 99;
-        transform: translateY(-100%);
-        transition: transform $default-transition;
-        .menu-open & {
-            transform: translateY(0%);
-        }
-        @include media-breakpoint-up(md) {
-            position: relative;
-            top: 0;
-            transform: none;
-            display: inline-flex;
-            width: auto;
-        }
-    }
 
-    ul.menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu-item {
-        display: block;
-    }
-
-    .menu-link {
-        display: block;
-        padding: 20px 15px;
-        text-decoration: none;
-        line-height: 1;
-    }
-
-    .menu-link,
-    .dropdown-item {
-        color: $color_base;
-        transform: color $default-transition,
-            background-color $default-transition;
-        &:hover {
-            color: $white-smoke;
-            background-color: $color_base;
-            .carret {
-                border-bottom: 2px solid $white-smoke;
-                border-right: 2px solid $white-smoke;
-            }
-        }
-    }
-
-    .carret {
-        display: inline-block;
-        width: 9px;
-        height: 9px;
-        margin-left: 0px;
-        margin-top: -8px;
-        margin-right: -4px;
-        vertical-align: middle;
-        border-bottom: 2px solid #333;
-        border-right: 2px solid #333;
-        border-left: 2px solid transparent;
-        border-top: 2px solid transparent;
-        transition: transform $default-transition;
-        transform: rotate(45deg);
-        transform-origin: 6px 6px;
-    }
-
-    .open .carret {
-        transform: rotate(225deg);
-    }
-
-    .dropdown-menu {
-        position: relative;
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        background-color: $white-smoke;
-
-        .dropdown-item {
-            display: block;
-            padding: 5px 15px 5px 30px;
-            text-decoration: none;
-        }
-    }
-    .open + .dropdown-menu {
-        max-height: 100vh;
-    }
-
-    @include media-breakpoint-up(md) {
-        display: flex;
-        align-items: center;
-
-        .menu-item {
-            display: inline-flex;
-            position: relative;
-
-            &.dropdown:hover {
-                .dropdown-menu {
-                    display: block;
-                }
-            }
-        }
-        .dropdown-menu {
-            display: none;
-            max-height: unset;
-            position: absolute;
-            top: 100%;
-            width: 100%;
-
-            .dropdown-item {
-                padding: 5px 15px;
-            }
-        }
-    }
-}
-
-/*
-========================================================================== 
-    Logo
-========================================================================== 
-*/
-header {
-    .logo {
-        width: 170px;
-        display: flex;
-        align-items: center;
-
-        a {
-            display: block;
-            img {
-                height: auto;
-                display: block;
-
-                width: 100%;
-            }
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        .logo {
-            width: 110px;
-        }
-    }
-}
-
-/*
-========================================================================== 
-    Mobile toggle
-========================================================================== 
-*/
-.navigation-toggle {
-    display: block;
-    position: relative;
-    height: 40px;
-    width: 40px;
-    pointer-events: all;
-
-    span {
-        background-color: $color_base;
-        display: block;
-        height: 3px;
-        border-radius: 1.5px;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 19px;
-        transition: transform $default-transition, opacity $default-transition;
-        width: 100%;
-
-        &:nth-child(1) {
-            transform: translateY(-9px) rotate(0deg);
-        }
-        &:nth-child(2) {
-            transform: translateY(0px) rotate(0deg);
-            opacity: 1;
-        }
-        &:nth-child(3) {
-            transform: translateY(9px) rotate(0deg);
-        }
-    }
-
-    .menu-open & {
-        span {
-            &:nth-child(1) {
-                transform: translateY(0px) rotate(45deg);
-            }
-            &:nth-child(2) {
-                transform: translateY(0px) rotate(0deg);
-                opacity: 0;
-            }
-            &:nth-child(3) {
-                transform: translateY(0px) rotate(-45deg);
-            }
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        display: none;
-    }
-}
+@import "./navigation/menu";
+@import "./navigation/logo";
+@import "./navigation/hamburger";

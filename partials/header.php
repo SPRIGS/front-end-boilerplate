@@ -14,7 +14,6 @@
 
 <body>
     <main>
-
         <header>
             <div class="header__container">
                 <div class="logo">
@@ -22,38 +21,27 @@
                         <img src="./public/assets/img/logo.svg" alt="">
                     </a>
                 </div>
-
-                <a href="javascript:void(0);" id="js-menu-toggle" class="navigation-toggle">
-                    <span></span>
-                    <span></span>
+                <a href="javascript:void(0);" id="js-menu-toggle" class="navigation-toggler">
                     <span></span>
                 </a>
             </div>
 
-                <nav class="nav">
-                    <ul class="menu">
-                        <li class="menu-item active">
-                            <a class="menu-link" href="#">Menu item</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Menu item</a>
-                        </li>
-                        <li class="menu-item dropdown">
-                            <a class="menu-link dropdown-toggle" href="javascript:void(0);">
-                                Menu dropdown <div class="carret"></div>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Sub Menu item</a>
-                                <a class="dropdown-item" href="#">Sub Menu item</a>
-                                <a class="dropdown-item" href="#">Sub Menu item</a>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href="#">Sub Menu item</a>
-                        </li>
-                    </ul>
-                </nav>
-
+            <nav class="nav">
+                <ul>
+                    <li class="menu-item current-menu-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Dropdown menu</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Dropdown item</a></li>
+                            <li class="menu-item"><a href="#">Another one</a></li>
+                            <li class="menu-item"><a href="#">Yet another one</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">About us</a></li>
+                    <li class="menu-item"><a href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
         </header>
-
-        

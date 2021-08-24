@@ -1,0 +1,135 @@
+/* 
+══════════════════════════════════════════════════════════════
+    Hamburger
+    * Navigation toggle styling *
+══════════════════════════════════════════════════════════════ 
+*/
+
+$toggler-width: 30px;
+$toggler-height: 3px;
+$toggler-space: 8px;
+$toggler-radius: 2px;
+$toggler-color: $color-primary;
+$toggler-transition-speed: 0.3s;
+$toggler-transition-easing: ease-out;
+
+a.navigation-toggler {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    width: $toggler-width;
+    z-index: 104;
+}
+
+a.navigation-toggler {
+    span {
+        transition: background 0s $toggler-transition-easing $toggler-transition-speed/2;
+    }
+    span,
+    span::before,
+    span::after {
+        background: $toggler-color;
+        border-radius: $toggler-radius;
+        display: block;
+        height: $toggler-height;
+        position: relative;
+        width: $toggler-width;
+    }
+
+    span::before,
+    span::after {
+        content: "";
+        position: absolute;
+    }
+
+    span::before {
+        transform: translateY(-$toggler-space);
+    }
+    span::after {
+        transform: translateY($toggler-space);
+    }
+
+    &.was-toggled {
+        span::before {
+            animation: topLineReverse 1 $toggler-transition-speed $toggler-transition-easing forwards;
+        }
+
+        span::after {
+            animation: bottomLineReverse 1 $toggler-transition-speed $toggler-transition-easing forwards;
+        }
+    }
+}
+
+/*  State: Navigation active
+   --------------------------------------------------------------------------- */
+body.menu-open {
+    a.navigation-toggler span {
+        background: transparent;
+
+        &::before {
+            animation: topLine 1 $toggler-transition-speed $toggler-transition-easing forwards;
+        }
+
+        &::after {
+            animation: bottomLine 1 $toggler-transition-speed $toggler-transition-easing forwards;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    a.navigation-toggler {
+        display: none;
+    }
+}
+
+@keyframes topLine {
+    0% {
+        transform: translateY(-$toggler-space);
+    }
+    50% {
+        transform: translateY(0);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes topLineReverse {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: translateY(0);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: translateY(-$toggler-space);
+    }
+}
+
+@keyframes bottomLine {
+    0% {
+        transform: translateY($toggler-space);
+    }
+    50% {
+        transform: translateY(0);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes bottomLineReverse {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: translateY(0);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: translateY($toggler-space);
+    }
+}
